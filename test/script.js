@@ -1,15 +1,8 @@
 let nightmode_enable = false;
 
-function white_excel(x){
-    x.src = "image/white_excel.png";
+let change = setInterval(changeback, 3000);
+let change_count = 0;
 
-}
-
-
-function green_excel(x){
-    x.src = "image/excel.png";
-
-}
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
@@ -32,5 +25,28 @@ function nightmode(){
         document.getElementById("text").style.color ="#333";
         nightmode_enable = false;
     }
-   
+}
+
+
+function changeback(){
+    img = document.getElementById("img");
+    document.getElementById("img").style.transition = "0.3s";
+    
+    if(change_count == 0){
+        img.src ="image/back1.png"
+        change_count = 1;
+    }
+    else if(change_count == 1){
+        img.src ="image/back2.png"
+        change_count = 2;
+    }
+    else if(change_count == 2){
+        img.src ="image/back3.png"
+        change_count = 3;
+    }
+    else if(change_count == 3){
+        img.src ="image/back.png"
+        change_count = 0;
+    }
+    
 }

@@ -1,28 +1,33 @@
 body, html{
-    height: 100%;
+
     margin: 0;
     padding: 0;
     font-family: 'Prompt', sans-serif;
     background: #b5bdc5;
-
     scroll-behavior: smooth;
+    transition: 0.3s;
+}
+#main{
+    transition: 0.5s;
+
 }
 .container{
     max-width: 960px;
     margin: 0 auto;
 }
 
+
+/* ส่วน Header ของเว็บ */
 .header{
     width: 100%;
-    height: 60px;
+    height: 70px;
     margin: 0;
     background: #227547;
+    position: fixed;
 }
-
 .head{
     width: 100%;
     height: 60px;
-
 }
 ul li{
     float:left;
@@ -30,19 +35,77 @@ ul li{
 }
 .header .container .head ul li h1{
     padding-left:20px; 
-    padding-top: 5px;
 }
 .header .container .head h1{
     color: white;
     font-style: italic;
     margin: 0;
 }
-
-
 .background #img{
     width: 100%;
 
 }
+
+/* ส่วนของ SideBar */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: scroll;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.openbtn:hover {
+  background-color: rgb(219, 120, 54);
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+/* ส่วนเนื้อหาของเว็บ */
+
 .content1{
     max-width: 100%;
     min-height: 100%;
@@ -82,6 +145,10 @@ ul li{
     border-radius : 20px; 
   }
 
+
+
+
+/* ส่วนของ Footer */
 .footer{
     width: 100%;
 	height: 120px;
@@ -94,6 +161,8 @@ ul li{
 .footer .container p{
     padding-top:50px; 
 }
+
+/* ส่วนขอการปรับหน้าจอ */
 
 @media screen and (max-width: 600px) {
     .card {
@@ -118,66 +187,4 @@ ul li{
     .footer{
         bottom: 0;
     }
-  }
-
-
-
-
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  
-  .openbtn:hover {
-    background-color: rgb(219, 120, 54);
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
   }

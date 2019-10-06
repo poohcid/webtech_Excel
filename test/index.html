@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
     <title>Document</title>
 </head>
@@ -27,8 +28,8 @@
 
             </div>
         </div>
-        <div class="background">
-            <img src="image/back.png" alt="" id="img">
+        <div id="background">
+
         </div>
 
         <div id="mySidebar" class="sidebar">
@@ -46,7 +47,7 @@
             <a href="#">บท 10</a>
             <h2 style="color:white; margin-left: 15px;">ตั้งค่า</h2>
             <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
-            <a href="#"style="color: #227547;">สมาชิกกลุ่ม</a>
+            <a href="#" id="member">สมาชิกกลุ่ม</a>
         </div>
 
 
@@ -54,11 +55,12 @@
             <h1 id="text">เนื้อหาหลัก<br><br></h1>
         </center>
 
+        <div class="container">
         <div class="content1">
 
-            <div class="container">
+           
 
-                <div class="card" onclick="location.href='https://facebook.com'" ;>
+                <div class="card" onclick="location.href='https://facebook.com'"; id="card">
                     <img src="image/excel.png" onmouseover="" onmouseout="" alt="Avatar" style="width:100%" id="excel_logo">
                     <div class="card_container">
                         <h2><b>บทที่ 1</b></h2>
@@ -106,13 +108,16 @@
                     </div>
                 </div>
 
-            </div>
+           
 
         </div>
+    </div>
 
         <div class="footer">
             <div class="container">
-                <p>IT KMITL</p>
+                <div class="infooter">
+                    <i class="fa fa-github" onclick="location.href='https://github.com/poohcid/webtech_Excel'" style="font-size: 40px ;color: #FFF; cursor: pointer;"></i>
+                </div>
             </div>
         </div>
 

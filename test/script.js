@@ -29,23 +29,23 @@ function nightmode(){
 
 
 function changeback(){
-    img = document.getElementById("img");
-    document.getElementById("img").style.transition = "0.3s";
+    img = document.getElementById("background");
+
     
     if(change_count == 0){
-        img.src ="image/back1.png"
+        img.style.backgroundImage = "url('image/back1.png')";
         change_count = 1;
     }
     else if(change_count == 1){
-        img.src ="image/back2.png"
+        img.style.backgroundImage = "url('image/back2.png')";
         change_count = 2;
     }
     else if(change_count == 2){
-        img.src ="image/back3.png"
+        img.style.backgroundImage = "url('image/back3.png')";
         change_count = 3;
     }
     else if(change_count == 3){
-        img.src ="image/back.png"
+        img.style.backgroundImage = "url('image/back.png')";
         change_count = 0;
     }
     

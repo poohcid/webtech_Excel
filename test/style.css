@@ -19,6 +19,7 @@ body, html{
     margin: 0;
     background: #227547;
     position: fixed;
+    top:0;
     z-index: 1;
 }
 .head{
@@ -44,7 +45,7 @@ ul li{
     background-repeat: no-repeat;
     transition: 0.5s;
     width: 100%;
-    height: 55%;
+    height: 550px;
     position: relative;
     top: 60px;
 }
@@ -71,7 +72,7 @@ ul li{
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 22px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -90,7 +91,10 @@ ul li{
 }
 
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
+  .sidebar {
+    padding-top: 15px;
+
+  }
   .sidebar a {font-size: 18px;}
   
 }
@@ -125,23 +129,29 @@ ul li{
 
 .content1{
     max-width: 100%;
-    min-height: 100%;
-    background: #333;
+    min-height: 2000px;
     margin-bottom: 5%; 
-    border-radius :20px; 
+    border-radius :20px;
+    background: #111;
 }
-#white_excel{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
+
+.card:nth-child(10){
+  background: white;
+  width: 50%;
+  height: 215px;
+  margin-left: 25%;
+  text-align: center;
+  font-size: 22px; 
+}
+
+.card:nth-child(10) h2{
+  padding-top: 35px;
 }
 
 .card {
     transition: 0.3s;
     width: 25%;
-    height: 40%;
+    height: 450px;
     background: white;
     border-radius : 20px; 
     float: left;
@@ -152,9 +162,13 @@ ul li{
     overflow: hidden;
 
 }
+.card p{
+  font-size: 20px;
+}
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background: #227547;
+    color: #f1f1f1;
     cursor: pointer;
 }
 .card:hover #white-excel{
@@ -171,12 +185,12 @@ ul li{
 
 /* ส่วนของ Footer */
 .footer{
-    width: 100%;
+  width: 100%;
 	height: 120px;
 	text-align: center;
-    background: #227547;
-    bottom:0; 
-    margin-top:auto; 
+  background: #227547;
+  bottom: 0;
+  margin-top:auto; 
 
 }
 .footer .container p{
@@ -190,6 +204,8 @@ ul li{
   padding-top: 45px;
 }
 
+
+
 /* ส่วนขอการปรับหน้าจอ */
 
 @media screen and (max-width: 1760px) {
@@ -197,11 +213,14 @@ ul li{
     height: 350px;
   }
 
-@media screen and (max-width: 768px) {
+}
+
+
+@media screen and (max-width: 767px) {
     .card {
       float: none;
       width: 250px;
-      height: 375px;
+      height: 385px;
       margin-left: 27%; 
     }
     .footer{
@@ -210,7 +229,13 @@ ul li{
     #background{
       height: 180px;
     }
-
+    .card p{
+      font-size: 18px;
+    }
+    .sidebar{
+      height: 90%;
+    }
+    
   }
 
 @media screen and (max-width: 480px) {
@@ -219,10 +244,12 @@ ul li{
       width: 200px;
       height: 350px;
       margin-left: 19%; 
-
     }
     .footer{
         bottom: 0;
     }
+    .card:nth-child(10){
+      width: 250px;
+      margin-left: 12%; 
+    }
   }
-}

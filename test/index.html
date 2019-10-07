@@ -9,124 +9,145 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Excel Basic</title>
 </head>
 
 <body>
-        <div class="header">
-            <div class="container">
-                <div class="head">
-                    <ul>
-                        <li><button class="openbtn" onclick="openNav()">☰</button> </li>
-                        <center></center>
-                        <li>
-                            <h1>Excel Basic</h1>
-                        </li>
-                        </center>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <div id="background">
-
-        </div>
-
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <h2 style="color:white; margin-left: 15px;">เนื้อหา</h2>
-            <a href="#">บท 1</a>
-            <a href="#">บท 2</a>
-            <a href="#">บท 3</a>
-            <a href="#">บท 4</a>
-            <a href="#">บท 5</a>
-            <a href="#">บท 6</a>
-            <a href="#">บท 7</a>
-            <a href="#">บท 8</a>
-            <a href="#">บท 9</a>
-            <a href="#">บท 10</a>
-            <h2 style="color:white; margin-left: 15px;">ตั้งค่า</h2>
-            <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
-            <a href="#" id="member">สมาชิกกลุ่ม</a>
-        </div>
-
-
-        <center>
-            <h1 id="text">เนื้อหาหลัก<br><br></h1>
-        </center>
-
+    <div class="header">
         <div class="container">
-        <div class="content1">
-
-           
-
-                <div class="card" onclick="location.href='https://facebook.com'"; id="card">
-                    <img src="image/excel.png" onmouseover="" onmouseout="" alt="Avatar" style="width:100%" id="excel_logo">
-                    <div class="card_container">
-                        <h2><b>บทที่ 1</b></h2>
-                        <p>การคำนวณทางคณิตศาสตร์</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="image/excel.png" alt="Avatar" style="width:100%">
-                    <div class="card_container">
-                        <h2><b>บทที่ 2</b></h2>
-                        <p>(SUM, AVERAGE, MIN, MAX, COUNT)</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="image/excel.png" alt="Avatar" style="width:100%">
-                    <div class="card_container">
-                        <h2><b>บทที่ 3</b></h2>
-                        <p>การใช้ IF ในการตรวจสอบเงื่อนไข</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="image/excel.png" alt="Avatar" style="width:100%">
-                    <div class="card_container">
-                        <h2><b>บทที่ 4</b></h2>
-                        <p>เปรียบเทียบการใช้ IF กับ VLOOKUP ในการตรวจสอบหลาย ๆ เงื่อนไข</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="image/excel.png" alt="Avatar" style="width:100%">
-                    <div class="card_container">
-                        <h2><b>บทที่ 5</b></h2>
-                        <p>เปรียบเทียบการใช้ IF กับ VLOOKUP ในการตรวจสอบหลาย ๆ เงื่อนไข</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="image/excel.png" alt="Avatar" style="width:100%">
-                    <div class="card_container">
-                        <h2><b>บทที่ 6</b></h2>
-                        <p>เปรียบเทียบการใช้ IF กับ VLOOKUP ในการตรวจสอบหลาย ๆ เงื่อนไข</p>
-                    </div>
-                </div>
-
-           
+            <div class="head">
+                <ul>
+                    <li><button class="openbtn" onclick="openNav()">☰</button> </li>
+                    <center></center>
+                    <li>
+                        <h1>Excel Basic</h1>
+                    </li>
+                    </center>
+                </ul>
+            </div>
 
         </div>
     </div>
+    
+    <div id="background" onclick="background_link()"></div>
 
-        <div class="footer">
-            <div class="container">
-                <div class="infooter">
-                    <i class="fa fa-github" onclick="location.href='https://github.com/poohcid/webtech_Excel'" style="font-size: 40px ;color: #FFF; cursor: pointer;"></i>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
+        <a href="#">Interface</a>
+        <a href="#">Table และการใส่ข้อมูล</a>
+        <a href="#">การจัดการกับ Table</a>
+        <a href="#">การดำเนินการทางคณิตศาสตร์</a>
+        <a href="#">ตัวดำเนินการเปรียบเทียบ</a>
+        <a href="#">ฟังก์ชัน</a>
+        <a href="#">ฟังก์ชัน IF</a>
+        <a href="#">ฟังก์ชัน VLOOKUP</a>
+        <a href="#">การสร้างกราฟ</a>
+        <a href="#">เทคนิคเพิ่มเติม</a>
+        <p href="#" style="border-top: 4px solid rgb(165, 165, 165);"></p>
+        <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
+        <a href="#" id="member"><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
+    </div>
+
+
+    <center>
+        <h1 id="text" style="font-size: 45px;">เนื้อหาหลัก<br><br></h1>
+    </center>
+
+    <div class="container">
+        <div class="content1" id="content1">
+
+            <div class="card" onclick="location.href='https://facebook.com'" ; id="card">
+                <img src="image/excel.png" onmouseover="" onmouseout="" alt="Avatar" style="width:100%" id="excel_logo">
+                <div class="card_container">
+                    <h2><b>บทที่ 1</b></h2>
+                    <p>ความหมายของแต่ละส่วนหน้าจอของ Microsoft Excel (Interface)</p>
                 </div>
             </div>
-        </div>
 
+            <div class="card">
+                <img src="image/excel.png" alt="Avatar" style="width:100%">
+                <div class="card_container">
+                    <h2><b>บทที่ 2</b></h2>
+                    <p>อธิบายส่วนของ Table และการใส่ข้อมูล</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/excel.png" alt="Avatar" style="width:100%">
+                <div class="card_container">
+                    <h2><b>บทที่ 3</b></h2>
+                    <p>การจัดการกับ Table</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/excel.png" alt="Avatar" style="width:100%">
+                <div class="card_container">
+                    <h2><b>บทที่ 4</b></h2>
+                    <p>การดำเนินการทางคณิตศาสตร์</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/excel.png" alt="Avatar" style="width:100%">
+                <div class="card_container">
+                    <h2><b>บทที่ 5</b></h2>
+                    <p>ตัวดำเนินการเปรียบเทียบ</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/excel.png" alt="Avatar" style="width:100%">
+                <div class="card_container">
+                    <h2><b>บทที่ 6</b></h2>
+                    <p>ฟังก์ชัน</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="image/excel.png" alt="Avatar" style="width:100%">
+                <div class="card_container">
+                    <h2><b>บทที่ 7</b></h2>
+                    <p>ฟังก์ชัน IF</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/excel.png" alt="Avatar" style="width:100%">
+                <div class="card_container">
+                    <h2><b>บทที่ 8</b></h2>
+                    <p>ฟังก์ชัน VLOOKUP</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/excel.png" alt="Avatar" style="width:100%">
+                <div class="card_container">
+                    <h2><b>บทที่ 9</b></h2>
+                    <p>การสร้างกราฟ</p>
+                </div>
+            </div>  
+
+            <div class="card">
+
+                <div class="card_container">
+                    <h2><b>บทที่ 10</b></h2>
+                    <p>เทคนิคเพิ่มเติม</p>
+                </div>
+            </div>  
+
+
+        </div>
     </div>
 
-
+    <div class="footer">
+        <div class="container">
+            <div class="infooter">
+                <i class="fa fa-github" onclick="location.href='https://github.com/poohcid/webtech_Excel'" style="font-size: 40px ;color: #FFF; cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
 
 </body>
-
-
-
 </html>

@@ -32,4 +32,5 @@
 
 10.	เทคนิคเพิ่มเติม
     -	Ref https://www.thepexcel.com/10-excel-tips-speed-up-work/
+11. workshop
 

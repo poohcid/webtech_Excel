@@ -49,11 +49,37 @@ ul li{
     position: relative;
     top: 60px;
 }
+.forward{
+  width:5%;
+  height:70px;
+  float: right;
+  background: #333;
+  border-radius:50px; 
+  cursor: pointer;
+  z-index: 1;
+  margin-top: 10%;
+  margin-right: 5%;
+  border: 0;
+}
+.back{
+  float: left;
+  width:5%;
+  height:70px;
+  border-radius:50px; 
+  background: #333;
+  cursor: pointer;
+  z-index: 1;
+  margin-top: 10%;
+  margin-left: 5%;
+  border: 0;
+}
 
 #text{
   margin-top: 100px;
 }
-
+.forward:hover, .back:hover{
+  background: rgb(218, 61, 56); 
+}
 /* ส่วนของ SideBar */
 
 .sidebar {
@@ -88,6 +114,10 @@ ul li{
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.closebtn{
+  font-size: 60px;
 }
 
 @media screen and (max-height: 450px) {
@@ -180,8 +210,24 @@ ul li{
     border-radius : 20px; 
   }
 
+/* ปุ่มไปส่วนบนสุดของหน้าเว็บ */
 
+.bottom_to_top{
+  width: 80px; 
+  height: 80px; 
+  background: rgb(0, 0, 0);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  margin: 20px;
+  border: 0;
+  transition: 0.3s;
+}
 
+.bottom_to_top:hover{
+  background: rgb(218, 61, 56);
+}
 
 /* ส่วนของ Footer */
 .footer{
@@ -235,7 +281,13 @@ ul li{
     .sidebar{
       height: 90%;
     }
-    
+    .back, .forward{
+      font-size: 30px;
+      width: 9%;
+    }
+    .content1{
+      background: none;
+    }
   }
 
 @media screen and (max-width: 480px) {
@@ -243,8 +295,9 @@ ul li{
       float: none;
       width: 200px;
       height: 350px;
-      margin-left: 19%; 
+      margin-left: 19%;
     }
+    
     .footer{
         bottom: 0;
     }
@@ -252,4 +305,8 @@ ul li{
       width: 250px;
       margin-left: 12%; 
     }
+    .back, .forward{
+      margin-top: 17.5%;
+    }
+    
   }

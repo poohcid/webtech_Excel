@@ -1,12 +1,16 @@
 let nightmode_enable = false;
 
-let change = setInterval(changeback, 3000);
+let change = setInterval(changeback, 4000);
 let change_count = 0;
 
 
 function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-
+    if(document.getElementById("mySidebar").style.width == "250px"){
+        document.getElementById("mySidebar").style.width = "0";
+    }
+    else{
+        document.getElementById("mySidebar").style.width = "250px";
+    }
 }
 
 function closeNav() {
@@ -29,24 +33,26 @@ function nightmode(){
 }
 
 
-function changeback(){
+function changeback(x){
     img = document.getElementById("background");
-    img.onclick = "https://google.com";
+    num = 0;
+    if(x == 1) num = change_count+x;
+    else  num = change_count-x;
     
-    if(change_count == 0){
+    if(change_count == 0 || num == 0){
         img.style.backgroundImage = "url('image/back1.png')";
         change_count = 1;
     }
-    else if(change_count == 1){
+    else if(change_count == 1 || num == 1){
         img.style.backgroundImage = "url('image/back2.png')";
-       
+
         change_count = 2;
     }
-    else if(change_count == 2){
+    else if(change_count == 2 || num == 2){
         img.style.backgroundImage = "url('image/back3.png')";
         change_count = 3;
     }
-    else if(change_count == 3){
+    else if(change_count == 3 || num == 3){
         img.style.backgroundImage = "url('image/back.png')";
         change_count = 0;
     }
@@ -54,21 +60,18 @@ function changeback(){
 }
 
 function background_link(){ 
+    
     if(change_count == 0){
-        alert('1');
-        window.location.href = 'https://facebook.com';
+        document.getElementById("background_link").href= 'https://facebook.com';
     }
     else if(change_count == 1){
-        alert('2');
-        window.open("https://www.youtube.com");
+        document.getElementById("background_link").href= 'https://google.com';
     }
     else if(change_count == 2){
-        alert('3');
-        window.open("https://www.google.com");
+        document.getElementById("background_link").href= 'https://youtube.com';
     }
     else if(change_count == 3){
-        alert('4');
-        window.open("https://www.instagram.com");
+        document.getElementById("background_link").href= 'https://instagram.com';
     }
 
 }

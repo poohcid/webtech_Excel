@@ -16,7 +16,7 @@
     <div class="header">
         <div class="container">
             <div class="head">
-                <ul>
+                <ul id="head_ul">
                     <li><button class="openbtn" onclick="openNav()">☰</button> </li>
                     <center></center>
                     <li>
@@ -28,11 +28,22 @@
 
         </div>
     </div>
+
+    <!--  -->
+    <div id="background" href="" onclick="background_link()">
+        <!-- <a href="" id="background_link" onclick="background_link()"> -->
+            <button class="forward" onclick="changeback(1)">
+                <center><i class='fas fa-angle-right' style='font-size: 65px; color: white;'></i></center>
+            </button>
+            <button class="back" onclick="changeback(-1)">
+                <center><i class='fas fa-angle-left' style='font-size: 65px; color: white;'></i></center>
+            </button>
+        <!-- </a> -->
+    </div>
     
-    <div id="background" onclick="background_link()"></div>
 
     <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
         <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
         <a href="#">Interface</a>
         <a href="#">Table และการใส่ข้อมูล</a>
@@ -105,7 +116,7 @@
                 </div>
             </div>
 
-             <div class="card">
+            <div class="card">
                 <img src="image/excel.png" alt="Avatar" style="width:100%">
                 <div class="card_container">
                     <h2><b>บทที่ 7</b></h2>
@@ -127,7 +138,7 @@
                     <h2><b>บทที่ 9</b></h2>
                     <p>การสร้างกราฟ</p>
                 </div>
-            </div>  
+            </div>
 
             <div class="card">
 
@@ -135,19 +146,22 @@
                     <h2><b>บทที่ 10</b></h2>
                     <p>เทคนิคเพิ่มเติม</p>
                 </div>
-            </div>  
+            </div>
 
 
         </div>
     </div>
-
+    
+    <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up' style='font-size: 65px; color: white;'></i></a></button>
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                <i class="fa fa-github" onclick="location.href='https://github.com/poohcid/webtech_Excel'" style="font-size: 40px ;color: #FFF; cursor: pointer;"></i>
+                <i class="fa fa-github" onclick="location.href='https://github.com/poohcid/webtech_Excel'"
+                    style="font-size: 40px ;color: #FFF; cursor: pointer;"></i>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>

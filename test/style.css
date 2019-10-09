@@ -213,8 +213,8 @@ ul li{
 /* ปุ่มไปส่วนบนสุดของหน้าเว็บ */
 
 .bottom_to_top{
-  width: 80px; 
-  height: 80px; 
+  width: 70px; 
+  height: 70px; 
   background: rgb(0, 0, 0);
   position: fixed;
   right: 0;
@@ -306,6 +306,9 @@ ul li{
       margin-left: 12%; 
     }
     .back, .forward{
+      margin-top: 17.5%;
+    }
+    .back i, .forward i{
       margin-top: 17.5%;
     }
     

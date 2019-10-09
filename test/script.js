@@ -22,7 +22,6 @@ function nightmode(){
     if(nightmode_enable == false){
         document.body.style.backgroundColor ="#111";
         document.getElementById("text").style.color ="#fff";
-        document.getElementById("content1").style.backgroundColor="#333";
         nightmode_enable = true;
     }
     else{

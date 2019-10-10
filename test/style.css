@@ -227,6 +227,10 @@ padding-left: 20px;
 
 
 /* ส่วนขอการปรับหน้าจอ */
+@media screen and (max-width: 1460px) {
+  .sidebar{
+    width: 0px;
+  }
 
 @media screen and (max-width: 960px) {
     .card {

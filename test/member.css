@@ -56,31 +56,12 @@ body, html{
     font-family: 'Prompt', sans-serif;
 }
 
-.forward{
-  width:3%;
-  height:70px;
-  float: right;
-  background: #333;
-  cursor: pointer;
-  border: 0;
-  border-radius: 5px
-}
-.back{
-  float: left;
-  width:3%;
-  height:70px;
-  background: #333;
-  cursor: pointer;
-  border: 0;
-  border-radius: 5px;
-}
 
-#text{
-  margin-top: 100px;
-}
-.forward:hover, .back:hover{
-  background: rgb(218, 61, 56); 
-}
+
+
+
+
+
 /* ส่วนของ SideBar */
 
 .sidebar {
@@ -225,14 +206,10 @@ body, html{
 
 /* ส่วนขอการปรับหน้าจอ */
 
-
 @media screen and (max-width:960px) {
 
     .footer{
         bottom: 0;
-    }
-    #background{
-      height: 180px;
     }
     .sidebar{
       height: 90%;
@@ -242,8 +219,7 @@ body, html{
     .content1{
         flex-direction: column;
         color: white;
-    }
-    
+    } 
     .img{
         width: 250px;
         height: 250px;
@@ -267,13 +243,13 @@ body, html{
     }
 
   }
-
-@media screen and (max-height: 830px) {
-  .sidebar{
-    height: 90%;
-  } 
-}
-
+  
+  @media screen and (max-height: 830px) {
+    .sidebar{
+      height: 90%;
+    } 
+  }
+  
 @media screen and (max-width: 480px) {
 
     .footer{

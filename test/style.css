@@ -14,75 +14,51 @@ body, html{
 
 /* ส่วน Header ของเว็บ */
 .header{
-    width: 100%;
-    height: 70px;
-    margin: 0;
-    background: #227547;
-    position: fixed;
-    top:0;
-    z-index: 1;
+  width: 100%;
+  height: 55%;
+  margin: 0;
+  background-image:url("image/back4.png");
 }
 .head{
-    width: 100%;
-    height: 60px;
+  width: 100%;
+  height: 60px;
 }
 .head button{
-  float: left;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 20px;
+float: left;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 20px;
 }
 .head h1{
-  padding-top: 10px;
-  padding-left: 20px;
+padding-top: 10px;
+padding-left: 20px;
 }
 
 .header .container .head h1{
-    color: white;
-    font-style: italic;
-    margin: 0;
+  color: white;
+  font-style: italic;
+  margin: 0;
 
 }
-#background {
-    background: url("image/back.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-    max-width: 100%;
-    height: 550px;
-    position: relative;
-    top: 60px;
+.head2{
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 15%;
+  
 }
-.forward{
-  width:3%;
-  height:70px;
-  float: right;
-  background: #333;
-  cursor: pointer;
-  border: 0;
-  border-radius: 5px
+.head2 p{
+ font-size: 22px;
 }
-.back{
-  float: left;
-  width:3%;
-  height:70px;
-  background: #333;
-  cursor: pointer;
-  border: 0;
-  border-radius: 5px;
+.head2 button{
+  font-family: 'Prompt', sans-serif;
 }
 
-#text{
-  margin-top: 100px;
-}
-.forward:hover, .back:hover{
-  background: rgb(218, 61, 56); 
-}
+
 /* ส่วนของ SideBar */
-
 .sidebar {
   height: 100%;
-  width: 0;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -120,7 +96,7 @@ body, html{
 
 @media screen and (max-height: 450px) {
   .sidebar {
-    padding-top: 15px;
+    padding-top: 12px;
 
   }
   .sidebar a {font-size: 18px;}
@@ -160,7 +136,7 @@ body, html{
     min-height: 2000px;
     margin-bottom: 5%; 
     border-radius :20px;
-    background: #111;
+    /* background: #111; */
 }
 
 .card:nth-child(10){
@@ -252,14 +228,6 @@ body, html{
 
 /* ส่วนขอการปรับหน้าจอ */
 
-@media screen and (max-width: 1760px) {
-  #background{
-    height: 350px;
-  }
-
-}
-
-
 @media screen and (max-width: 767px) {
     .card {
       float: none;
@@ -269,9 +237,6 @@ body, html{
     }
     .footer{
         bottom: 0;
-    }
-    #background{
-      height: 180px;
     }
     .card p{
       font-size: 18px;
@@ -293,6 +258,7 @@ body, html{
       margin-right: 0px;
     }
   }
+
 @media screen and (max-height: 830px) {
   .sidebar{
     height: 90%;

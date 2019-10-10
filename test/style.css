@@ -243,6 +243,7 @@ padding-left: 20px;
     }
     .sidebar{
       height: 90%;
+      width: 0px;
     }
     .back, .forward{
       width: 9%;

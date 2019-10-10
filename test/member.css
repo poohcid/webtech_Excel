@@ -268,6 +268,12 @@ body, html{
 
   }
 
+@media screen and (max-height: 830px) {
+  .sidebar{
+    height: 90%;
+  } 
+}
+
 @media screen and (max-width: 480px) {
 
     .footer{

@@ -133,55 +133,73 @@ padding-left: 20px;
 
 .content1{
     max-width: 100%;
-    min-height: 2000px;
     margin-bottom: 5%; 
     border-radius :20px;
+    display: flex;
     /* background: #111; */
-}
-
-.card:nth-child(10){
-  background: white;
-  width: 50%;
-  height: 215px;
-  margin-left: 25%;
-  text-align: center;
-  font-size: 22px; 
-}
-
-.card:nth-child(10) h2{
-  padding-top: 35px;
 }
 
 .card {
     transition: 0.3s;
-    width: 25%;
-    height: 450px;
+    width: 40%;
+    height: 500px;
     background: white;
-    border-radius : 20px; 
+    border-radius : 5px; 
     float: left;
-    margin-right: 0%; 
-    margin-left: 6.4%; 
-    margin-top: 5%;
-    margin-bottom: 6.25%;
+    margin-left: 1.5%; 
+    margin-top: 0%;
+    margin-bottom: 4%;
     overflow: hidden;
-
+}
+.card_extra{
+  transition: 0.3s;
+  width: 50%;
+  height: 500px;
+  background: white;
+  border-radius : 5px; 
+  float: left;
+  margin-left: 1.5%; 
+  margin-top: 0%;
+  margin-bottom: 4%;
+  overflow: hidden;
+}
+.card_extra h2{
+  font-size: 40px;
+  text-align: center;
+}
+.card_img{
+  width:100%;
+  height:50%;
+  background: #227547;
+}
+.card_button{
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 2px solid #111;
+  border-radius : 5px; 
+  font-family: 'Prompt', sans-serif;
+  transition: 0.3s;
+  font-size: 17px;
+  bottom: 0;
+}
+.card_button:hover{
+  background: #111;
+  color: white;
 }
 .card p{
-  font-size: 20px;
+  font-size: 18px;
+  margin: 0;
 }
-.card:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    background: #227547;
-    color: #f1f1f1;
-    cursor: pointer;
-}
-.card:hover #white-excel{
-    display: inline;
+.button_card{
+  width: 100%;
+  height:14%;
 }
 .card_container {
     padding: 2px 16px;
     color: black;
     border-radius : 20px; 
+    height: 35%;
   }
 
 /* ปุ่มไปส่วนบนสุดของหน้าเว็บ */
@@ -228,33 +246,20 @@ padding-left: 20px;
   .sidebar{
     width: 0px;
   }
-
 }
 
 /* ส่วนขอการปรับหน้าจอ */
 
 @media screen and (max-width: 960px) {
-    .card {
-      float: none;
-      width: 250px;
-      height: 385px;
-      margin-left: 27%; 
-    }
     .footer{
         bottom: 0;
     }
     .card p{
-      font-size: 18px;
+      font-size: 17px;
     }
     .sidebar{
       height: 90%;
       width: 0px;
-    }
-    .back, .forward{
-      width: 9%;
-    }
-    .content1{
-      background: none;
     }
     .header{
       text-align: center;
@@ -271,23 +276,18 @@ padding-left: 20px;
   } 
 }
 
-@media screen and (max-width: 480px) {
-    .card {
-      float: none;
-      width: 200px;
-      height: 350px;
-      margin-left: 19%;
-    }
-    
-    .footer{
-        bottom: 0;
-    }
-    .card:nth-child(10){
-      width: 250px;
-      margin-left: 12%; 
-    }
-    .header{
-      height: 82%;
+@media screen and (max-width: 490px) {
+  .content1{
+    flex-direction: column;
+  }
+  .card, .card_extra{
+    width: 97%;
+  }
+  .footer{
+    bottom: 0;
+  }
+  .header{
+    height: 75%;
   }
   
-  }
+}

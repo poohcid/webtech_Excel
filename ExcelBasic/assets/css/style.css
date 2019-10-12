@@ -276,6 +276,9 @@ padding-left: 20px;
     .header{
       height: auto;
     }
+    .head2 p{
+      margin-bottom: 5px;
+    }
   }
 
 @media screen and (max-height: 830px) {

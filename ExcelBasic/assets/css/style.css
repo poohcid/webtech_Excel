@@ -281,7 +281,10 @@ padding-left: 20px;
 @media screen and (max-height: 830px) {
   .sidebar{
     height: 90%;
-  } 
+  }
+  .header{
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 490px) {

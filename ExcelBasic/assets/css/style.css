@@ -273,15 +273,15 @@ padding-left: 20px;
       padding-left: 15px;
       margin-right: 0px;
     }
+    .header{
+      height: auto;
+    }
   }
 
 @media screen and (max-height: 830px) {
   .sidebar{
     height: 90%;
   } 
-  .header{
-    height: 100%;
-  }
 }
 
 @media screen and (max-width: 490px) {

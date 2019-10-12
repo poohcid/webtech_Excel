@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/unit1.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/script.js"></script>
+    <title>Excel Basic</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="head">
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <h1>Excel Basic</h1>
+            </div>
+            <div class="head2">
+                <h1 style="font-size: 70px;">บทที่ 1 : Interface</h1>
+                <button class="openbtn" onclick="window.location.href = 'index.html';">เนื้อหาอื่นๆ</button>
+                <button class="openbtn" onclick="window.location.href = 'member.html';">สมาชิกกลุ่ม</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
+        <a href="unit1.html">Interface</a>
+        <a href="unit2.html">Table และการใส่ข้อมูล</a>
+        <a href="#">การจัดการกับ Table</a>
+        <a href="#">การดำเนินการทางคณิตศาสตร์</a>
+        <a href="#">ตัวดำเนินการเปรียบเทียบ</a>
+        <a href="#">ฟังก์ชัน</a>
+        <a href="#">ฟังก์ชัน IF</a>
+        <a href="#">ฟังก์ชัน VLOOKUP</a>
+        <a href="#">การสร้างกราฟ</a>
+        <a href="#">เทคนิคเพิ่มเติม</a>
+        <p href="#" style="border-top: 4px solid rgb(165, 165, 165);"></p>
+        <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
+        <a href="member.html" id=""><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
+    </div>
+
+    <div class="container">
+        <div class="content1" id="content1">
+            <h2>ความหมายของแต่ละส่วนหน้าจอของ Microsoft Excel (Interface)</h2>
+            <div class="img"><img src="assets/image/unit1/main point.jpg" alt=""></div>
+            <div class="underline" id="line"></div>
+            <div class="content_detail" id="text">
+                <div class="img"><img src="image/unit1/quick.jpg" alt=""></div>
+                <p><b>Quick Access</b> : เราสามารถทำการเพิ่มไอคอน Tools ต่างๆที่เราใช้บ่อยๆมาไว้ตรงนี้ได้</p>
+                
+                <div class="img"><img src="assets/image/unit1/menu_and_tools.jpg" alt=""></div>
+                <p><b>Ribbon Bar</b> : จะเป็นการรวม Tools ต่างๆในการจัดการ Excel</p>
+                
+                <div class="img"><img src="assets/image/unit1/name_cell.jpg" alt=""></div>
+                <p><b>Name Box</b> : ชื่อของ Cell นั้นๆ หรือ จะเป็นการพิมพ์ชื่อ Cell นั้นๆลงไปแล้ว Enter มันจำนำเราไปอยู่ใน Cell ที่เราต้องการ</p>
+                
+                <div class="img"><img src="assets/image/unit1/fucntion.jpg" alt=""></div>
+                <p><b>Formula Bar</b> : โดยเป็นช่องใส่สูตรที่เราจะใช้</p>
+                
+                <div class="img"><img src="assets/image/unit1/collum.jpg" alt=""></div>
+                <p><b>Column</b> : ชื่อคอลั่มในการใช้งานไฟล์ใน Excel อาทิเช่น  A , B , C , D , E , F……</p>
+                
+                <div class="img"><img src="assets/image/unit1/row.jpg" alt=""></div>
+                <p><b>Row</b> : ชื่อแถวในการใช้งานไฟล์ใน Excel อาทิเช่น  1,2,3,4,5</p>
+                
+                <div class="img"><img src="assets/image/unit1/sheet.jpg" alt=""></div>
+                <p><b>Sheet Tab</b> : จะเป็นแถบในการจัดการ Sheet และการเพิ่ม Sheet</p>
+            </div>
+            <center>
+            <div class="navigator">
+                <div class="nav_button" onclick="window.location.href = 'unit2.html';"><p>เนื้อหาถัดไป</p></div>
+            </div>
+            </center>
+        </div>
+    </div>
+
+
+
+
+    <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'
+                style='font-size: 65px; color: white;'></i></a></button>
+    <div class="footer">
+        <div class="container">
+            <div class="infooter">
+                <i class="fa fa-github" onclick="location.href='https://github.com/poohcid/webtech_Excel'"
+                    style="font-size: 40px ;color: #FFF; cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -21,14 +21,20 @@ function nightmode(){
         document.body.style.backgroundColor ="#222";
         document.getElementById("text").style.color ="#fff";
         document.getElementById("content1").style.color ="#fff";
-        document.getElementById("line").style.background ="rgb(255, 191, 118)";
+        var line = document.querySelectorAll(".underline");
+        for (i = 0; i < line.length; i++) {
+            line[i].style.backgroundColor = "rgb(255, 191, 118)";
+          }
         nightmode_enable = true;
     }
     else{
         document.body.style.backgroundColor ="#b5bdc5";
-        document.getElementById("text").style.color ="#222";
-        document.getElementById("content1").style.color ="#222";
-        document.getElementById("line").style.background ="#222";
+        document.getElementById("text").style.color ="#000";
+        document.getElementById("content1").style.color ="#000";
+        var line = document.querySelectorAll(".underline");
+        for (i = 0; i < line.length; i++) {
+            line[i].style.backgroundColor = "#111";
+          }
         nightmode_enable = false;
     }
 }

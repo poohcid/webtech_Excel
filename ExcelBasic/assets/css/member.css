@@ -239,10 +239,14 @@ body, html{
     }
     .header{
       text-align: center;
+      height: auto;
     }
     .head button{
       padding-left: 15px;
       margin-right: 0px;
+    }
+    .head2 p{
+      margin-bottom: 5px;
     }
 
   }
@@ -250,6 +254,9 @@ body, html{
   @media screen and (max-height: 830px) {
     .sidebar{
       height: 90%;
+    } 
+    .header{
+      height: auto;
     } 
   }
   
@@ -259,7 +266,7 @@ body, html{
         bottom: 0;
     }
     .header{
-        height: 70%;
+        height: auto;
     }
     
   }

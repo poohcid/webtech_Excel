@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/unit.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/script.js"></script>
+    <link rel="shortcut icon" href="assets/image/white_excel.ico"/>
+    <title>Excel Basic</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="head">
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <h1 onclick="window.location.href = 'unit1.html';">Excel Basic</h1>
+            </div>
+            <div class="head2">
+                <h1 style="font-size: 60px;">บทที่ 2.1 : การใส่ค่า</h1>
+                <button class="openbtn" onclick="window.location.href = 'index.html';">เนื้อหาอื่นๆ</button>
+                <button class="openbtn" onclick="window.location.href = 'member.html';">สมาชิกกลุ่ม</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
+        <a href="unit1.html">Interface</a>
+        <a href="unit2.html">Table และการใส่ข้อมูล</a>
+        <a href="unit3.html">การจัดการกับ Table</a>
+        <a href="unit4.html">การดำเนินการทางคณิตศาสตร์</a>
+        <a href="unit5.html">ตัวดำเนินการเปรียบเทียบ</a>
+        <a href="unit6.html">ฟังก์ชัน</a>
+        <a href="unit7.html">ฟังก์ชัน IF</a>
+        <a href="unit8.html">ฟังก์ชัน VLOOKUP</a>
+        <a href="unit9.html">การสร้างกราฟ</a>
+        <a href="tech.html">เทคนิคเพิ่มเติม</a>
+        <p href="workshop.html" style="border-top: 4px solid rgb(165, 165, 165);"></p>
+        <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
+        <a href="member.html" id=""><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
+    </div>
+       
+    <div class="container">
+        <div class="content1" id="content1">
+            <br><br><center><iframe width="100%" height="70%" style="border-radius: 10px;" src="https://www.youtube.com/embed/nFxZGf6I5lc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            
+            <br><br><h1 id="text">แถวและคอลั่ม</h1>
+            <p id="text">ตำแหน่งคอลั่มจะถูกตั้งชื่อด้วยตัวอักษร A – Z ตำแหน่งแถวจะถูกตั้งชื่อด้วยตัวเลขไล่ตั้งแต่ 1 </p>
+            
+            <div class="img"><img src="assets/image/unit2/col row.png" alt=""></div>
+            <p id="text">ชื่อเซลล์จะถูกตั้งชื่อขึ้นต้นด้วยชื่อคอลั่มและแถวต่อกัน ดั่งรูปภาพ เซลล์อยู่คอลั่ม B และแถว 3 จะถูกตั้งชื่อเป็น B3</p>
+            
+            <div class="underline" id="line"></div>
+            <h1 id="text">การใส่ค่า</h1>
+            
+            <div class="content_detail" id="text">
+                <div class="img"><img src="assets/image/unit2/input.jpg" alt=""></div>
+                <p id="text"><b>การใส่ค่าสามารถทำได้ 2 วิธี</b></p>
+                <p id="text"><b>1.</b> กำหนดลงในเซลล์โดยตรง</p>
+                <p id="text"><b>2.</b> กำหนดลงในช่องใส่สูตร โดยวิธีนี้แนะนำกว่าแบบแรกเพราะสามารถเห็นข้อมูลทั้งหมดของเซลล์ที่เลือกไว้ได้ทั้งหมด เพราะ <b>จากตัวอย่างภาพ</b> ข้อมูลที่แสดงผลบนเซลล์ที่เลือกเมื่อมีข้อมูลเกินขอบเขตขนาดที่ตั้งไว้ถ้าเซลล์ถัดมามีข้อมูลอยู่</p>
+            </div>
+            <center>
+                <div class="navigator">
+                    <div class="nav_button" onclick="window.location.href = 'unit1.html';"><p>เนื้อหาก่อนหน้า</p></div>
+                    <div class="nav_button" onclick="window.location.href = 'unit2-2.html';"><p>เนื้อหาถัดไป</p></div>
+                </div>
+            </center>
+        </div>
+    </div>
+
+    
+
+
+    <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'
+                style='font-size: 65px; color: white;'></i></a></button>
+    <div class="footer">
+        <div class="container">
+            <div class="infooter">
+                <i class="fa fa-github" onclick="location.href='https://github.com/poohcid/webtech_Excel'"
+                    style="font-size: 40px ;color: #FFF; cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

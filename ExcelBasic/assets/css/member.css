@@ -55,6 +55,8 @@ body, html{
 }
 .head2 button{
     font-family: 'Prompt', sans-serif;
+    width: 140px;
+    margin-bottom: 10px;
 }
 
 

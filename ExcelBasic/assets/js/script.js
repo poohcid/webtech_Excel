@@ -21,7 +21,6 @@ function nightmode(){
         document.body.style.backgroundColor ="#222";
         var text = document.querySelectorAll("#text");
         var line = document.querySelectorAll(".underline");
-
         for (i = 0; i < text.length; i++) {
             text[i].style.color = "#FFF";
           }  
@@ -34,7 +33,7 @@ function nightmode(){
         document.body.style.backgroundColor ="#b5bdc5";
         var text = document.querySelectorAll("#text");
         var line = document.querySelectorAll(".underline");
-        
+
         for (i = 0; i < text.length; i++) {
             text[i].style.color = "#000";
           }      

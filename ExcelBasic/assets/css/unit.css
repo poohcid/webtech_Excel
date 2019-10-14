@@ -57,6 +57,8 @@ cursor: pointer;
 }
 .head2 button{
   font-family: 'Prompt', sans-serif;
+  width: 130px;
+  margin-bottom: 10px;
 }
 
 
@@ -278,6 +280,9 @@ table tr td{
     }
     .head2 p{
       margin-bottom: 5px;
+    }
+    .nav_button p{
+      font-size: 19px;
     }
   }
 

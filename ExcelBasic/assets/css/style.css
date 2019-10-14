@@ -52,6 +52,8 @@ cursor: pointer;
  font-size: 22px;
 }
 .head2 button{
+  width: 130px;
+  margin-bottom: 10px;
   font-family: 'Prompt', sans-serif;
 }
 

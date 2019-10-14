@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/unit.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/script.js"></script>
+    <link rel="shortcut icon" href="assets/image/white_excel.ico" />
+    <title>Excel Basic</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="head">
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <h1 onclick="window.location.href = 'index.html';">Excel Basic</h1>
+            </div>
+            <div class="head2">
+                <h1 style="font-size: 60px;">บทที่ 3.1 : การตกแต่งตาราง</h1>
+                <button class="openbtn" onclick="window.location.href = 'index.html';">เนื้อหาอื่นๆ</button>
+                <button class="openbtn" onclick="window.location.href = 'member.html';">สมาชิกกลุ่ม</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
+        <a href="unit1.html">Interface</a>
+        <a href="unit2.html">ตาราง</a>
+        <a href="unit3.html">การจัดการตาราง</a>
+        <a href="unit4.html">การดำเนินการทางคณิตศาสตร์</a>
+        <a href="unit5.html">ตัวดำเนินการเปรียบเทียบ</a>
+        <a href="unit6.html">ฟังก์ชัน</a>
+        <a href="unit7.html">ฟังก์ชัน IF</a>
+        <a href="unit8.html">ฟังก์ชัน VLOOKUP</a>
+        <a href="unit9.html">การสร้างกราฟ</a>
+        <a href="tech.html">เทคนิคเพิ่มเติม</a>
+        <a href="workshop.html">Workshop</a>
+        <p style="border-top: 4px solid rgb(165, 165, 165);"></p>
+        <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
+        <a href="member.html" id=""><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
+    </div>
+
+    <div class="container">
+        <div class="content1" id="content1">
+            <br><br>
+            <h1 id="text">การใส่เส้นขอบตาราง</h1>
+            <p id="text">1. เลือกคุมตารางในส่วนที่เราต้องการ จากนั้น เลือก Ribbon หน้าแรก ในส่วนจัดการของ
+                คำสั่งฟอนต์จะมีคำสั่ง เส้นขอบตาราง คลิกลูกศรลงตรงค่าสั่งจะมีคำสั่งต่างๆให้เลือก ใน
+                ตัวอย่างนี้เราเลือกคำสั่งเส้นขอบทั้งหมด</p>
+            <div class="img"><img src="assets/image/unit3/boder1.jpg" alt=""></div><br><br>
+
+            <div class="img"><img src="assets/image/unit3/boder2.jpg" alt=""></div><br><br>
+
+            <div class="img"><img src="assets/image/unit3/boder3.jpg" alt=""></div>
+
+            <div class="underline" id="line"></div>
+
+            <h1 id="text">การใส่เงาหรือใส่สี</h1>
+
+            <div class="img"><img src="assets/image/unit3/color1.jpg" alt=""></div><br><br>
+
+            <div class="img"><img src="assets/image/unit3/color2.jpg" alt=""></div><br><br>
+
+            <div class="img"><img src="assets/image/unit3/color3.jpg" alt=""></div>
+
+            <div class="underline" id="line"></div>
+
+            <h1 id="text">การใส่สีแบบมีเงื่อนไข</h1>
+            <p id="text">ถ้าต้องการให้ค่าที่เรากำหนดตรงตามเงื่อนไขจะให้แสดงผลบางอย่าง โดยมีขั้นตอนดังนี้</p>
+
+            <div class="img"><img src="assets/image/unit3/con1.jpg" alt=""></div>
+            <p id="text">1. คลุมตารางที่เราจะใช้เช็คเงื่อนไข</p><br><br>
+            <div class="img"><img src="assets/image/unit3/con2.jpg" alt=""></div><br>
+
+            <p id="text">2. ไปแถบเมนูใส่ส่วนของหน้าแรกแล้วคลิกที่ Conditional Formatting แล้วไปที่ Highlight Cells Rules
+            </p>
+            <p id="text">3. เลือกเงื่อนไขที่เราต้องการ เช่น มากกว่า น้อยกว่า เปรียบเทียบข้อความและอื่นๆ</p>
+
+
+            <div class="underline" id="line"></div>
+
+            <h1 id="text">การสร้างกฎใหม่</h1>
+
+            <div class="img"><img src="assets/image/unit3/new0.jpg" alt=""></div>
+            <p id="text">ไดอะล็อกบ็อกซ์กฎการจัดรูปแบบใหม่ / New Formatting Rule </p><br>
+
+            <div class="img"><img src="assets/image/unit3/new.jpg" alt=""></div>
+            <p id="text">โดยในตัวอย่างนี้จะเลือก คำสั่งจัดรูปแบบเฉพาะที่มี/ Format only cells that contain
+                จากนั้นกำหนดเงื่อนไข โดย ไปที่ส่วนคำสั่ง กำหนดเงื่อนไขเอง เมื่อกำหนดเสร็จให้คลิกปุ่ม ตกลง/OK</p><br>
+
+            <div class="img"><img src="assets/image/unit3/new4.jpg" alt=""></div><br>
+            <div class="img"><img src="assets/image/unit3/new3.jpg" alt=""></div>
+
+            <p id="text">เมื่อกดที่ Format จะปรากฏไดอะล็อกบ็อกซ์ใหม่ขึ้นมา ชื่อว่าการ
+                จัดรูปแบบเซลล์ซึ่งจะมีหลายฟังก์ชั่นให้เลือกใช้ คือ ตัวเลข,แบบอักษร, เส้นขอบ,และการ
+                เติมสี ให้เลือกแบบที่ต้องการ จากนั้นคลิกปุ่ม ตกลง
+            </p>
+
+            <h2 id="text">ผลลัพธ์ตัวอย่าง</h2>
+
+            <div class="img"><img src="assets/image/unit3/ex1.jpg" alt=""></div>
+            <div class="underline" id="line"></div>
+
+            <h1 id="text">การแก้ไขกฏ</h1>
+            <p id="text">ทำการคลิกไปที่เซลล์นั้นๆ จากนั้นกด Ctrl + คลิกลากเมาส์ตรงมุมของเซลล์นั้นๆ (+) จากนั้นลากลงมา
+            </p><br>
+           
+            <div class="img"><img src="assets/image/unit3/mange4.jpg" alt=""><img style="margin-left: 20px;" src="assets/image/unit3/mange1.jpg" alt=""></div>
+            
+            <p id="text">1.	ทำการเลือกครอบตารางที่จะแก้แล้วไปที่ปุ่ม Conditional Formatting แล้วไปที่ปุ่ม Manage Rules</p><br><br><br>
+
+            <div class="img"><img src="assets/image/unit3/mange2.jpg" alt=""></div>
+            <p id="text">2.	กดที่ Edit Rule</p><br><br>
+
+            <div class="img"><img src="assets/image/unit3/mange3.jpg" alt=""></div>
+            <p id="text">3.	จากนั้นหน้าต่าง Edit Formatting Rule ก็จะโผล่ขึ้นมา เราสามารถกดเปลี่ยนรูปแบบได้เหมือนตอนเราสร้างกฏตัวใหม่ได้</p><br><br><br><br>
+
+            <center>
+                <div class="navigator">
+                    <div class="nav_button" onclick="window.location.href = 'unit2.html';">
+                        <p>เนื้อหาก่อนหน้า</p>
+                    </div>
+                    <div class="nav_button" onclick="window.location.href = 'unit3-2.html';">
+                        <p>เนื้อหาถัดไป</p>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+
+
+
+
+    <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'
+                style='font-size: 65px; color: white;'></i></a></button>
+    <div class="footer">
+        <div class="container">
+            <div class="infooter">
+                <i class="fa fa-github" onclick="location.href='https://github.com/poohcid/webtech_Excel'"
+                    style="font-size: 40px ;color: #FFF; cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

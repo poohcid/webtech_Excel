@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/js/script.js"></script>
-    <link rel="shortcut icon" href="assets/image/white_excel.ico"/>
+    <link rel="shortcut icon" href="assets/image/white_excel.ico" />
     <title>Excel Basic</title>
 </head>
 
@@ -19,13 +19,13 @@
         <div class="container">
             <div class="head">
                 <button class="openbtn" onclick="openNav()">☰</button>
-                <h1 onclick="window.location.href = 'index.html';">Excel Basic</h1>
+                <h1><a href="index.html">Excel Basic</a></h1>
             </div>
             <div class="head2">
                 <h1 style="font-size: 60px;">บทที่ 2 : ตาราง</h1>
-                <button class="openbtn" onclick="window.location.href = 'unit1.html';">บทก่อนหน้า</button>
-                <button class="openbtn" onclick="window.location.href = 'index.html';">หน้าหลัก</button>
-                <button class="openbtn" onclick="window.location.href = 'unit3.html';">บทถัดไป</button>
+                <a href="unit1.html"><button class="openbtn">บทก่อนหน้า</button></a>
+                <a href="index.html"><button class="openbtn">หน้าหลัก</button></a>
+                <a href="unit3.html"><button class="openbtn">บทถัดไป</button></a>
             </div>
         </div>
     </div>
@@ -48,23 +48,45 @@
         <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
         <a href="member.html" id=""><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
     </div>
-       
+
     <div class="container">
         <div class="content1" id="content1">
-            <br><br><center><iframe width="100%" height="70%" style="border-radius: 10px;" src="https://www.youtube.com/embed/nFxZGf6I5lc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-            
-            <br><br><div class="underline" id="line"></div>
-            
-            <center>
-                <div class="navigator" style="width:100%;">
-                    <div class="nav_button"  onclick="window.location.href = 'unit2-1.html';"><p>บทที่ 2.1 การใส่ค่า</p></div>
-                    <div class="nav_button" onclick="window.location.href = 'unit2-2.html';"><p>บทที่ 2.2 การอ้างอิง</p></div>
+            <br><br>
+            <center><iframe width="100%" height="70%" style="border-radius: 10px;"
+                    src="https://www.youtube.com/embed/nFxZGf6I5lc" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></center>
+
+            <br><br>
+            <div class="underline" id="line"></div>
+
+            <div class="flex_container">
+                <div class="card" id="card">
+                    <div class="card_img"><img src="assets/image/card/table.jpg" alt=""></div>
+                    <div class="card_container">
+                        <h2><b>บทที่ 2.1</b></h2>
+                        <h1><b>การใส่ค่า</b></h1>
+                    </div>
+                    <div class="button_card">
+                        <a href="unit2-1.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
+                    </div>
                 </div>
-            </center>
+
+                <div class="card" id="card">
+                    <div class="card_img"><img src="assets/image/card/table.jpg" alt=""></div>
+                    <div class="card_container">
+                        <h2><b>บทที่ 2.2</b></h2>
+                        <h1><b>การอ้างอิง</b></h1>
+                    </div>
+                    <div class="button_card">
+                        <a href="unit2-2.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    
+
 
 
     <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'
@@ -72,8 +94,7 @@
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                <i class="fa fa-github" onclick="location.href='https://github.com/poohcid/webtech_Excel'"
-                    style="font-size: 40px ;color: #FFF; cursor: pointer;"></i>
+                    <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github" style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
             </div>
         </div>
     </div>

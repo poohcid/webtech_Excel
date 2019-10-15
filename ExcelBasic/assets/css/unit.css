@@ -10,12 +10,19 @@ body, html{
     max-width: 1220px;
     margin: 0 auto;
 }
-
 p{
     font-size: 21px;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
 
+.head h1 a{
+  text-decoration: none;
+  color: white;
+}
 /* ส่วน Header ของเว็บ */
 .header{
   width: 100%;
@@ -26,6 +33,10 @@ p{
 .head{
   width: 100%;
   height: 60px;
+}
+.head h1 a{
+  text-decoration: none;
+  color: white;
 }
 .head button{
 float: left;
@@ -143,10 +154,6 @@ cursor: pointer;
     margin-bottom: 5%; 
     border-radius :20px;
 }
-.content1 h2{
-  padding-top: 50px;
-  padding-bottom: 25px;
-}
 .img{
     width: 100%;
 }
@@ -164,24 +171,92 @@ cursor: pointer;
     background: #111;
     margin: 5% 0 5% 0;
 }
+
+.flex_container{
+  max-width: 100%;
+  margin-bottom: 5%; 
+  border-radius :20px;
+  display: flex;
+}
+
+.card {
+  transition: 0.3s;
+  width: 30%;
+  height: 500px;
+  background: white;
+  border-radius : 5px; 
+  float: left;
+  overflow: hidden;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.card_img{
+max-width:100%;
+height:50%;
+background: #227547;
+}
+.card_img img{
+width:100%;
+height: 100%;
+background: #227547;
+}
+.card_button{
+width: 100%;
+height: 100%;
+background: white;
+border: 2px solid #111;
+border-radius : 5px; 
+font-family: 'Prompt', sans-serif;
+transition: 0.3s;
+font-size: 17px;
+bottom: 0;
+cursor: pointer;
+}
+.card_button a{
+width: 100%;
+text-decoration: none;
+color: #000;
+}
+.card_button:hover{
+background: #111;
+color: white;
+}
+.card p{
+font-size: 18px;
+margin: 0;
+}
+.button_card{
+width: 100%;
+height:14%;
+}
+.card_container {
+  padding: 2px 16px;
+  color: black;
+  border-radius : 20px; 
+  height: 35%;
+}
+
+
 .navigator{
-    width: 320px;
-    display: flex;
-    align-items: center;
+  width: 85%;
+  display: flex;
+  align-items: center;
 }
 .nav_button{
-  width: 90px;
-  height: 50px;
+  width: 100%;
   background: #444;
-  text-align: center;
-  padding-bottom: 20px;
   border: 2px solid #444;
-  color: white;
-  border-radius: 5px;
-  flex: 1;
-  margin-right: 15px;
+  margin-right:20px;
   transition: 0.3s;
+  border-radius: 5px;
   cursor: pointer;
+  flex: 1;
+  color: white;
+}
+.nav_button:nth-last-child(1){
+  margin-right:0px;
 }
 .nav_button:hover{
   background: transparent;
@@ -263,6 +338,12 @@ table tr td{
     .footer{
         bottom: 0;
     }
+    .flex_container{
+      flex-direction: column;
+    }
+    .card, .card_extra{
+      width: 55%;
+    }
     .card p{
       font-size: 17px;
     }
@@ -282,11 +363,12 @@ table tr td{
       margin-bottom: 5px;
     }
     .nav_button p{
-      font-size: 19px;
+      font-size: 18px;
     }
   }
 
 @media screen and (max-height: 830px) {
+  
   .sidebar{
     height: 90%;
   } 
@@ -296,9 +378,6 @@ table tr td{
 }
 
 @media screen and (max-width: 490px) {
-  .content1{
-    flex-direction: column;
-  }
   .card, .card_extra{
     width: 97%;
   }
@@ -310,6 +389,9 @@ table tr td{
   }
   .nav_button p{
     font-size: 19px;
+  }
+  img #mange1_photo{
+    margin: 0;
   }
   
 }

@@ -1,0 +1,183 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/unit.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/script.js"></script>
+    <link rel="shortcut icon" href="assets/image/white_excel.ico" />
+    <title>Excel Basic</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="head">
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <h1><a href="index.html">Excel Basic</a></h1>
+            </div>
+            <div class="head2">
+                <h1 style="font-size: 60px;">บทที่ 4 : ตัวดำเนินการทางคณิตศาสตร์</h1>
+                <a href="unit3-2.html"><button class="openbtn">บทก่อนหน้า</button></a>
+                <a href="index.html"><button class="openbtn">หน้าหลัก</button></a>
+                <a href="unit5.html"><button class="openbtn">บทถัดไป</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
+        <a href="unit1.html">Interface</a>
+        <a href="unit2.html">ตาราง</a>
+        <a href="unit3.html">การจัดการตาราง</a>
+        <a href="unit4.html">การดำเนินการทางคณิตศาสตร์</a>
+        <a href="unit5.html">ตัวดำเนินการเปรียบเทียบ</a>
+        <a href="unit6.html">ฟังก์ชัน</a>
+        <a href="unit7.html">ฟังก์ชัน IF</a>
+        <a href="unit8.html">ฟังก์ชัน VLOOKUP</a>
+        <a href="unit9.html">การสร้างกราฟ</a>
+        <a href="tech.html">เทคนิคเพิ่มเติม</a>
+        <a href="workshop.html">Workshop</a>
+        <p style="border-top: 4px solid rgb(165, 165, 165);"></p>
+        <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
+        <a href="member.html" id=""><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
+    </div>
+
+    <div class="container">
+        <div class="content1" id="content1">
+            <br><br><iframe width="100%" height="70%" style="border-radius: 10px;" src="https://www.youtube.com/embed/ce_KPVqfp0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+            
+            <div class="underline" id="line"></div>
+
+            <h1 id="text">ตัวดำเนินการทางคณิตศาสตร์</h1>
+            <p id="text">เราสามารถหาผลลัพธ์ทางคณิตศาสตร์ใน Cell ได้โดยใส่ข้อมูลที่เป็นตัวเลขหรืออ้างอิง Cell
+                ที่มีข้อมูลที่เป็นตัวเลข</b></p>
+            <table style="height: 35%;">
+                <tr>
+                    <th>เครื่องหมาย</th>
+                    <th>ความหมาย</th>
+                    <th>ตัวอย่าง</th>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>บวก</td>
+                    <td>8 + 5, C1 + B4</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>ลบ</td>
+                    <td>10 – 2, A1 – B3</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>คูณ</td>
+                    <td>10*-2, A3 * H1</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>หาร</td>
+                    <td>10 / 2, A2 / B1</td>
+                </tr>
+                <tr>
+                    <td>^</td>
+                    <td>ยกกำลัง</td>
+                    <td>5 ^ 2, B3 ^ A1</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>เปอร์เซ็นต์</td>
+                    <td>10%, B2% ( ได้ผลลัพธ์เป็นทศนิยม )</td>
+                </tr>
+            </table>
+
+            <div class="underline" id="line"></div>
+
+            <h1 id="text">ตัวเชื่อมข้อความ</h1>
+            <p id="text">เครื่องหมาย “ & ” จะเป็นตัวเชื่อมข้อความมาต่อกันเป็นข้อความเดียวกัน เช่น</p>
+            <p id="text">10 & 10 ==> 1010, “abc”&(10+5) ==> abc15</p>
+
+            <div class="underline" id="line"></div>
+
+            <h1 id="text">ลำดับความสำคัญของตัวดำเนินการ</h1>
+            <p id="text"><b>เครื่องหมายวงเล็บ</b></p>
+            <p id="text">- เราสามารถใส่เครื่องหมาย “ ( ) ”
+                ครอบส่วนที่จะต้องคำนวนก่อนและเป็นเครื่องหมายที่มีความสำคัญมากสุด</p>
+
+            <table>
+                <tr>
+                    <th style="background: #666;" colspan="2">ลำดับความสำคัญ</th>
+                </tr>
+                <tr>
+                    <th style="width: 10%;">ลำดับ</th>
+                    <th>เครื่องหมาย</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>()</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>^</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>* และ /</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>+ และ –</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>&</td>
+                </tr>
+            </table>
+
+            <div class="underline" id="line"></div>
+
+            <h1 id="text">การหารศูนย์</h1>
+            <p id="text">เมื่อหารด้วย 0 เช่น 10/0 ใน excel จะแสดง error ใน cell นั้น</p>
+            
+            <div class="img"><img src="assets/image/unit4/div0.png" alt=""></div><br><br><br>
+ 
+
+            <center>
+                <div class="navigator">
+                    <a href="unit3-2.html" class="nav_button">
+                        <p>เนื้อหาก่อนหน้า</p>
+                    </a>
+                    <a href="unit5.html" class="nav_button">
+                        <p>เนื้อหาถัดไป</p>
+                    </a>
+                </div>
+            </center>
+        </div>
+    </div>
+
+
+
+
+    <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'
+                style='font-size: 65px; color: white;'></i></a></button>
+    <div class="footer">
+        <div class="container">
+            <div class="infooter">
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                        style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

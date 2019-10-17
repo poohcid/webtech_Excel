@@ -10,8 +10,8 @@ body, html{
     max-width: 1220px;
     margin: 0 auto;
 }
-p{
-    font-size: 21px;
+p, li{
+    font-size: 20px;
 }
 
 a{
@@ -47,7 +47,9 @@ margin-right: 20px;
 .head h1{
 padding-top: 10px;
 padding-left: 20px;
-cursor: pointer;
+}
+.head a{
+  cursor: pointer;
 }
 
 .header .container .head h1{
@@ -60,8 +62,7 @@ cursor: pointer;
   width: 100%;
   text-align: center;
   color: white;
-  margin-top: 15%;
-  
+  margin-top: 12.5%;
 }
 .head2 p{
  font-size: 22px;
@@ -90,14 +91,15 @@ cursor: pointer;
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .sidebar a:hover {
   color: #f1f1f1;
+  background: #222;
 }
 
 .sidebar .closebtn {
@@ -190,7 +192,7 @@ cursor: pointer;
   margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto;
-
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .card_img{
 max-width:100%;
@@ -204,10 +206,10 @@ background: #227547;
 }
 .card_button{
 width: 100%;
-height: 100%;
+height: 101%;
 background: white;
-border: 2px solid #111;
-border-radius : 5px; 
+border: 1px solid #111;
+border-radius : 0px 0px 5px 5px; 
 font-family: 'Prompt', sans-serif;
 transition: 0.3s;
 font-size: 17px;
@@ -293,20 +295,22 @@ thead th{
 /* ปุ่มไปส่วนบนสุดของหน้าเว็บ */
 
 .bottom_to_top{
-  width: 70px; 
-  height: 70px; 
+  width: 65px; 
+  height: 65px; 
   background: rgb(0, 0, 0);
   position: fixed;
   right: 0;
   bottom: 0;
   border-radius: 50px;
-  margin: 20px;
+  margin: 15px;
   border: 2px solid #fff;
   transition: 0.3s;
 }
 
 .bottom_to_top:hover{
-  background: rgb(218, 61, 56);
+  background: #4970c5;
+  color: #111;
+  border: 2px solid #111;
 }
 
 /* ส่วนของ Footer */
@@ -369,6 +373,9 @@ thead th{
     .nav_button p{
       font-size: 18px;
     }
+    .head h1 a{
+      padding-right: 40px;
+    }
   }
 
 @media screen and (max-height: 830px) {
@@ -383,7 +390,7 @@ thead th{
 
 @media screen and (max-width: 490px) {
   .card, .card_extra{
-    width: 97%;
+    width: 85%;
   }
   .footer{
     bottom: 0;
@@ -397,7 +404,6 @@ thead th{
   img #mange1_photo{
     margin: 0;
   }
-  
 }
 
 

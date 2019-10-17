@@ -369,7 +369,7 @@ thead th{
   padding-top: 45px;
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1860px) {
   .sidebar{
     width: 0px;
   }

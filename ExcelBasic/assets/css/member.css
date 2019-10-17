@@ -260,7 +260,7 @@ body, html{
 
 
 /* ส่วนขอการปรับหน้าจอ */
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1830px) {
   .sidebar{
     width: 0px;
   }

@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/unit.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/script.js"></script>
+    <link rel="shortcut icon" href="assets/image/white_excel.ico" />
+    <title>Excel Basic</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="head">
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <h1><a href="index.html">Excel Basic</a></h1>
+            </div>
+            <div class="head2">
+                <h1 style="font-size: 60px;">บทที่ 6 ฟังก์ชัน</h1>
+                <a href="unit5.html"><button class="openbtn">บทก่อนหน้า</button></a>
+                <a href="index.html"><button class="openbtn">หน้าหลัก</button></a>
+                <a href="unit6-1.html"><button class="openbtn">บทถัดไป</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
+        <a href="unit1.html">Interface</a>
+        <a href="unit2.html">ตาราง</a>
+        <a href="unit3.html">การจัดการตาราง</a>
+        <a href="unit4.html">การดำเนินการทางคณิตศาสตร์</a>
+        <a href="unit5.html">ตัวดำเนินการเปรียบเทียบ</a>
+        <a href="unit6.html">ฟังก์ชัน</a>
+        <a href="unit7.html">ฟังก์ชัน IF</a>
+        <a href="unit8.html">ฟังก์ชัน VLOOKUP</a>
+        <a href="unit9.html">การสร้างกราฟ</a>
+        <a href="tech.html">เทคนิคเพิ่มเติม</a>
+        <a href="workshop.html">Workshop</a>
+        <p style="border-top: 4px solid rgb(165, 165, 165);"></p>
+        <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
+        <a href="member.html" id="member"><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
+    </div>
+
+    <div class="container">
+        <div class="content1" id="content1"><br><br>
+            <iframe width="100%" height="70%"
+                style="border-radius: 10px; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);"
+                src="https://www.youtube.com/embed/Cuoop11CL74" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+
+            <br><br>
+            <div class="underline" id="line"></div>
+        </div>
+        <div class="flex_container">
+            <div class="card" id="card">
+                <div class="card_img"><img src="assets/image/card/function.jpg" alt=""></div>
+                <div class="card_container">
+                    <h2><b>บทที่ 6.1</b></h2>
+                    <h1><b>ฟังก์ชันแบบกำหนดเอง</b></h1>
+                </div>
+                <div class="button_card">
+                    <a href="unit6-1.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
+                </div>
+            </div>
+
+            <div class="card" id="card">
+                <div class="card_img"><img src="assets/image/card/function.jpg" alt=""></div>
+                <div class="card_container">
+                    <h2><b>บทที่ 6.2</b></h2>
+                    <h1><b>สูตรแบบอาร์เรย์</b></h1>
+                </div>
+                <div class="button_card">
+                    <a href="unit6-2.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="flex_container">
+            <div class="card" id="card">
+                <div class="card_img"><img src="assets/image/card/function.jpg" alt=""></div>
+                <div class="card_container">
+                    <h2><b>บทที่ 6.3</b></h2>
+                    <h1><b>ฟังก์ชันพื้นฐานของ Excel</b></h1>
+                </div>
+                <div class="button_card">
+                    <a href="unit6-3.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
+                </div>
+
+            </div>
+            <div class="card" id="card">
+                <div class="card_img"><img src="assets/image/card/function.jpg" alt=""></div>
+                <div class="card_container">
+                    <h2><b>บทที่ 6.4</b></h2>
+                    <h1><b>ฟังก์ชัน อื่นๆ</b></h1>
+                </div>
+                <div class="button_card">
+                    <a href="unit6-4.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'
+                style='font-size: 60px; color: white;'></i></a></button>
+    <div class="footer">
+        <div class="container">
+            <div class="infooter">
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                        style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

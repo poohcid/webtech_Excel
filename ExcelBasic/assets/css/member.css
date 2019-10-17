@@ -18,6 +18,37 @@ body, html{
   transition: 0.3s;
 }
 
+
+/* Scroll Bar */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; 
+  border-radius: 5px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #222; 
+}
+
+
+
+
+
 /* ส่วน Header ของเว็บ */
 .header{
     width: 100%;
@@ -94,10 +125,15 @@ body, html{
   display: block;
   transition: 0.2s;
 }
-
+.sidebar a:first-child:hover{
+  color: #f1f1f1;
+  border-left: none;
+  background: #111;
+}
 .sidebar a:hover {
   color: #f1f1f1;
   background: #222;
+  border-left: 7px solid rgb(219, 120, 54) ;
 }
 
 .sidebar .closebtn {

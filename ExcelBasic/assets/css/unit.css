@@ -11,7 +11,7 @@ body, html{
     margin: 0 auto;
 }
 p, li{
-    font-size: 20px;
+    font-size: 19px;
 }
 
 a{
@@ -277,7 +277,7 @@ height:14%;
 
 
 .navigator{
-  width: 85%;
+  max-width: 100%;
   display: flex;
   align-items: center;
 }
@@ -308,7 +308,7 @@ table{
   height: 25%;
   border-radius: 10px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 table tr th{
   border: 2px solid #111;
@@ -375,6 +375,12 @@ thead th{
   }
 }
 
+@media screen and (max-width: 1220px) {
+  .content1{
+    margin: 0 15px 5% 15px; 
+ }
+}
+
 /* ส่วนขอการปรับหน้าจอ */
 
 @media screen and (max-width: 960px) {
@@ -411,6 +417,8 @@ thead th{
     .head h1 a{
       padding-right: 40px;
     }
+  
+    
   }
 
 @media screen and (max-height: 830px) {
@@ -439,6 +447,7 @@ thead th{
   img #mange1_photo{
     margin: 0;
   }
+  
 }
 
 

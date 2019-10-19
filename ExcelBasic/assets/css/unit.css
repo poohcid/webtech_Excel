@@ -342,6 +342,17 @@ thead th{
   width: 100%;
 }
 
+a[href="unit2-2.html"]{
+  color: black;
+  padding-bottom: 4px;
+  transition: 0.3s;
+}
+
+a[href="unit2-2.html"]:hover{
+  border-bottom: 2px solid #FFF;
+  padding-bottom: 0px;
+}
+
 
 /* ปุ่มไปส่วนบนสุดของหน้าเว็บ */
 

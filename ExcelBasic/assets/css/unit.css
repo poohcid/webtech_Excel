@@ -277,7 +277,7 @@ height:14%;
 
 
 .navigator{
-  max-width: 100%;
+  max-width: 90%;
   display: flex;
   align-items: center;
 }

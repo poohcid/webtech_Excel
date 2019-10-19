@@ -343,14 +343,16 @@ thead th{
 }
 
 a[href="unit2-2.html"]{
-  color: black;
-  padding-bottom: 4px;
+  
+  font-size: 22px;
+  padding-bottom: 1px;
   transition: 0.3s;
-}
+  border-bottom: 3px solid rgb(179, 40, 93);
+  font-style: italic;
 
-a[href="unit2-2.html"]:hover{
-  border-bottom: 2px solid #FFF;
-  padding-bottom: 0px;
+  color: #000;
+
+
 }
 
 

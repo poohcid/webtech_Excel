@@ -56,6 +56,15 @@ body, html{
 .head h1 a{
   text-decoration: none;
   color: white;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+.head h1 a:hover{
+  border-bottom: 2px solid #FFF;
+  padding-bottom: 0px;
+  
 }
 .head button{
 float: left;

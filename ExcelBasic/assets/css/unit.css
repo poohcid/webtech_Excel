@@ -18,6 +18,12 @@ a{
   text-decoration: none;
   color: white;
 }
+iframe{
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
 
 
 
@@ -25,19 +31,19 @@ a{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #AAA; 
   border-radius: 10px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #555; 
-  border-radius: 5px;
+  border-radius: 2px;
 
 }
 /* Handle on hover */
@@ -68,6 +74,15 @@ a{
 .head h1 a{
   text-decoration: none;
   color: white;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+.head h1 a:hover{
+  border-bottom: 2px solid #FFF;
+  padding-bottom: 0px;
+  
 }
 .head button{
 float: left;
@@ -279,21 +294,22 @@ height:14%;
 .navigator{
   max-width: 90%;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .nav_button{
-  width: 100%;
+  max-width: 50%;
   background: #444;
   border: 2px solid #444;
-  margin-right:20px;
   transition: 0.3s;
   border-radius: 5px;
   cursor: pointer;
   flex: 1;
   color: white;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.nav_button:nth-last-child(1){
-  margin-right:0px;
+.nav_button:nth-child(2){
+  margin-left:20px;
 }
 .nav_button:hover{
   background: transparent;
@@ -377,7 +393,7 @@ thead th{
 
 @media screen and (max-width: 1220px) {
   .content1{
-    margin: 0 15px 5% 15px; 
+    margin: 0 10px 5% 10px; 
  }
 }
 
@@ -417,6 +433,9 @@ thead th{
     .head h1 a{
       padding-right: 40px;
     }
+    iframe{
+      height: 50%;
+    }
   
     
   }
@@ -447,6 +466,10 @@ thead th{
   img #mange1_photo{
     margin: 0;
   }
+  iframe{
+    height: 40%;
+  }
+  
   
 }
 

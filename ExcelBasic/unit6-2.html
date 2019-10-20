@@ -51,78 +51,105 @@
 
     <div class="container">
         <div class="content1" id="content1">
+
+
+            <br><br><h1 id="text">สูตรแบบอาร์เรย์</h1>
+            <p id="text">คือการอ้างอิงที่มีของข้อมูลเป็น cell หลายๆตัวหรือหลายๆแถว อยู่เป็นข้อมูลชุดเดียว
+                การใช้สูตรแบบอาร์เรย์มีความจำเป็นมากเพราะฟังก์ชันพื้นฐานใน Excel ต้องคำนวนโดยใส่ค่าเป็นอาร์เรย์เท่านั้น
+            </p>
+            <h2 id="text">รูปแบบ</h2>
+            <p id="text">= ตัวอ้างอิงเริ่มต้น : ตัวอ้างอิงตัวสุดท้าย</p>
+
+            <h2 id="text">ขั้นตอน</h2>
+
+            <p id="text">1.	เลือกช่วงที่ต้องการสร้างสูตรแบบอาร์เรย์ ตามรูปแบบ</p>
+            <div class="img"><img src="assets/image/unit6/array1.jpg" alt=""></div><br><br>
             
-        
-            <h1 id="text">ตัวดำเนินการเปรียบเทียบ</h1>
-            <p id="text">เป็นการเปรียบข้อมูลโดยจะให้ค่าสองค่าคือ เป็นจริง (TRUE) เป็นเท็จ (FALSE)
-                    สามารถเปรียบเทียบเป็นข้อมูลหรืออ้างอิงก็ได้
-                    </p>
-            <table style="height: 35%;">
-                <tr>
-                    <th style="width: 10%;">เครื่องหมาย</th>
-                    <th style="width: 20%;">ความหมาย</th>
-                    <th>ตัวอย่าง</th>
-                </tr>
-                <tr>
-                    <td>=</td>
-                    <td>เท่ากับ</td>
-                    <td>10 = 10, B1 = A2</td>
-                </tr>
-                <tr>
-                    <td> < </td>
-                    <td>น้อยกว่า</td>
-                    <td>4 < 30, A2 < A3</td>
-                </tr>
-                <tr>
-                    <td>></td>
-                    <td>มากกว่า</td>
-                    <td>30 > 10, C7 > B1</td>
-                </tr>
-                <tr>
-                    <td><=</td>
-                    <td>น้อยกว่าเท่ากับ</td>
-                    <td>20 <= 21, C1 <= B3</td>
-                </tr>
-                <tr>
-                    <td>>=</td>
-                    <td>มากกว่าเท่ากับ</td>
-                    <td>14 >= 2, A5 >= B7</td>
-                </tr>
-                <tr>
-                    <td><></td>
-                    <td>ไม่เท่ากับ</td>
-                    <td>12 <> 13, A1 <> A7</td>
-                </tr>
-            </table>
+            
+            
+            <p id="text">2.	กด Enter Cell ที่สร้างจะมีข้อมูลชุดอาร์เรย์ตามที่อ้างอิง แต่ยังไม่ถือว่าเป็นสูตรแบบอาร์เรย์บ</p>
+            <div class="img"><img src="assets/image/unit6/array2.jpg" alt=""></div><br><br>
+            
+
+            <p id="text">3.	เพื่อให้เป็นสูตรอาร์เรย์ที่ถูกต้อง ให้ทำการกดแก้ไขสูตรของ cell ที่เราสร้างสูตรในข้อที่ 1
+                บน Formula Bar แต่ไม่ต้องลบหรือแก้ไขอะไร ให้ทำการกด Ctrl + Shift + Enter จากนั้นจะได้สูตรที่เป็นอาร์เรย์แบบถูกต้อง และทุกๆ cell ที่เป็นข้อมูลในอาร์เรย์ก็จะอ้างอิงเป็นสูตรเดียวกันในรูปแบบ { } 
+                </p>
+            <div class="img"><img src="assets/image/unit6/array3.jpg" alt=""></div><br><br>
 
             <div class="underline" id="line"></div>
 
-            <h1 id="text">ลำดับความสำคัญ</h1>
+            <h1 id="text">การเก็บค่าอาร์เรย์ในรูปแบบตัวแปร</h1>
+            <p id="text">ก็คือเปลี่ยนจากการอ้างอิงตามรูปแบบเปลี่ยนเป็นการเรียกชื่อแทน โดยเราสามารถตั้งชื่อเป็นชื่ออะไรก็ได้ แต่เพื่อไม่เกิดการสับสนระหว่างชื่อตัวแปรกับชื่อ cell ให้เอาเครื่องหมาย “_” มาไว้หน้าชื่อ</p>
+            
+            <h2 id="text">รูปแบบ</h2>
+            <p id="text">_ชื่อตัวแปร</p>
+
+            <h2 id="text">ขั้นตอน</h2>
+            <p id="text">1.	เลือกช่วงของ cell ที่จะเก็บแบบอาร์เรย์ แล้วทำการตั้งชื่อบน Name Box แล้วกด Enter</p>
+            
+            <div class="img"><img src="assets/image/unit6/array4.jpg" alt=""></div><br><br>
+
+            <p id="text">2.	ไปที่แถบเมนูแล้วคลิกที่เมนู Formulas จากนั้นคลิกที่ Name manager</p>
+            
+            <div class="img"><img src="assets/image/unit6/array5.jpg" alt=""></div><br><br>
+
+            <p id="text">3.	จะปรากฎชื่อที่เราตั้งไว้พร้อมกับข้อมูลที่เป็นอาร์เรย์ โดยในตัวอย่างนี้เราได้ทำเป็นอาร์เรย์สองมิติ โดยแต่ละแถวจะขั้นด้วย “ ; ” และข้อมูลแต่ละ cell จะขั้นด้วย “ , ”</p>
+            
+            <div class="img"><img src="assets/image/unit6/array6.jpg" alt=""></div><br><br>
+
+            <p id="text">4.	วิธีเรียกใช้งาน ให้สร้างสูตรปกติแล้วใส่ “ _ ” จากนั้น Excel จะโชว์ชื่อตัวแปรที่เราตั้งไว้ จากนั้นทำการเลือกโดยใช้ตัวลูกศรขึ้นลง</p>
+            
+            <div class="img"><img src="assets/image/unit6/array7.jpg" alt=""></div><br><br>
+
+            <p id="text">5.	พอเลือกแล้วให้ทำการกด Tab ตอนนี้ใน Formula Bar ก็จะมีชื่อตัวแปรที่เราได้ตั้งไว้</p>
+            
+            <div class="img"><img src="assets/image/unit6/array8.jpg" alt=""></div><br><br>
+            
+            
+            <p id="text">6.	หลังจากนี้ก็ทำตามในรูปแบบปกติได้เลย โดยกด Enter ก่อน จะขึ้นช่วงของอาร์เรย์ที่จะปรากฎในตาราง จากนั้นเลือกที่ cell ต้นทางแล้วกด Ctrl + Shift + Enter </p>
+            
+            <div class="img"><img src="assets/image/unit6/array9.jpg" alt=""></div><br><br>
+           
+            <div class="underline" id="line"></div>
+            
+            <h1 id="text">ตัวดำเนินการอาร์เรย์</h1>
+
+            <p id="text">ข้อมูลที่เก็บในอาร์รย์ของ Excel สามารถเอาอาร์เรย์หลายชุด มารวมกันหรือมาหาส่วนที่ทับกันได้</p>
+            
             <table>
                 <tr>
-                    <th>ลำดับ</th>
+                    <th colspan="2">ตัวดำเนินการ</th>
+                </tr>
+                <tr>
                     <th>เครื่องหมาย</th>
+                    <th>ความหมาย</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>ตัวดำเนินการทางคณิตศาสตร์ (), %, ^, *, /, +, -</td>
+                    <td>“ , ”</td>
+                    <td>นำมารวมกันทุกตัว</td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>&</td>
+                    <td>“  ” (ช่องว่าง)</td>
+                    <td>นำช่วงของ cell ที่มีการทับกัน</td>
                 </tr>
-                <tr>
-                    <td>3</td>
-                    <td>=  <  >  <=  >=  <></td>
-                </tr>
-            </table>
+            </table><br>
 
-            <br><h2 id="text">ตัวอย่าง</h2>
-            <li id="text">29 + 1 < 20 * 4 ==> (30) < (80) ==> TRUE</li>
-            <li id="text">20 <= 30 - 10 ==> 20 <= (20) ==> TRUE</li>
-            <li id="text">29 + 1 < 20 < 2 ==> (30) < 20 < 2 == > FALSE </li>
-            <li id="text">29 + 1 > 20 >= 1 ==> (30) > 20 >= 1 ==> TRUE</li>
-            <li id="text">20 >= 1 <> 1 ==> TRUE </p><br><br></li>
+            <h2 id="text">ตัวอย่าง</h2>
+
+            <p id="text">ขอยกตัวอย่างการใช้ของ “  ” เพราะการใช้ “ , ” นั้นใช้ได้เฉพาะในฟังก์ชันพื้นฐานของ Excel เท่านั้น</p>
+
+            <br><h2 id="text">ขั้นตอน</h2>
+
+            <p id="text">1.	ทำการอ้างอิงแบบอาร์เรย์สองชุด โดยใช้เครื่องหมาย “  ” เป็นตัวเชื่อม</p>
+            <div class="img"><img src="assets/image/unit6/array10.jpg" alt=""></div><br><br>
+
+            <p id="text">2.	จากนั้นกด Enter จะปรากฎเป็นข้อมูลที่เป็นส่วนทับกันของอาร์เรย์ทั้งสองชุด</p>
+            <div class="img"><img src="assets/image/unit6/array11.jpg" alt=""></div><br><br>
+
+            <p id="text">3.	ทำเป็นสูตรแบบอาร์เรย์ให้เรียบร้อยโดยกด Ctrl + Shift + Enter ที่ Cell ต้นสูตร</p>
+            <div class="img"><img src="assets/image/unit6/array12.jpg" alt=""></div><br><br>
+
+            <br>
 
             <center>
                 <div class="navigator">

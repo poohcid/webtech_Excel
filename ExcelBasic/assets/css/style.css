@@ -4,7 +4,6 @@ body, html{
     font-family: 'Prompt', sans-serif;
     background: #b5bdc5;
     scroll-behavior: smooth;
-    transition: 0.3s;
 }
 .container{
     max-width: 960px;

@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/js/script.js"></script>
-    <link rel="shortcut icon" href="assets/image/white_excel.ico"/>
+    <link rel="shortcut icon" href="assets/image/white_excel.ico" />
     <title>Excel Basic</title>
 </head>
 
@@ -23,9 +23,11 @@
             </div>
             <div class="head2">
                 <h1 style="font-size: 60px;">บทที่ 2.1 การใส่ค่า</h1>
-                <a href="unit2.html"><button class="openbtn">บทก่อนหน้า</button></a>
-                <a href="index.html"><button class="openbtn">หน้าหลัก</button></a>
-                <a href="unit2-2.html"><button class="openbtn">บทถัดไป</button></a>
+                <div class="button_container">
+                    <a href="unit1.html" class="btn1"><button class="openbtn">บทก่อนหน้า</button></a>
+                    <a href="index.html" class="btn2"><button class="openbtn">หน้าหลัก</button></a>
+                    <a href="unit2-2.html" class="btn3"><button class="openbtn">บทถัดไป</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -48,34 +50,43 @@
         <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
         <a href="member.html" id="member"><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
     </div>
-       
+
     <div class="container">
-        <div class="content1" id="content1">          
-            <br><br><h1 id="text">แถวและคอลั่ม</h1>
+        <div class="content1" id="content1">
+            <br><br>
+            <h1 id="text">แถวและคอลั่ม</h1>
             <p id="text">ตำแหน่งคอลั่มจะถูกตั้งชื่อด้วยตัวอักษร A – Z ตำแหน่งแถวจะถูกตั้งชื่อด้วยตัวเลขไล่ตั้งแต่ 1 </p>
-            
+
             <div class="img"><img src="assets/image/unit2/col row.png" alt=""></div>
-            <p id="text">ชื่อเซลล์จะถูกตั้งชื่อขึ้นต้นด้วยชื่อคอลั่มและแถวต่อกัน ดั่งรูปภาพ เซลล์อยู่คอลั่ม B และแถว 3 จะถูกตั้งชื่อเป็น B3</p>
-            
+            <p id="text">ชื่อเซลล์จะถูกตั้งชื่อขึ้นต้นด้วยชื่อคอลั่มและแถวต่อกัน ดั่งรูปภาพ เซลล์อยู่คอลั่ม B และแถว 3
+                จะถูกตั้งชื่อเป็น B3</p>
+
             <div class="underline" id="line"></div>
             <h1 id="text">การใส่ค่า</h1>
-            
+
             <div class="content_detail" id="text">
                 <div class="img"><img src="assets/image/unit2/input.jpg" alt=""></div>
                 <p id="text"><b>การใส่ค่าสามารถทำได้ 2 วิธี</b></p>
                 <p id="text"><b>1.</b> กำหนดลงในเซลล์โดยตรง</p>
-                <p id="text"><b>2.</b> กำหนดลงในช่องใส่สูตร โดยวิธีนี้แนะนำกว่าแบบแรกเพราะสามารถเห็นข้อมูลทั้งหมดของเซลล์ที่เลือกไว้ได้ทั้งหมด เพราะ <b>จากตัวอย่างภาพ</b> ข้อมูลที่แสดงผลบนเซลล์ที่เลือกเมื่อมีข้อมูลเกินขอบเขตขนาดที่ตั้งไว้ถ้าเซลล์ถัดมามีข้อมูลอยู่</p>
+                <p id="text"><b>2.</b> กำหนดลงในช่องใส่สูตร
+                    โดยวิธีนี้แนะนำกว่าแบบแรกเพราะสามารถเห็นข้อมูลทั้งหมดของเซลล์ที่เลือกไว้ได้ทั้งหมด เพราะ
+                    <b>จากตัวอย่างภาพ</b>
+                    ข้อมูลที่แสดงผลบนเซลล์ที่เลือกเมื่อมีข้อมูลเกินขอบเขตขนาดที่ตั้งไว้ถ้าเซลล์ถัดมามีข้อมูลอยู่</p>
             </div>
             <center>
                 <div class="navigator">
-                    <a href="unit1.html" class="nav_button"><p>เนื้อหาก่อนหน้า</p></a>
-                    <a href="unit2-2.html" class="nav_button"><p>เนื้อหาถัดไป</p></a>
+                    <a href="unit1.html" class="nav_button">
+                        <p>เนื้อหาก่อนหน้า</p>
+                    </a>
+                    <a href="unit2-2.html" class="nav_button">
+                        <p>เนื้อหาถัดไป</p>
+                    </a>
                 </div>
             </center>
         </div>
     </div>
 
-    
+
 
 
     <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'
@@ -83,7 +94,8 @@
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                    <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github" style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                        style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
             </div>
         </div>
     </div>

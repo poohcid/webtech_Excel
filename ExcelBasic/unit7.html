@@ -23,9 +23,11 @@
             </div>
             <div class="head2">
                 <h1 style="font-size: 60px;">บทที่ 7 ฟังก์ชัน IF</h1>
-                <a href="unit6-4.html"><button class="openbtn">บทก่อนหน้า</button></a>
-                <a href="index.html"><button class="openbtn">หน้าหลัก</button></a>
-                <a href="unit8.html"><button class="openbtn">บทถัดไป</button></a>
+                <div class="button_container">
+                    <a href="unit6-4.html" class="btn1"><button class="openbtn">บทก่อนหน้า</button></a>
+                    <a href="index.html" class="btn2"><button class="openbtn">หน้าหลัก</button></a>
+                    <a href="unit8.html" class="btn3"><button class="openbtn">บทถัดไป</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -51,13 +53,15 @@
 
     <div class="container">
         <div class="content1" id="content1">
-                <br><br><iframe src="https://www.youtube.com/embed/VNIE3VX1KeA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               
-                
+            <br><br><iframe src="https://www.youtube.com/embed/VNIE3VX1KeA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+
             <h1 id="text">ตัวดำเนินการเปรียบเทียบ</h1>
             <p id="text">เป็นการเปรียบข้อมูลโดยจะให้ค่าสองค่าคือ เป็นจริง (TRUE) เป็นเท็จ (FALSE)
-                    สามารถเปรียบเทียบเป็นข้อมูลหรืออ้างอิงก็ได้
-                    </p>
+                สามารถเปรียบเทียบเป็นข้อมูลหรืออ้างอิงก็ได้
+            </p>
             <table style="height: 35%;">
                 <tr>
                     <th style="width: 10%;">เครื่องหมาย</th>
@@ -70,27 +74,27 @@
                     <td>10 = 10, B1 = A2</td>
                 </tr>
                 <tr>
-                    <td> < </td>
-                    <td>น้อยกว่า</td>
-                    <td>4 < 30, A2 < A3</td>
-                </tr>
-                <tr>
+                    <td>
+                        < </td> <td>น้อยกว่า
+                    </td>
+                    <td>4 < 30, A2 < A3</td> </tr> <tr>
                     <td>></td>
                     <td>มากกว่า</td>
                     <td>30 > 10, C7 > B1</td>
                 </tr>
                 <tr>
-                    <td><=</td>
-                    <td>น้อยกว่าเท่ากับ</td>
-                    <td>20 <= 21, C1 <= B3</td>
-                </tr>
-                <tr>
+                    <td>
+                        <=</td> <td>น้อยกว่าเท่ากับ
+                    </td>
+                    <td>20 <= 21, C1 <=B3</td> </tr> <tr>
                     <td>>=</td>
                     <td>มากกว่าเท่ากับ</td>
                     <td>14 >= 2, A5 >= B7</td>
                 </tr>
                 <tr>
-                    <td><></td>
+                    <td>
+                        <>
+                    </td>
                     <td>ไม่เท่ากับ</td>
                     <td>12 <> 13, A1 <> A7</td>
                 </tr>
@@ -114,14 +118,17 @@
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>=  <  >  <=  >=  <></td>
+                    <td>= <>
+                            <=>= <>
+                    </td>
                 </tr>
             </table>
 
-            <br><h2 id="text">ตัวอย่าง</h2>
-            <li id="text">29 + 1 < 20 * 4 ==> (30) < (80) ==> TRUE</li>
-            <li id="text">20 <= 30 - 10 ==> 20 <= (20) ==> TRUE</li>
-            <li id="text">29 + 1 < 20 < 2 ==> (30) < 20 < 2 == > FALSE </li>
+            <br>
+            <h2 id="text">ตัวอย่าง</h2>
+            <li id="text">29 + 1 < 20 * 4==> (30) < (80)==> TRUE</li>
+            <li id="text">20 <= 30 - 10==> 20 <= (20)==> TRUE</li>
+            <li id="text">29 + 1 < 20 < 2==> (30) < 20 < 2==> FALSE </li>
             <li id="text">29 + 1 > 20 >= 1 ==> (30) > 20 >= 1 ==> TRUE</li>
             <li id="text">20 >= 1 <> 1 ==> TRUE </p><br><br></li>
 

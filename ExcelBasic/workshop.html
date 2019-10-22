@@ -15,12 +15,14 @@
 </head>
 
 <body>
+    <div class="head">
+        <div class="container">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <h1><a href="index.html">Excel Basic</a></h1>
+        </div>
+    </div>
     <div class="header">
         <div class="container">
-            <div class="head">
-                <button class="openbtn" onclick="openNav()">☰</button>
-                <h1><a href="index.html">Excel Basic</a></h1>
-            </div>
             <div class="head2">
                 <h1 style="font-size: 60px;">Workshop</h1>
                 <a href="tech.html"><button class="openbtn">บทก่อนหน้า</button></a>
@@ -50,17 +52,19 @@
 
     <div class="container">
         <div class="content1" id="content1">
-               
+
             <br>
             <h1 id="text">ตัวดำเนินการเปรียบเทียบ</h1>
-            <p id="text">เป็นการเปรียบข้อมูลโดยจะให้ค่าสองค่าคือ เป็นจริง (TRUE) เป็นเท็จ (FALSE)สามารถเปรียบเทียบเป็นข้อมูลหรืออ้างอิงก็ได้</p>
-           
+            <p id="text">เป็นการเปรียบข้อมูลโดยจะให้ค่าสองค่าคือ เป็นจริง (TRUE) เป็นเท็จ
+                (FALSE)สามารถเปรียบเทียบเป็นข้อมูลหรืออ้างอิงก็ได้</p>
+
             <div class="underline" id="line"></div>
 
-            <br><h2 id="text">ตัวอย่าง</h2>
-            <li id="text">29 + 1 < 20 * 4 ==> (30) < (80) ==> TRUE</li>
-            <li id="text">20 <= 30 - 10 ==> 20 <= (20) ==> TRUE</li>
-            <li id="text">29 + 1 < 20 < 2 ==> (30) < 20 < 2 == > FALSE </li>
+            <br>
+            <h2 id="text">ตัวอย่าง</h2>
+            <li id="text">29 + 1 < 20 * 4==> (30) < (80)==> TRUE</li>
+            <li id="text">20 <= 30 - 10==> 20 <= (20)==> TRUE</li>
+            <li id="text">29 + 1 < 20 < 2==> (30) < 20 < 2==> FALSE </li>
             <li id="text">29 + 1 > 20 >= 1 ==> (30) > 20 >= 1 ==> TRUE</li>
             <li id="text">20 >= 1 <> 1 ==> TRUE </p><br><br></li>
 

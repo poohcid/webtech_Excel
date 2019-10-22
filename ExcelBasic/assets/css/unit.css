@@ -52,14 +52,6 @@ iframe{
 }
 
 
-
-
-
-
-.head h1 a{
-  text-decoration: none;
-  color: white;
-}
 /* ส่วน Header ของเว็บ */
 .header{
   width: 100%;
@@ -69,9 +61,12 @@ iframe{
 }
 .head{
   width: 100%;
-  height: 60px;
+  height: 65px;
+  background: #093c28;
+  position: fixed;
+  top: 0;
 }
-.head h1 a{
+.head a{
   text-decoration: none;
   color: white;
   transition: 0.3s;
@@ -79,44 +74,43 @@ iframe{
   padding-bottom: 15px;
   cursor: pointer;
 }
+.head button{
+  float: left;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.head h1{
+  padding-left: 20px;
+  margin-top: 10px;
+  color: white;
+  font-style: italic;
+}
 .head h1 a:hover{
   border-bottom: 2px solid #FFF;
   padding-bottom: 0px;
-  
-}
-.head button{
-float: left;
-margin-top: 10px;
-margin-left: 10px;
-margin-right: 20px;
-}
-.head h1{
-padding-top: 10px;
-padding-left: 20px;
-}
-.head a{
-  cursor: pointer;
-}
-
-.header .container .head h1{
-  color: white;
-  font-style: italic;
-  margin: 0;
-
 }
 .head2{
   width: 100%;
+  height: auto;
   text-align: center;
   color: white;
-  margin-top: 12.5%;
+  padding-top: 13%;
 }
-.head2 p{
- font-size: 22px;
+.head2 h1{
+  margin-bottom: 25px;
 }
 .head2 button{
-  font-family: 'Prompt', sans-serif;
   width: 130px;
   margin-bottom: 10px;
+  font-family: 'Prompt', sans-serif;
+}
+.button_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn2{
+  margin: 0 10px 0 10px;
 }
 
 
@@ -152,7 +146,6 @@ padding-left: 20px;
   background: #222;
   border-left: 7px solid rgb(219, 120, 54) ;
 }
-
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -160,10 +153,12 @@ padding-left: 20px;
   font-size: 36px;
   margin-left: 50px;
 }
-
 .closebtn{
   font-size: 60px;
 }
+
+
+
 
 @media screen and (max-height: 450px) {
   .sidebar {
@@ -342,12 +337,11 @@ thead th{
   width: 100%;
 }
 
-a[href="unit2-2.html"]{
-  
+.link{
   font-size: 22px;
-  padding-bottom: 1px;
+
   transition: 0.3s;
-  border-bottom: 3px solid rgb(179, 40, 93);
+  border-bottom: 2px solid rgb(179, 40, 93);
   font-style: italic;
   color: #000;
 
@@ -380,7 +374,7 @@ a[href="unit2-2.html"]{
   width: 100%;
 	height: 120px;
 	text-align: center;
-  background: #227547;
+  background: #093c28;
   bottom: 0;
   margin-top:auto; 
 
@@ -411,9 +405,6 @@ a[href="unit2-2.html"]{
 /* ส่วนขอการปรับหน้าจอ */
 
 @media screen and (max-width: 960px) {
-    .footer{
-        bottom: 0;
-    }
     .flex_container{
       flex-direction: column;
     }
@@ -428,36 +419,30 @@ a[href="unit2-2.html"]{
       width: 0px;
     }
     .header{
-      text-align: center;
       height: auto;
+    }
+    .head2 p{
+      margin-bottom: 5px;
+    }
+    .head h1{
+      padding-right: 40px;
+      text-align: center;
     }
     .head button{
       padding-left: 15px;
       margin-right: 0px;
     }
-    .head2 p{
-      margin-bottom: 5px;
-    }
     .nav_button p{
       font-size: 18px;
-    }
-    .head h1{
-      padding-right: 40px;
     }
     iframe{
       height: 50%;
     }
-  
-    
   }
 
 @media screen and (max-height: 830px) {
-  
   .sidebar{
     height: 90%;
-  } 
-  .header{
-    height: auto;
   } 
 }
 
@@ -479,6 +464,12 @@ a[href="unit2-2.html"]{
   }
   iframe{
     height: 40%;
+  }
+  .btn2{
+    order: 1;
+  }
+  .btn1{
+    margin-right: 5px;
   }
   
   

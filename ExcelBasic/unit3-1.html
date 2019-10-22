@@ -15,17 +15,21 @@
 </head>
 
 <body>
+    <div class="head">
+        <div class="container">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <h1><a href="index.html">Excel Basic</a></h1>
+        </div>
+    </div>
     <div class="header">
         <div class="container">
-            <div class="head">
-                <button class="openbtn" onclick="openNav()">☰</button>
-                <h1><a href="index.html">Excel Basic</a></h1>
-            </div>
             <div class="head2">
                 <h1 style="font-size: 60px;">บทที่ 3.1 การตกแต่งตาราง</h1>
-                <a href="unit3.html"><button class="openbtn">บทก่อนหน้า</button></a>
-                <a href="index.html"><button class="openbtn">หน้าหลัก</button></a>
-                <a href="unit3-2.html"><button class="openbtn">บทถัดไป</button></a>
+                <div class="button_container">
+                    <a href="unit3.html" class="btn1"><button class="openbtn">บทก่อนหน้า</button></a>
+                    <a href="index.html" class="btn2"><button class="openbtn">หน้าหลัก</button></a>
+                    <a href="unit3-2.html" class="btn3"><button class="openbtn">บทถัดไป</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -113,21 +117,28 @@
             <h1 id="text">การแก้ไขกฏ</h1>
             <p id="text">ทำการคลิกไปที่เซลล์นั้นๆ จากนั้นกด Ctrl + คลิกลากเมาส์ตรงมุมของเซลล์นั้นๆ (+) จากนั้นลากลงมา
             </p><br>
-           
-            <div class="img"><img style="margin-right: 10px; " src="assets/image/unit3/mange4.jpg" alt=""><img src="assets/image/unit3/mange1.jpg" alt=""></div>
-            
-            <p id="text">1.	ทำการเลือกครอบตารางที่จะแก้แล้วไปที่ปุ่ม Conditional Formatting แล้วไปที่ปุ่ม Manage Rules</p><br><br><br>
+
+            <div class="img"><img style="margin-right: 10px; " src="assets/image/unit3/mange4.jpg" alt=""><img
+                    src="assets/image/unit3/mange1.jpg" alt=""></div>
+
+            <p id="text">1. ทำการเลือกครอบตารางที่จะแก้แล้วไปที่ปุ่ม Conditional Formatting แล้วไปที่ปุ่ม Manage Rules
+            </p><br><br><br>
 
             <div class="img"><img src="assets/image/unit3/mange2.jpg" alt=""></div>
-            <p id="text">2.	กดที่ Edit Rule</p><br><br>
+            <p id="text">2. กดที่ Edit Rule</p><br><br>
 
             <div class="img"><img src="assets/image/unit3/mange3.jpg" alt=""></div>
-            <p id="text">3.	จากนั้นหน้าต่าง Edit Formatting Rule ก็จะโผล่ขึ้นมา เราสามารถกดเปลี่ยนรูปแบบได้เหมือนตอนเราสร้างกฏตัวใหม่ได้</p><br><br><br><br>
+            <p id="text">3. จากนั้นหน้าต่าง Edit Formatting Rule ก็จะโผล่ขึ้นมา
+                เราสามารถกดเปลี่ยนรูปแบบได้เหมือนตอนเราสร้างกฏตัวใหม่ได้</p><br><br><br><br>
 
             <center>
                 <div class="navigator">
-                    <a href="unit2.html" class="nav_button"><p>เนื้อหาก่อนหน้า</p></a>
-                    <a href="unit3-2.html" class="nav_button"><p>เนื้อหาถัดไป</p></a>
+                    <a href="unit2.html" class="nav_button">
+                        <p>เนื้อหาก่อนหน้า</p>
+                    </a>
+                    <a href="unit3-2.html" class="nav_button">
+                        <p>เนื้อหาถัดไป</p>
+                    </a>
                 </div>
             </center>
         </div>
@@ -141,7 +152,8 @@
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                    <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github" style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                        style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
             </div>
         </div>
     </div>

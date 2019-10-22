@@ -10,22 +10,26 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/js/script.js"></script>
-    <link rel="shortcut icon" href="assets/image/white_excel.ico"/>
+    <link rel="shortcut icon" href="assets/image/white_excel.ico" />
     <title>Excel Basic</title>
 </head>
 
 <body>
+    <div class="head">
+        <div class="container">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <h1><a href="index.html">Excel Basic</a></h1>
+        </div>
+    </div>
     <div class="header">
         <div class="container">
-            <div class="head">
-                <button class="openbtn" onclick="openNav()">☰</button>
-                <h1><a href="index.html">Excel Basic</a></h1>
-            </div>
             <div class="head2">
                 <h1 style="font-size: 60px;">บทที่ 2.2 การอ้างอิง</h1>
-                <a href="unit2-1.html"><button class="openbtn">บทก่อนหน้า</button></a>
-                <a href="index.html"><button class="openbtn">หน้าหลัก</button></a>
-                <a href="unit3.html"><button class="openbtn">บทถัดไป</button></a>
+                <div class="button_container">
+                    <a href="unit2-1.html" class="btn1"><button class="openbtn">บทก่อนหน้า</button></a>
+                    <a href="index.html" class="btn2"><button class="openbtn">หน้าหลัก</button></a>
+                    <a href="unit3.html" class="btn3"><button class="openbtn">บทถัดไป</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -48,81 +52,101 @@
         <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
         <a href="member.html" id="member"><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
     </div>
-       
+
     <div class="container">
         <div class="content1" id="content1">
-            <br><br><h1 id="text">การอ้างอิง</h1>
+            <br><br>
+            <h1 id="text">การอ้างอิง</h1>
             <div class="img"><img src="assets/image/unit2/ref1.jpg" alt=""></div>
-            <p id="text"><b>จากรูปภาพ</b> เลือกเซลล์ที่ <b>F3</b> โดยทำการอ้างอิงถึงเซลล์ <b>D3</b> โดยใช้วิธีดังนี้ขึ้นต้นด้วยเครื่องหมาย “=” แล้วตามด้วยชื่อเซลล์ที่จะอ้างอิงลงบนช่องสูตรแล้วจากนั้นกด enterเซลล์ที่เลือกก็จะไปอ้างอิงตามที่กำหนดไว้</p>
-            
+            <p id="text"><b>จากรูปภาพ</b> เลือกเซลล์ที่ <b>F3</b> โดยทำการอ้างอิงถึงเซลล์ <b>D3</b>
+                โดยใช้วิธีดังนี้ขึ้นต้นด้วยเครื่องหมาย “=” แล้วตามด้วยชื่อเซลล์ที่จะอ้างอิงลงบนช่องสูตรแล้วจากนั้นกด
+                enterเซลล์ที่เลือกก็จะไปอ้างอิงตามที่กำหนดไว้</p>
+
             <div class="underline" id="line"></div>
 
             <h1 id="text">การอ้างอิงเซลล์แบบสัมพัทธ์</h1>
-            <p id="text"><b>การอ้างอิงแบบสัมพัทธ์</b> คือ การอ้างอิงไปที่เซลล์ใดหรือช่วงเซลล์ใดก็ตามเมื่อมีการเปลี่ยนแปลง เช่น การ ย้ายหรือคัดลอกสูตร จะทำให้ตำแหน่งการอ้างอิงเปลี่ยนแปลงไปตามความสัมพัทธ์ของการย้ายหรือคัดลอก <b>ตัวอย่างเช่น</b></p>
+            <p id="text"><b>การอ้างอิงแบบสัมพัทธ์</b> คือ
+                การอ้างอิงไปที่เซลล์ใดหรือช่วงเซลล์ใดก็ตามเมื่อมีการเปลี่ยนแปลง เช่น การ ย้ายหรือคัดลอกสูตร
+                จะทำให้ตำแหน่งการอ้างอิงเปลี่ยนแปลงไปตามความสัมพัทธ์ของการย้ายหรือคัดลอก <b>ตัวอย่างเช่น</b></p>
 
             <div class="img"><img src="assets/image/unit2/ref2.jpg" alt=""></div>
-            <p id="text">เซลล์ตำแหน่งที่ <b>E3</b> ได้อ้างอิงแบบสัมพัทธ์ไปที่ตำแหน่ง <b>C3</b> ซึ่งมีค่าเท่ากับ 20 จากนั้นทำการคัดลอกสูตรในคอลั่ม <b>E</b> จนถึงแถวที่ <b>9</b></p>
-            
+            <p id="text">เซลล์ตำแหน่งที่ <b>E3</b> ได้อ้างอิงแบบสัมพัทธ์ไปที่ตำแหน่ง <b>C3</b> ซึ่งมีค่าเท่ากับ 20
+                จากนั้นทำการคัดลอกสูตรในคอลั่ม <b>E</b> จนถึงแถวที่ <b>9</b></p>
+
             <h2 id="text">ผลลัพธ์ที่ได้คือ</h2>
-            
+
             <div class="img"><img src="assets/image/unit2/ref3.jpg" alt=""></div>
-            <p id="text">จะเห็นว่าตำแหน่งเซลล์ที่ <b>E4</b> มีสูตรที่อ้างอิงไปยังตำแหน่งที่ <b>C4</b> เพราะเราคัดลอกสูตรในคอลั่มซึ่งเซลล์แถวที่ต่อลงมาก็จะเปลี่ยนการอ้างอิงแค่เลขแถว ผลที่ได้เซลล์แถวต่อลงมาจะมีสูตรเป็น<b>C5, C6, C7, C8, C9</b> ค่าที่ได้ก็จะตรงตามที่เราอ้างอิง</p>
+            <p id="text">จะเห็นว่าตำแหน่งเซลล์ที่ <b>E4</b> มีสูตรที่อ้างอิงไปยังตำแหน่งที่ <b>C4</b>
+                เพราะเราคัดลอกสูตรในคอลั่มซึ่งเซลล์แถวที่ต่อลงมาก็จะเปลี่ยนการอ้างอิงแค่เลขแถว
+                ผลที่ได้เซลล์แถวต่อลงมาจะมีสูตรเป็น<b>C5, C6, C7, C8, C9</b> ค่าที่ได้ก็จะตรงตามที่เราอ้างอิง</p>
 
             <div class="underline" id="line"></div>
 
             <h1 id="text">การอ้างอิงเซลแบบสัมบูรณ์</h1>
 
-            <p id="text">เป็นการอ้างอิงแล้วเมื่อคัดลอกสูตรค่าที่อ้างอิงจะไม่สัมพัทธ์หรือไม่เปลี่ยนตามการคัดลอก แล้วเซลล์ที่ถูกคัดลอกจะมีสูตรอ้างอิงที่เหมือนกับต้นเซลล์ต้นฉบับ จะมีประโยชน์มากๆ เมื่ออ้างอิงที่เป็นแบบสัมพัทธ์ผสมอยู่ <b>เราสามารถเขียนเป็นรูปแบบดังนี้</b>ใช้เครื่องหมาย <b>“$”</b> เอาไว้หน้าคอลั่มหรือแถว ที่ต้องการคัดลอกสูตรแล้วจะไม่สัมพัทธ์</p>
-            
+            <p id="text">เป็นการอ้างอิงแล้วเมื่อคัดลอกสูตรค่าที่อ้างอิงจะไม่สัมพัทธ์หรือไม่เปลี่ยนตามการคัดลอก
+                แล้วเซลล์ที่ถูกคัดลอกจะมีสูตรอ้างอิงที่เหมือนกับต้นเซลล์ต้นฉบับ จะมีประโยชน์มากๆ
+                เมื่ออ้างอิงที่เป็นแบบสัมพัทธ์ผสมอยู่ <b>เราสามารถเขียนเป็นรูปแบบดังนี้</b>ใช้เครื่องหมาย <b>“$”</b>
+                เอาไว้หน้าคอลั่มหรือแถว ที่ต้องการคัดลอกสูตรแล้วจะไม่สัมพัทธ์</p>
+
             <center>
-            <table>
-                <tr>
-                    <th>การอ้างชื่อ</th>
-                    <th>ความหมาย</th>
-                </tr>
-                <tr>
-                    <td>$E$4</td>
-                    <td >คอลั่ม E ไม่สัมพัทธ์ และ แถว 4 ไม่สัมพัทธ์</td>
-                </tr>
-                <tr>
-                    <td>$E4</td>
-                    <td>คอลั่ม E ไม่สัมพัทธ์ แต่ แถว 4 สัมพัทธ์</td>
-                </tr>
-                <tr>
-                    <td>E$4</td>
-                    <td>คอลั่ม E สัมพัทธ์ แต่ แถว 4 ไม่สัมพัทธ์</td>
-                </tr>
-            </table>
+                <table>
+                    <tr>
+                        <th>การอ้างชื่อ</th>
+                        <th>ความหมาย</th>
+                    </tr>
+                    <tr>
+                        <td>$E$4</td>
+                        <td>คอลั่ม E ไม่สัมพัทธ์ และ แถว 4 ไม่สัมพัทธ์</td>
+                    </tr>
+                    <tr>
+                        <td>$E4</td>
+                        <td>คอลั่ม E ไม่สัมพัทธ์ แต่ แถว 4 สัมพัทธ์</td>
+                    </tr>
+                    <tr>
+                        <td>E$4</td>
+                        <td>คอลั่ม E สัมพัทธ์ แต่ แถว 4 ไม่สัมพัทธ์</td>
+                    </tr>
+                </table>
             </center>
 
             <h2 id="text">โดยตัวอย่าง</h2>
 
-            
-            <div class="img"><img src="assets/image/unit2/ref4.jpg" alt=""></div>
-            <p id="text">ทำการคัดลอกสูตรที่ <b>F3</b> จากต้นฉบับ <b>E3</b> ซึ่งเป็นการอ้างอิงแบบสัมบูรณ์ที่คอลั่ม <b>C</b> และแถวแบบสัมพัทธ์ แต่เป็นการคัดลอกตามคอลั่ม <br><b>ผลที่ได้คือ</b></p>
 
-            
+            <div class="img"><img src="assets/image/unit2/ref4.jpg" alt=""></div>
+            <p id="text">ทำการคัดลอกสูตรที่ <b>F3</b> จากต้นฉบับ <b>E3</b> ซึ่งเป็นการอ้างอิงแบบสัมบูรณ์ที่คอลั่ม
+                <b>C</b> และแถวแบบสัมพัทธ์ แต่เป็นการคัดลอกตามคอลั่ม <br><b>ผลที่ได้คือ</b></p>
+
+
             <div class="img"><img src="assets/image/unit2/ref5.jpg" alt=""></div>
             <h2 id="text">ตัวอย่างผสม</h2>
 
-            
+
             <div class="img"><img src="assets/image/unit2/ref6.jpg" alt=""></div>
-            <p id="text">เซลล์ตำแหน่ง <b>E3</b> มีสูตรคือ นำค่าในเซลล์ตำแหน่ง <b>C3</b> ซึ่งเป็นการอ้างอิงแบบสัมพัทธ์และนำไปบวกกับค่าในเซลล์ที่ตำแหน่ง <b>F2</b> ซึ่งเป็นการอ้างอิงแบบสัมบูรณ์ทั้งคอลั่มและแถว คัดลอกสูตรในคอลั่มโดยจากแถว 4 ถึง แถว 9 <b>ผลที่ได้คือ</b></p>
-            
-            
+            <p id="text">เซลล์ตำแหน่ง <b>E3</b> มีสูตรคือ นำค่าในเซลล์ตำแหน่ง <b>C3</b>
+                ซึ่งเป็นการอ้างอิงแบบสัมพัทธ์และนำไปบวกกับค่าในเซลล์ที่ตำแหน่ง <b>F2</b>
+                ซึ่งเป็นการอ้างอิงแบบสัมบูรณ์ทั้งคอลั่มและแถว คัดลอกสูตรในคอลั่มโดยจากแถว 4 ถึง แถว 9 <b>ผลที่ได้คือ</b>
+            </p>
+
+
             <div class="img"><img src="assets/image/unit2/ref7.jpg" alt=""></div>
-            <p id="text">จะได้ค่าบวก 1 จากเซลล์ตำแหน่ง <b>F2</b> ที่เป็นการอ้างอิงแบบสัมบูรณ์ แต่การอ้างอิงแบบสัมพัทธ์จะเปลี่ยนแปลงตามปกติ</p><br><br>
-           
+            <p id="text">จะได้ค่าบวก 1 จากเซลล์ตำแหน่ง <b>F2</b> ที่เป็นการอ้างอิงแบบสัมบูรณ์
+                แต่การอ้างอิงแบบสัมพัทธ์จะเปลี่ยนแปลงตามปกติ</p><br><br>
+
             <center>
                 <div class="navigator">
-                    <a href="unit2-1.html" class="nav_button"><p>เนื้อหาก่อนหน้า</p></a>
-                    <a href="unit3.html" class="nav_button"><p>เนื้อหาถัดไป</p></a>
+                    <a href="unit2-1.html" class="nav_button">
+                        <p>เนื้อหาก่อนหน้า</p>
+                    </a>
+                    <a href="unit3.html" class="nav_button">
+                        <p>เนื้อหาถัดไป</p>
+                    </a>
                 </div>
             </center>
         </div>
     </div>
 
-    
+
 
 
     <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'
@@ -130,7 +154,8 @@
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                    <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github" style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                        style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
             </div>
         </div>
     </div>

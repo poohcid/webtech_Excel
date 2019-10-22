@@ -10,22 +10,26 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/js/script.js"></script>
-    <link rel="shortcut icon" href="assets/image/white_excel.ico"/>
+    <link rel="shortcut icon" href="assets/image/white_excel.ico" />
     <title>Excel Basic</title>
 </head>
 
 <body>
+    <div class="head">
+        <div class="container">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <h1><a href="index.html">Excel Basic</a></h1>
+        </div>
+    </div>
     <div class="header">
         <div class="container">
-            <div class="head">
-                <button class="openbtn" onclick="openNav()">☰</button>
-                <h1><a href="index.html">Excel Basic</a></h1>
-            </div>
             <div class="head2">
-                <h1 style="font-size: 60px;">บทที่ 3.2  การจัดตาราง</h1>
-                <a href="unit3-1.html"><button class="openbtn">บทก่อนหน้า</button></a>
-                <a href="index.html"><button class="openbtn">หน้าหลัก</button></a>
-                <a href="unit4.html"><button class="openbtn">บทถัดไป</button></a>
+                <h1 style="font-size: 60px;">บทที่ 3.2 การจัดตาราง</h1>
+                <div class="button_container">
+                    <a href="unit3-1.html" class="btn1"><button class="openbtn">บทก่อนหน้า</button></a>
+                    <a href="index.html" class="btn2"><button class="openbtn">หน้าหลัก</button></a>
+                    <a href="unit4.html" class="btn3"><button class="openbtn">บทถัดไป</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -48,11 +52,13 @@
         <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
         <a href="member.html" id="member"><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
     </div>
-       
+
     <div class="container">
         <div class="content1" id="content1">
-            <br><br><h1 id="text">การคัดลอกข้อมูลของตารางใน Excel</h1>
-            <p id="text">ทำการเลือกข้อมูลที่เราต้องการคัดลอก จากนั้นกด Ctrl + C และเอาเมาส์ไปวางไว้ใน Cell ที่เราต้องการจากนั้นกด Ctrl + V <b>แต่ตัวที่คัดลอกจะไม่ใช่กันคัดลอกสูตร</b></p>
+            <br><br>
+            <h1 id="text">การคัดลอกข้อมูลของตารางใน Excel</h1>
+            <p id="text">ทำการเลือกข้อมูลที่เราต้องการคัดลอก จากนั้นกด Ctrl + C และเอาเมาส์ไปวางไว้ใน Cell
+                ที่เราต้องการจากนั้นกด Ctrl + V <b>แต่ตัวที่คัดลอกจะไม่ใช่กันคัดลอกสูตร</b></p>
             <h2 id="text">ขั้นตอน</h2>
             <div class="img"><img src="assets/image/unit3/copy1.jpg" alt=""></div>
             <p id="text">1. เลือกตารางที่จะเป็นต้นฉบับ จากนั้นกด <b>Ctrl + C</b></p><br><br><br>
@@ -66,7 +72,8 @@
             <div class="underline" id="line"></div>
 
             <h1 id="text">การใส่ข้อมูลหลายๆ Cell พร้อมกันทีเดียว</h1>
-            <p id="text">ทำการเลือกคลุม table ที่เราต้องการ จากนั้นทำการพิมพ์ลงไปใน Cell แรก และทำการกด <b>Ctrl + Enter</b> ทุกๆ Cell จะค่าเท่ากับ Cell ตัวแรก</p>
+            <p id="text">ทำการเลือกคลุม table ที่เราต้องการ จากนั้นทำการพิมพ์ลงไปใน Cell แรก และทำการกด <b>Ctrl +
+                    Enter</b> ทุกๆ Cell จะค่าเท่ากับ Cell ตัวแรก</p>
             <h2 id="text">ขั้นตอน</h2>
             <div class="img"><img src="assets/image/unit3/copy4.jpg" alt=""></div>
             <p id="text">1. คลุมส่วน table ที่ต้องการจะใส่ค่า</p><br><br><br>
@@ -77,7 +84,7 @@
             <div class="img"><img src="assets/image/unit3/copy6.jpg" alt=""></div>
             <p id="text">3. กด <b>Ctrl + Enter</b> จากนั้นทุกๆ Cell ใน table จะมีค่าเท่ากับ Cell แรก</p>
 
-            <div class="underline" id="line"></div>    
+            <div class="underline" id="line"></div>
 
             <h1 id="text">การขึ้นบรรทัดใหม่แต่อยู่ใน Cell เดียวกันหรือ Row เดียวกัน Excel</h1>
             <p id="text">โดยทำการกด <b>ALT + Enter</b> จากนั้นก็พิมพ์ Text ต่อไปได้ ข้อมูลก็จะอยู่ใน Row เดียวกัน</p>
@@ -88,30 +95,36 @@
             <div class="img"><img src="assets/image/unit3/newline2.jpg" alt=""></div>
             <p id="text">2. กด Alt + Enter Cell นั้นจะทำการขึ้นบรรทัดใหม่ แล้วก็ใส่ค่าตามปกติได้เลย</p>
 
-            <div class="underline" id="line"></div>  
+            <div class="underline" id="line"></div>
 
             <h1 id="text">ต้องการแทรกคอลัมน์ของ Excel ทั้ง Column และ Row Excel</h1>
-            <p id="text"><b>คลิกขวาที่คอลัมน์ที่เราต้องการเพิ่ม > เลือก Insert </b>จากนั้นจะพบว่าจะมี Column เพิ่มขึ้นมาด้านหน้าของ column ที่เราเลือก ถ้าเป็นการเพิ่ม Row ก็ให้คลิกที่ด้านขวาของ Workbook</p><br>
+            <p id="text"><b>คลิกขวาที่คอลัมน์ที่เราต้องการเพิ่ม > เลือก Insert </b>จากนั้นจะพบว่าจะมี Column
+                เพิ่มขึ้นมาด้านหน้าของ column ที่เราเลือก ถ้าเป็นการเพิ่ม Row ก็ให้คลิกที่ด้านขวาของ Workbook</p><br>
             <div class="img"><img src="assets/image/unit3/insert1.jpg" alt=""></div>
 
-            <div class="underline" id="line"></div>  
+            <div class="underline" id="line"></div>
 
             <h1 id="text">การดึงข้อมูลตัวเลขให้เรียงลงมา</h1>
-            <p id="text">ทำการคลิกไปที่เซลล์นั้นๆ จากนั้นกด Ctrl + คลิกลากเมาส์ตรงมุมของเซลล์นั้นๆ (+) จากนั้นลากลงมา</p><br>
+            <p id="text">ทำการคลิกไปที่เซลล์นั้นๆ จากนั้นกด Ctrl + คลิกลากเมาส์ตรงมุมของเซลล์นั้นๆ (+) จากนั้นลากลงมา
+            </p><br>
 
             <div class="img"><img src="assets/image/unit3/Numbers.jpg" alt=""></div><br><br><br><br>
 
-            
+
             <center>
                 <div class="navigator">
-                    <a href="unit3-1.html" class="nav_button"><p>เนื้อหาก่อนหน้า</p></a>
-                    <a href="unit4.html" class="nav_button"><p>เนื้อหาถัดไป</p></a>
+                    <a href="unit3-1.html" class="nav_button">
+                        <p>เนื้อหาก่อนหน้า</p>
+                    </a>
+                    <a href="unit4.html" class="nav_button">
+                        <p>เนื้อหาถัดไป</p>
+                    </a>
                 </div>
             </center>
         </div>
     </div>
 
-    
+
 
 
     <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'
@@ -119,7 +132,8 @@
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                    <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github" style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                        style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
             </div>
         </div>
     </div>

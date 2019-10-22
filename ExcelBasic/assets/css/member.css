@@ -51,16 +51,19 @@ body, html{
 
 /* ส่วน Header ของเว็บ */
 .header{
-    width: 100%;
-    height: 55%;
-    margin: 0;
-    background-image:url("../image/back4.png");
+  width: 100%;
+  height: 55%;
+  margin: 0;
+  background-image:url("../image/back4.png");
 }
 .head{
-    width: 100%;
-    height: 60px;
+  width: 100%;
+  height: 65px;
+  background: #093c28;
+  position: fixed;
+  top: 0;
 }
-.head h1 a{
+.head a{
   text-decoration: none;
   color: white;
   transition: 0.3s;
@@ -68,46 +71,40 @@ body, html{
   padding-bottom: 15px;
   cursor: pointer;
 }
-.head h1 a:hover{
-  border-bottom: 2px solid #FFF;
-  padding-bottom: 0px;
-  
-}
 .head button{
   float: left;
-  margin-top: 10px;
   margin-left: 10px;
   margin-right: 20px;
 }
 .head h1{
-  padding-top: 10px;
   padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: white;
+  font-style: italic;
 }
-.head a{
-  cursor: pointer;
+.head h1 a:hover{
+  border-bottom: 2px solid #FFF;
+  padding-bottom: 0px;
 }
 
-.header .container .head h1{
-    color: white;
-    font-style: italic;
-    margin: 0;
-
-}
 .head2{
-    width: 100%;
-    text-align: center;
-    color: white;
-    margin-top: 15%;
-    
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding-top: 15%;
+  margin-top: 5%;
 }
 .head2 p{
-   font-size: 22px;
+ font-size: 22px;
 }
 .head2 button{
-    font-family: 'Prompt', sans-serif;
-    width: 140px;
-    margin-bottom: 10px;
+  width: 140px;
+  margin-bottom: 10px;
+  font-family: 'Prompt', sans-serif;
 }
+
 
 
 
@@ -250,7 +247,7 @@ body, html{
   width: 100%;
 	height: 120px;
 	text-align: center;
-  background: #227547;
+  background: #093c28;
   bottom: 0;
   margin-top:auto; 
 
@@ -316,6 +313,7 @@ body, html{
     }
     .head h1{
       padding-right: 40px;
+      text-align: center;
     }
 
   }

@@ -15,17 +15,21 @@
 </head>
 
 <body>
+    <div class="head">
+        <div class="container">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <h1><a href="index.html">Excel Basic</a></h1>
+        </div>
+    </div>
     <div class="header">
         <div class="container">
-            <div class="head">
-                <button class="openbtn" onclick="openNav()">☰</button>
-                <h1><a href="index.html">Excel Basic</a></h1>
-            </div>
             <div class="head2">
                 <h1 style="font-size: 60px;">บทที่ 6.3 ฟังก์ชันพื้นฐานของ Excel</h1>
-                <a href="unit6-2.html"><button class="openbtn">บทก่อนหน้า</button></a>
-                <a href="index.html"><button class="openbtn">หน้าหลัก</button></a>
-                <a href="unit6-4.html"><button class="openbtn">บทถัดไป</button></a>
+                <div class="button_container">
+                    <a href="unit6-2.html" class="btn1"><button class="openbtn">บทก่อนหน้า</button></a>
+                    <a href="index.html" class="btn2"><button class="openbtn">หน้าหลัก</button></a>
+                    <a href="unit6-4.html" class="btn3"><button class="openbtn">บทถัดไป</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -51,79 +55,71 @@
 
     <div class="container">
         <div class="content1" id="content1">
-                
-        
-            
-            <h1 id="text">ตัวดำเนินการเปรียบเทียบ</h1>
-            <p id="text">เป็นการเปรียบข้อมูลโดยจะให้ค่าสองค่าคือ เป็นจริง (TRUE) เป็นเท็จ (FALSE)
-                    สามารถเปรียบเทียบเป็นข้อมูลหรืออ้างอิงก็ได้
-                    </p>
-            <table style="height: 35%;">
+
+
+            <br><br>
+            <h1 id="text">ฟังก์ชันพื้นฐานของ Excel</h1>
+            <p id="text">ใน Excel มีฟังก์ชันที่ติดตัวอยู่แล้ว ซึ่งช่วยอำนวยความสะดวกให้กับผู้ใช้งานเพราะไม่ต้องเขียนเอง
+                แต่เราก็ต้องรู้ว่าฟังก์แต่ละอย่างนั้นทำงานยังไง
+                ในที่นี้จะยกตัวอย่างฟังก์ชันที่ควรจะรู้เพราะเป็นฟังก์ชันพื้นฐานและใช้งานบ่อย
+            </p>
+            <table>
                 <tr>
-                    <th style="width: 10%;">เครื่องหมาย</th>
-                    <th style="width: 20%;">ความหมาย</th>
-                    <th>ตัวอย่าง</th>
+                    <th colspan="3">ฟังก์ชันพื้นฐาน</th>
                 </tr>
                 <tr>
-                    <td>=</td>
-                    <td>เท่ากับ</td>
-                    <td>10 = 10, B1 = A2</td>
+                    <th>ชื่อฟังก์ชัน</th>
+                    <th>หน้าที่</th>
+                    <th>รูปแบบ</th>
                 </tr>
                 <tr>
-                    <td> < </td>
-                    <td>น้อยกว่า</td>
-                    <td>4 < 30, A2 < A3</td>
+                    <td>SUM( )</td>
+                    <td>บวกเลขทุกตัวที่อยู่ใน Range ที่เลือกไว้</td>
+                    <td>=SUM(array1, array2)</td>
+                <tr>
+                    <td>AVERAGE( )</td>
+                    <td>หาค่าเฉลี่ยจากตัวเลขใน Range ที่เลือกไว้ โดยที่จะไม่คิดค่าว่างเปล่า</td>
+                    <td>=AVERAGE(array1, array2)</td>
+                </tr>
+                <td>MAX( )</td>
+                <td>หาค่าที่มากที่สุด</td>
+                <td>=MAX(array1, array2)</td>
+                <tr>
+                    <td>MIN( )</td>
+                    <td>หาค่าที่น้อยที่สุด</td>
+                    <td>=MIN(array1, array2)</td>
                 </tr>
                 <tr>
-                    <td>></td>
-                    <td>มากกว่า</td>
-                    <td>30 > 10, C7 > B1</td>
-                </tr>
-                <tr>
-                    <td><=</td>
-                    <td>น้อยกว่าเท่ากับ</td>
-                    <td>20 <= 21, C1 <= B3</td>
-                </tr>
-                <tr>
-                    <td>>=</td>
-                    <td>มากกว่าเท่ากับ</td>
-                    <td>14 >= 2, A5 >= B7</td>
-                </tr>
-                <tr>
-                    <td><></td>
-                    <td>ไม่เท่ากับ</td>
-                    <td>12 <> 13, A1 <> A7</td>
+                    <td>MOD( )</td>
+                    <td>หาเศษเหลือจากการหาร </td>
+                    <td>=MOD(number, divisor)</td>
                 </tr>
             </table>
 
             <div class="underline" id="line"></div>
 
-            <h1 id="text">ลำดับความสำคัญ</h1>
-            <table>
-                <tr>
-                    <th>ลำดับ</th>
-                    <th>เครื่องหมาย</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>ตัวดำเนินการทางคณิตศาสตร์ (), %, ^, *, /, +, -</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>&</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>=  <  >  <=  >=  <></td>
-                </tr>
-            </table>
+            <h1 id="text">การประยุกต์ใช้งานกับตัวดำเนินการอาร์เรย์</h1>
+            <p id="text">สามารถย้อนกลับไปดูเรื่องของสูตรแบบอาร์เรย์ได้ที่ <a href="unit6-2.html" class="link"
+                    id="text">บทที่ 6.2 สูตรแบบอาร์เรย์</a> ตอนนี้เราสามารถใช้เครื่องหมาย “ , ” ได้กับฟังก์ชันตามข้างต้น
+                โดยเป็นตัวดำเนินการที่เชื่อมตัวอาร์เรย์เข้าด้วยกัน</p>
 
-            <br><h2 id="text">ตัวอย่าง</h2>
-            <li id="text">29 + 1 < 20 * 4 ==> (30) < (80) ==> TRUE</li>
-            <li id="text">20 <= 30 - 10 ==> 20 <= (20) ==> TRUE</li>
-            <li id="text">29 + 1 < 20 < 2 ==> (30) < 20 < 2 == > FALSE </li>
-            <li id="text">29 + 1 > 20 >= 1 ==> (30) > 20 >= 1 ==> TRUE</li>
-            <li id="text">20 >= 1 <> 1 ==> TRUE </p><br><br></li>
+            <br>
+            <p id="text">1. ในตัวอย่างนี้จะนำค่าในอาร์เรย์มาบวกกัน เราก็ทำการอิงโดยใช้เมาส์คลุม และให้แสดงผลโดยมีคำว่า “
+                total = ” แล้วตามด้วยผลรวมใช้ “ & ” เป็นตัวเชื่อมกับฟังก์ชัน SUM</p>
+            <div class="img"><img src="assets/image/unit6/basic1.jpg" alt=""></div><br><br>
+
+            <br>
+            <p id="text">2. กด Ctrl ค้าง เพื่อเลือกช่วงใหม่สังเกตุว่า Excel จะใส่เครื่องหมาย “ , ”
+                เป็นตัวเชื่อมอัตโนมัติ</p>
+            <div class="img"><img src="assets/image/unit6/basic2.jpg" alt=""></div><br><br>
+
+
+            <br>
+            <p id="text">3. ทำสูตรให้สมบูรณ์แล้วกด Enter ก็จะได้ผลลัพธ์ตามฟังก์ชันคือ (11+14+15)+(27+28+29)+(12+13+14) =
+                163</p>
+            <div class="img"><img src="assets/image/unit6/basic3.jpg" alt=""></div><br><br><br>
+
+
 
             <center>
                 <div class="navigator">

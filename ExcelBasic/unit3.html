@@ -17,7 +17,7 @@
 <body>
     <div class="head">
         <div class="container">
-            <button class="openbtn" onclick="openNav()">☰</button>
+            <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
             <h1><a href="index.html">Excel Basic</a></h1>
         </div>
     </div>
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <div id="mySidebar" class="sidebar">
+    <div id="mySidebar" class="sidebar" onmouseover="setOverside(1)" onmouseout="setOverside(2)">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
         <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
         <a href="unit1.html">Interface</a>

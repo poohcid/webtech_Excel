@@ -1,8 +1,21 @@
 let nightmode_enable = false;
+let isOverside = 0;
 
+function setOverside(a){
+    isOverside = a;
+    console.log(isOverside);
+}
+
+document.addEventListener("click", function(){
+    if (isOverside == 2 && window.innerWidth <= 1860){
+        document.getElementById("mySidebar").style.width = "0";
+        isOverside = 0;
+    }
+});
 
 
 function openNav() {
+    isOverside = 0;
     if(document.getElementById("mySidebar").style.width == "250px"){
         document.getElementById("mySidebar").style.width = "0";
     }
@@ -13,6 +26,7 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
+    isOverside = 0;
 }
 
 function nightmode(){

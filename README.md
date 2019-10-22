@@ -34,3 +34,10 @@
     -	Ref https://www.thepexcel.com/10-excel-tips-speed-up-work/
 11. workshop
 
+# เครื่องมือที่ใช้
+1. HTML
+2. css
+3. javascript
+
+# การออกแบบและความก้าวหน้า
+   -   <a href="https://poohcid.github.io/webtech_Excel/ExcelBasic/index.html" >https://poohcid.github.io/webtech_Excel/ExcelBasic/index.html

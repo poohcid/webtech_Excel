@@ -2,7 +2,7 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: 'Prompt', sans-serif;
-    background: #b5bdc5;
+    background: #a9b4bd;
     scroll-behavior: smooth;
     transition: 0.3s;
 }
@@ -23,6 +23,21 @@ iframe{
   height: 70%;
   border-radius: 10px;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.head_button{
+  background: #111;
+  border: none;
+  width: 100px;
+  height: 45px;
+  color: #FFF;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.head_button:hover{
+  background: rgb(255, 204, 108);
+  color: #000;
 }
 
 
@@ -55,20 +70,24 @@ iframe{
 /* ส่วน Header ของเว็บ */
 .header{
   width: 100%;
-  height: 55%;
+  min-height: 53%;
   margin: 0;
-  background-image:url("../image/back4.png");
+  background-image:url("../image/back6.png");
+  background-attachment: fixed;
+  
 }
 .head{
   width: 100%;
   height: 65px;
-  background: #093c28;
+  background: #e0e0e0;
   position: fixed;
   top: 0;
+  transition: 0.3s;
+  border-bottom: 2px solid #000;
 }
 .head a{
   text-decoration: none;
-  color: white;
+  color: black;
   transition: 0.3s;
   border-bottom: 2px solid transparent;
   padding-bottom: 15px;
@@ -82,22 +101,24 @@ iframe{
 .head h1{
   padding-left: 20px;
   margin-top: 10px;
-  color: white;
+  margin-bottom: 0;
   font-style: italic;
 }
 .head h1 a:hover{
-  border-bottom: 2px solid #FFF;
+  border-bottom: 2px solid #000;
   padding-bottom: 0px;
 }
+
 .head2{
   width: 100%;
   height: auto;
   text-align: center;
   color: white;
-  padding-top: 13%;
+  padding-top: 9%;
+  margin-top: 5%;
 }
-.head2 h1{
-  margin-bottom: 25px;
+.head2 p{
+ font-size: 22px;
 }
 .head2 button{
   width: 130px;
@@ -120,13 +141,15 @@ iframe{
   width: 250px;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 65px;
   left: 0;
   background-color: #111;
-  overflow-x: scroll;
   transition: 0.5s;
   padding-top: 60px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
 
 .sidebar a {
   padding: 8px 8px 8px 32px;
@@ -168,19 +191,22 @@ iframe{
   .sidebar a {font-size: 18px;}
   
 }
-  /* ปุ่มเรียก sidebar */
+/* ปุ่มเรียก sidebar */
 
 .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 9px 15px;
-  border: none;
-  border-radius: 5px;
-  transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 10px;   
 }
-
+#open1{
+    margin-left: 15px;  
+}
 .openbtn:hover {
   background-color: rgb(219, 120, 54);
 }
@@ -415,11 +441,15 @@ thead th{
       font-size: 17px;
     }
     .sidebar{
-      height: 90%;
+      max-height: 75%;
       width: 0px;
+      overflow: auto;
     }
     .header{
       height: auto;
+    }
+    .head2{
+      padding-top: 18%;
     }
     .head2 p{
       margin-bottom: 5px;

@@ -15,19 +15,17 @@
 
 <body>
     <div class="head">
-        <div class="container">
-            <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
-            <h1><a href="index.html">Excel Basic</a></h1>
-        </div>
+        <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
+        <h1><a href="index.html">Excel Basic</a></h1>
     </div>
     <div class="header">
         <div class="container">
             <div class="head2">
                 <h1 style="font-size: 60px;">บทที่ 6.4 ฟังก์ชัน อื่นๆ</h1>
                 <div class="button_container">
-                    <a href="unit6-3.html" class="btn1"><button class="openbtn">บทก่อนหน้า</button></a>
-                    <a href="index.html" class="btn2"><button class="openbtn">หน้าหลัก</button></a>
-                    <a href="unit7.html" class="btn3"><button class="openbtn">บทถัดไป</button></a>
+                    <a href="unit6-3.html" class="btn1"><button class="head_button">บทก่อนหน้า</button></a>
+                    <a href="index.html" class="btn2"><button class="head_button">หน้าหลัก</button></a>
+                    <a href="unit7.html" class="btn3"><button class="head_button">บทถัดไป</button></a>
                 </div>
             </div>
         </div>
@@ -48,7 +46,7 @@
         <a href="tech.html">เทคนิคเพิ่มเติม</a>
         <a href="workshop.html">Workshop</a>
         <p style="border-top: 4px solid rgb(165, 165, 165);"></p>
-        <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
+        <a onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
         <a href="member.html" id="member"><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
     </div>
 
@@ -56,79 +54,139 @@
         <div class="content1" id="content1">
 
 
-            <h1 id="text">ตัวดำเนินการเปรียบเทียบ</h1>
-            <p id="text">เป็นการเปรียบข้อมูลโดยจะให้ค่าสองค่าคือ เป็นจริง (TRUE) เป็นเท็จ (FALSE)
-                สามารถเปรียบเทียบเป็นข้อมูลหรืออ้างอิงก็ได้
-            </p>
-            <table style="height: 35%;">
+            <br><br>
+            <h1 id="text">ฟังก์ชัน อื่นๆ</h1>
+            <p id="text">นอกเหนือจากฟังก์ชันพื้นฐานใน บทที่ 6.3 ฟังก์ชันพื้นฐาน ก็ยังมีฟังก์ชันในโปรแกรม Excel อื่นๆ
+                เยอะแยะมากมาย โดยในที่นี้จะยกตัวอย่างจากฟังก์ชันที่แนะนำและน่าสนใจ</p>
+            <table>
                 <tr>
-                    <th style="width: 10%;">เครื่องหมาย</th>
-                    <th style="width: 20%;">ความหมาย</th>
+                    <th colspan="3" style=" height: 50px;">ฟังก์ชันประเภท คณิตศาสตร์</th>
+                </tr>
+                <tr>
+                    <th style="width: 20%; height: 50px;">ชื่อฟังก์ชัน</th>
+                    <th style="width: 25%; height: 50px;">หน้าที่</th>
                     <th>ตัวอย่าง</th>
                 </tr>
-                <tr>
-                    <td>=</td>
-                    <td>เท่ากับ</td>
-                    <td>10 = 10, B1 = A2</td>
+                <tr style="height: 75px;">
+                    <td>POWER( )</td>
+                    <td>ใช้หาผลยกกำลัง</td>
+                    <td>=POWER(6, 2) ได้ 36</td>
                 </tr>
-                <tr>
-                    <td>
-                        < </td> <td>น้อยกว่า
-                    </td>
-                    <td>4 < 30, A2 < A3</td> </tr> <tr>
-                    <td>></td>
-                    <td>มากกว่า</td>
-                    <td>30 > 10, C7 > B1</td>
+                <tr style="height: 75px;">
+                    <td>SUMPRODUCT( )</td>
+                    <td>ให้เอาเลข 2 ชุดมาคูณกันตามคู่ลำดับแล้วหาผลรวมภายหลัง</td>
+                    <td>=SUMPRODUCT(A1:A10,B1:B10)แปลว่า ให้บวกเลขในช่อง A1*B1 + A2*B2+…A10*B10</td>
                 </tr>
-                <tr>
-                    <td>
-                        <=</td> <td>น้อยกว่าเท่ากับ
-                    </td>
-                    <td>20 <= 21, C1 <=B3</td> </tr> <tr>
-                    <td>>=</td>
-                    <td>มากกว่าเท่ากับ</td>
-                    <td>14 >= 2, A5 >= B7</td>
+                <tr style="height: 75px;">
+                    <td>ROUND( )</td>
+                    <td>ปัดเศษทศนิยมตามหลักที่กำหนด</td>
+                    <td>= ROUND(2.615162, 2 ) ได้ 2.62 หมายความว่าแปลง 2.615162 ปัดเป็น 2 ตำแหน่ง</td>
                 </tr>
-                <tr>
-                    <td>
-                        <>
-                    </td>
-                    <td>ไม่เท่ากับ</td>
-                    <td>12 <> 13, A1 <> A7</td>
+                <tr style="height: 75px;">
+                    <td>GCD( )</td>
+                    <td>ปัดเศษทศนิยมตามหลักที่กำหนด</td>
+                    <td>= ROUND(2.615162, 2 ) ได้ 2.62 หมายความว่าแปลง 2.615162 ปัดเป็น 2 ตำแหน่ง</td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>FACT( )</td>
+                    <td>หา Factorial</td>
+                    <td>=FACT(4) ได้ 24</td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>SUMPRODUCT( )</td>
+                    <td>ให้เอาเลข 2 ชุดมาคูณกันตามคู่ลำดับแล้วหาผลรวมภายหลัง</td>
+                    <td>=SUMPRODUCT(A1:A10,B1:B10)แปลว่า ให้บวกเลขในช่อง A1*B1 + A2*B2+…A10*B10</td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>RANDBETWEEN( )</td>
+                    <td>ทำการสุ่มเลขเป็นจำนวนเต็มในขอบเขตที่กำหนด</td>
+                    <td>=RANDBETWEEN(20, 25) ได้ เลขในช่วง 20 ถึง 25 โดยระบุตัวน้อยกว่าก่อนแล้วตามด้วยตัวมาก</td>
                 </tr>
             </table>
 
             <div class="underline" id="line"></div>
 
-            <h1 id="text">ลำดับความสำคัญ</h1>
             <table>
                 <tr>
-                    <th>ลำดับ</th>
-                    <th>เครื่องหมาย</th>
+                    <th colspan="3" style=" height: 50px;">ฟังก์ชันประเภท สถิติ</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>ตัวดำเนินการทางคณิตศาสตร์ (), %, ^, *, /, +, -</td>
+                    <th style="width: 20%; height: 50px;">ชื่อฟังก์ชัน</th>
+                    <th style="width: 25%; height: 50px;">หน้าที่</th>
+                    <th>ตัวอย่าง</th>
                 </tr>
-                <tr>
-                    <td>2</td>
-                    <td>&</td>
+                <tr style="height: 75px;">
+                    <td>COUNT( )</td>
+                    <td>นับจำนวนช่องที่เป็นตัวเลขใน Range ที่เลือกไว้</td>
+                    <td>=COUNT(A1:A10) จะนับว่าในช่อง A1 ถึง A10 มีช่องที่เป็นตัวเลขกี่ช่อง</td>
                 </tr>
-                <tr>
-                    <td>3</td>
-                    <td>= <>
-                            <=>= <>
-                    </td>
+                <tr style="height: 75px;">
+                    <td>COUNTA( )</td>
+                    <td>นับจำนวนช่องที่ไม่ว่างเปล่าใน Range ที่เลือกไว้</td>
+                    <td>=COUNTA(A1:A10) จะนับว่าในช่อง A1 ถึง A10 มีช่องที่ไม่ว่างเปล่ากี่ช่อง</td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>LARGE( ) / SMALL( )</td>
+                    <td>หาค่าที่มาก / น้อย เป็นลำดับที่ xx จากตัวเลขใน Range ที่เลือกไว้ แปลว่าใช้แทน MAX/MIN ก็ได้</td>
+                    <td>=LARGE(A1:A10,3) แปลว่าหาค่าที่มากที่สุดเป็นลำดับที่ 3 (ระบุที่ k) จากช่วง A1 ถึง A10</td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>MODE( )</td>
+                    <td>หาค่า ฐานนิยม</td>
+                    <td>=MODE(A1: A20) จะได้ค่าที่มีความถี่มากที่สุด</td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>FACT( )</td>
+                    <td>หา Factorial</td>
+                    <td>=FACT(4) ได้ 24</td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>MEDIAN( )</td>
+                    <td>หาค่า มัธยฐาน</td>
+                    <td>=MEDIAN(A1: A20) จะได้ค่าตรงกลาง</td>
                 </tr>
             </table>
 
-            <br>
-            <h2 id="text">ตัวอย่าง</h2>
-            <li id="text">29 + 1 < 20 * 4==> (30) < (80)==> TRUE</li>
-            <li id="text">20 <= 30 - 10==> 20 <= (20)==> TRUE</li>
-            <li id="text">29 + 1 < 20 < 2==> (30) < 20 < 2==> FALSE </li>
-            <li id="text">29 + 1 > 20 >= 1 ==> (30) > 20 >= 1 ==> TRUE</li>
-            <li id="text">20 >= 1 <> 1 ==> TRUE </p><br><br></li>
+            <div class="underline" id="line"></div>
+
+            <table>
+                <tr>
+                    <th colspan="3" style=" height: 50px;">ฟังก์ชันประเภท ข้อความ</th>
+                </tr>
+                <tr>
+                    <th style="width: 20%; height: 50px;">ชื่อฟังก์ชัน</th>
+                    <th style="width: 25%; height: 50px;">หน้าที่</th>
+                    <th>ตัวอย่าง</th>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>LEN( )</td>
+                    <td>นับจำนวนตัวอักษรของคำที่เลือก โดยนับทั้ง space สระ วรรณยุกต์ด้วย</td>
+                    <td>=LEN(“สวัสดี”) จะได้ 6</td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>LEFT( ) / RIGHT( )</td>
+                    <td>ตัดตัวหนังสือที่กำหนดจากทาง ซ้าย/ขวา ด้วยระยะจำนวนตัวอักษรที่กำหนด</td>
+                    <td>=LEFT(“สวัสดี”, 2) จะได้ สว <br>=RIGHT(“สวัสดี”, 2) จะได้ ดี </td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>FIND( )</td>
+                    <td>หาว่าคำที่ต้องการค้นหา อยู่เป็นตัวอักษรลำดับที่เท่าไหร่ของคำที่กำหนด สนใจ ตัวพิพม์เล็กพิมพ์ใหญ่</td>
+                    <td>ใส่คำที่จะค้นหาก่อน และตามด้วยข้อความ<br> = FIND(“Excel”, “inwexcel is Excellent”)จะได้ 13 0</td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>SEARCH( )</td>
+                    <td>ค้นหาตำแหน่ง ไม่สนใจ ตัวพิพม์เล็กพิมพ์ใหญ่ และใช้เครื่องหมาย Wildcard ได้</td>
+                    <td>ใส่คำที่จะค้นหาก่อน และตามด้วยข้อความ<br>=SEARCH(“Excel”,”inwexcel is Excellent”) จะได้ 4</td>
+                </tr>
+                <tr style="height: 75px;">
+                    <td>TEXT( )</td>
+                    <td>เปลี่ยน Number Format ของตัวเลขด้วยการใช้สูตร</td>
+                    <td>=TEXT(1234.5678, “0.00”) จะได้ “1234.57”</td>
+                </tr>
+            </table>
+            <br><br><br>
+
+
 
             <center>
                 <div class="navigator">

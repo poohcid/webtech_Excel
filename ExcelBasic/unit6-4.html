@@ -52,57 +52,51 @@
 
     <div class="container">
         <div class="content1" id="content1">
-
-
-            <br><br>
             <h1 id="text">ฟังก์ชัน อื่นๆ</h1>
             <p id="text">นอกเหนือจากฟังก์ชันพื้นฐานใน บทที่ 6.3 ฟังก์ชันพื้นฐาน ก็ยังมีฟังก์ชันในโปรแกรม Excel อื่นๆ
                 เยอะแยะมากมาย โดยในที่นี้จะยกตัวอย่างจากฟังก์ชันที่แนะนำและน่าสนใจ</p>
-            <table>
-                <tr>
-                    <th colspan="3" style=" height: 50px;">ฟังก์ชันประเภท คณิตศาสตร์</th>
-                </tr>
-                <tr>
-                    <th style="width: 20%; height: 50px;">ชื่อฟังก์ชัน</th>
-                    <th style="width: 25%; height: 50px;">หน้าที่</th>
-                    <th>ตัวอย่าง</th>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>POWER( )</td>
-                    <td>ใช้หาผลยกกำลัง</td>
-                    <td>=POWER(6, 2) ได้ 36</td>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>SUMPRODUCT( )</td>
-                    <td>ให้เอาเลข 2 ชุดมาคูณกันตามคู่ลำดับแล้วหาผลรวมภายหลัง</td>
-                    <td>=SUMPRODUCT(A1:A10,B1:B10)แปลว่า ให้บวกเลขในช่อง A1*B1 + A2*B2+…A10*B10</td>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>ROUND( )</td>
-                    <td>ปัดเศษทศนิยมตามหลักที่กำหนด</td>
-                    <td>= ROUND(2.615162, 2 ) ได้ 2.62 หมายความว่าแปลง 2.615162 ปัดเป็น 2 ตำแหน่ง</td>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>GCD( )</td>
-                    <td>ปัดเศษทศนิยมตามหลักที่กำหนด</td>
-                    <td>= ROUND(2.615162, 2 ) ได้ 2.62 หมายความว่าแปลง 2.615162 ปัดเป็น 2 ตำแหน่ง</td>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>FACT( )</td>
-                    <td>หา Factorial</td>
-                    <td>=FACT(4) ได้ 24</td>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>SUMPRODUCT( )</td>
-                    <td>ให้เอาเลข 2 ชุดมาคูณกันตามคู่ลำดับแล้วหาผลรวมภายหลัง</td>
-                    <td>=SUMPRODUCT(A1:A10,B1:B10)แปลว่า ให้บวกเลขในช่อง A1*B1 + A2*B2+…A10*B10</td>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>RANDBETWEEN( )</td>
-                    <td>ทำการสุ่มเลขเป็นจำนวนเต็มในขอบเขตที่กำหนด</td>
-                    <td>=RANDBETWEEN(20, 25) ได้ เลขในช่วง 20 ถึง 25 โดยระบุตัวน้อยกว่าก่อนแล้วตามด้วยตัวมาก</td>
-                </tr>
-            </table>
+            <div class="table_fix">
+                <table>
+                    <tr>
+                        <th colspan="3" style="height: 50px;">ฟังก์ชันประเภท คณิตศาสตร์</th>
+                    </tr>
+                    <tr>
+                        <th style="height: 50px;">ชื่อฟังก์ชัน</th>
+                        <th style="height: 50px;">หน้าที่</th>
+                        <th style="height: 50px;">ตัวอย่าง</th>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>POWER( )</td>
+                        <td>ใช้หาผลยกกำลัง</td>
+                        <td>=POWER(6, 2) ได้ 36</td>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>SUMPRO<br>DUCT( )</td>
+                        <td>ให้เอาเลข 2 ชุดมาคูณกันตามคู่ลำดับแล้วหาผลรวมภายหลัง</td>
+                        <td>=SUMPRODUCT(A1:A10,B1:B10)<br>แปลว่า ให้บวกเลขในช่อง <br>A1*B1 + A2*B2+…A10*B10</td>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>ROUND( )</td>
+                        <td>ปัดเศษทศนิยมตามหลักที่กำหนด</td>
+                        <td>= ROUND(2.615162, 2 ) ได้ 2.62<br>หมายความว่าแปลง<br> 2.615162 ปัดเป็น 2 ตำแหน่ง</td>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>GCD( )</td>
+                        <td>ปัดเศษทศนิยมตามหลักที่กำหนด</td>
+                        <td>=GCD(36, 12, 24) ได้ 12</td>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>FACT( )</td>
+                        <td>หา Factorial</td>
+                        <td>=FACT(4) ได้ 24</td>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>RANDBET<br>WEEN( )</td>
+                        <td>ทำการสุ่มเลขเป็นจำนวนเต็มในขอบเขตที่กำหนด</td>
+                        <td>=RANDBETWEEN(20, 25)<br>ได้ เลขในช่วง 20 ถึง 25 <br>โดยระบุตัวน้อยกว่าก่อน<br>แล้วตามด้วยตัวมาก</td>
+                    </tr>
+                </table>
+            </div>
 
             <div class="underline" id="line"></div>
 
@@ -149,41 +143,47 @@
 
             <div class="underline" id="line"></div>
 
-            <table>
-                <tr>
-                    <th colspan="3" style=" height: 50px;">ฟังก์ชันประเภท ข้อความ</th>
-                </tr>
-                <tr>
-                    <th style="width: 20%; height: 50px;">ชื่อฟังก์ชัน</th>
-                    <th style="width: 25%; height: 50px;">หน้าที่</th>
-                    <th>ตัวอย่าง</th>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>LEN( )</td>
-                    <td>นับจำนวนตัวอักษรของคำที่เลือก โดยนับทั้ง space สระ วรรณยุกต์ด้วย</td>
-                    <td>=LEN(“สวัสดี”) จะได้ 6</td>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>LEFT( ) / RIGHT( )</td>
-                    <td>ตัดตัวหนังสือที่กำหนดจากทาง ซ้าย/ขวา ด้วยระยะจำนวนตัวอักษรที่กำหนด</td>
-                    <td>=LEFT(“สวัสดี”, 2) จะได้ สว <br>=RIGHT(“สวัสดี”, 2) จะได้ ดี </td>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>FIND( )</td>
-                    <td>หาว่าคำที่ต้องการค้นหา อยู่เป็นตัวอักษรลำดับที่เท่าไหร่ของคำที่กำหนด สนใจ ตัวพิพม์เล็กพิมพ์ใหญ่</td>
-                    <td>ใส่คำที่จะค้นหาก่อน และตามด้วยข้อความ<br> = FIND(“Excel”, “inwexcel is Excellent”)จะได้ 13 0</td>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>SEARCH( )</td>
-                    <td>ค้นหาตำแหน่ง ไม่สนใจ ตัวพิพม์เล็กพิมพ์ใหญ่ และใช้เครื่องหมาย Wildcard ได้</td>
-                    <td>ใส่คำที่จะค้นหาก่อน และตามด้วยข้อความ<br>=SEARCH(“Excel”,”inwexcel is Excellent”) จะได้ 4</td>
-                </tr>
-                <tr style="height: 75px;">
-                    <td>TEXT( )</td>
-                    <td>เปลี่ยน Number Format ของตัวเลขด้วยการใช้สูตร</td>
-                    <td>=TEXT(1234.5678, “0.00”) จะได้ “1234.57”</td>
-                </tr>
-            </table>
+            <div class="table_fix">
+                <table>
+                    <tr>
+                        <th colspan="3" style=" height: 50px;">ฟังก์ชันประเภท ข้อความ</th>
+                    </tr>
+                    <tr>
+                        <th style="height: 50px;">ชื่อฟังก์ชัน</th>
+                        <th style="height: 50px;">หน้าที่</th>
+                        <th style="height: 50px;">ตัวอย่าง</th>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>LEN( )</td>
+                        <td>นับจำนวนตัวอักษรของคำที่เลือก โดยนับทั้ง space สระ วรรณยุกต์ด้วย</td>
+                        <td>=LEN(“สวัสดี”) จะได้ 6</td>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>LEFT( ) / RIGHT( )</td>
+                        <td>ตัดตัวหนังสือที่กำหนดจากทาง ซ้าย/ขวา ด้วยระยะจำนวนตัวอักษรที่กำหนด</td>
+                        <td>=LEFT(“สวัสดี”, 2) จะได้ สว <br>=RIGHT(“สวัสดี”, 2) จะได้ ดี </td>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>FIND( )</td>
+                        <td>หาว่าคำที่ต้องการค้นหา อยู่เป็นตัวอักษรลำดับที่เท่าไหร่ของคำที่กำหนด สนใจ
+                            ตัวพิพม์เล็กพิมพ์ใหญ่
+                        </td>
+                        <td>ใส่คำที่จะค้นหาก่อน และตามด้วยข้อความ<br> = FIND(“Excel”, “inwexcel is Excellent”)จะได้ 13 0
+                        </td>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>SEARCH( )</td>
+                        <td>ค้นหาตำแหน่ง ไม่สนใจ ตัวพิพม์เล็กพิมพ์ใหญ่ และใช้เครื่องหมาย Wildcard ได้</td>
+                        <td>ใส่คำที่จะค้นหาก่อน และตามด้วยข้อความ<br>=SEARCH(“Excel”,”inwexcel is Excellent”) จะได้ 4
+                        </td>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <td>TEXT( )</td>
+                        <td>เปลี่ยน Number Format ของตัวเลขด้วยการใช้สูตร</td>
+                        <td>=TEXT(1234.5678, “0.00”) จะได้ “1234.57”</td>
+                    </tr>
+                </table>
+            </div>
             <br><br><br>
 
 

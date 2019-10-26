@@ -359,13 +359,18 @@ table tr td{
   background: #a0a0a0;
   color: #000;
 }
-thead th{
-  width: 100%;
+
+.table_fix{
+  overflow-x: auto;
 }
+
+
+
+
+/* link เชื่อมไปเนื้อหาอื่นๆ */
 
 .link{
   font-size: 22px;
-
   transition: 0.3s;
   border-bottom: 2px solid rgb(179, 40, 93);
   font-style: italic;

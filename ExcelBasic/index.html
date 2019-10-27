@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
     <link href="/fontawesome/css/all.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -14,18 +14,17 @@
 </head>
 
 <body>
-    <div class="head">
-        <div class="container">
-            <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
-            <h1><a href="index.html">Excel Basic</a></h1>
-        </div>
+    <div class="head" id="head">
+        <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
+        <h1 id="text"><a href="index.html">Excel Basic</a></h1>
     </div>
     <div class="header">
         <div class="container">
             <div class="head2">
                 <h1>พื้นฐาน Microsoft Excel</h1>
                 <p>เทคนิคการใช้งาน Microsoft Excel ระดับพื้นฐาน</p>
-                <a href="member.html"><button class="openbtn">สมาชิกกลุ่ม</button></a>
+                <a href="member.html"><button class="head_button">สมาชิกกลุ่ม</button></a>
+                <a href="content.html"><button class="head_button">เข้าสู่บทเรียน</button></a>
             </div>
         </div>
     </div>
@@ -45,157 +44,35 @@
         <a href="tech.html">เทคนิคเพิ่มเติม</a>
         <a href="workshop.html">Workshop</a>
         <p style="border-top: 4px solid rgb(165, 165, 165);"></p>
-        <a href="#" onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
+        <a onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
         <a href="member.html" id="member"><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
     </div>
 
-    <center>
-        <h1 id="text" style="font-size: 45px; margin-bottom: 0;">เนื้อหาหลัก<br><br></h1>
-    </center>
-
     <div class="container">
         <div class="content1" id="content1">
-            <div class="card" id="card">
-                <div class="card_img"><img src="assets/image/unit1/main.jpg" alt=""></div>
+                <div class="card_img"></div>
                 <div class="card_container">
-                    <h2><b>บทที่ 1</b></h2>
-                    <p><b>ความหมายของแต่ละส่วนหน้าจอของ Microsoft Excel (Interface)</b></p>
-                </div>
-                <div class="button_card">
+                    <div class="card_content">
+                        <h1><b>จุดประสงค์</b></h1>
+                        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non obcaecati, quas placeat
+                                possimus ullam nihil officia qui et debitis voluptatum numquam saepe tenetur expedita
+                                iusto ipsum blanditiis. Beatae, ipsam sed.</b></p>
+                    </div>
                     <a href="unit1.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
-            </div>
-
-            <div class="card" id="card">
-                <div class="card_img"><img src="assets/image/card/table.jpg" alt=""></div>
-                <div class="card_container">
-                    <h2><b>บทที่ 2</b></h2>
-                    <p><b>ตาราง</b></p>
-                    <li>แถว คอลั่ม, การใส่ค่า</li>
-                    <li>ตัวดำเนินการอ้างอิง</li>
-                </div>
-                <div class="button_card">
-                    <a href="unit2.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
-            </div>
-
-            <div class="card" id="card">
-                <div class="card_img"><img src="assets/image/card/manage_table.jpg" alt=""></div>
-                <div class="card_container">
-                    <h2><b>บทที่ 3</b></h2>
-                    <p><b>การจัดการตาราง</b></p>
-                    <li>การตกแต่งตาราง</li>
-                    <li>การจัดสรรตารางและแทรกข้อมูล</li>
-                </div>
-                <div class="button_card">
-                    <a href="unit3.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
-            </div>
-
-        </div>
-        <div id="line"></div>
-        <div class="content1" id="content1">
-
-            <div class="card" id="card">
-                <div class="card_img"><img src="assets/image/card/math.jpg" alt=""></div>
-                <div class="card_container">
-                    <h2><b>บทที่ 4</b></h2>
-                    <p><b>การดำเนินการทางคณิตศาสตร์</b></p>
-                    <li>บวก ลบ คูณ หาร เปอร์เซน ยกกำลัง</li>
-                </div>
-                <div class="button_card">
-                    <a href="unit4.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
-            </div>
-
-            <div class="card" id="card">
-                <div class="card_img"><img src="assets/image/card/compare.jpg" alt=""></div>
-                <div class="card_container">
-                    <h2><b>บทที่ 5</b></h2>
-                    <p><b>ตัวดำเนินการเปรียบเทียบ</b></p>
-                    <li>มากกว่า น้อยกว่า เท่ากับ ไม่เท่ากับ</li>
-                </div>
-                <div class="button_card">
-                    <a href="unit5.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
-            </div>
-
-            <div class="card" id="card">
-                <div class="card_img"><img src="assets/image/card/function.jpg" alt=""></div>
-                <div class="card_container">
-                    <h2><b>บทที่ 6</b></h2>
-                    <p><b>ฟังก์ชัน</b></p>
-                    <li>ฟังก์ชันแบบกำหนดเอง</li>
-                    <li>สูตรแบบอาร์เรย์</li>
-                    <li>ฟังก์ชันพื้นฐานของ Excel</li>
-                </div>
-                <div class="button_card">
-                    <a href="unit6.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="content1" id="content1">
-            <div class="card" id="card">
-                <div class="card_img"><img src="assets/image/card/if.jpg" alt=""></div>
-                <div class="card_container">
-                    <h2><b>บทที่ 7</b></h2>
-                    <p><b>ฟังก์ชัน IF</b></p>
-                </div>
-                <div class="button_card">
-                    <a href="unit7.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
-            </div>
-
-            <div class="card" id="card">
-                <div class="card_img"><img src="assets/image/card/vlookup.jpg" alt=""></div>
-                <div class="card_container">
-                    <h2><b>บทที่ 8</b></h2>
-                    <p><b>ฟังก์ชัน VLOOKUP</b></p>
-                </div>
-                <div class="button_card">
-                    <a href="unit8.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
-
-            </div>
-
-            <div class="card" id="card">
-                <div class="card_img"><img src="assets/image/card/graph.jpg" alt=""></div>
-                <div class="card_container">
-                    <h2><b>บทที่ 9</b></h2>
-                    <p><b>การสร้างกราฟ</b></p>
-
-                </div>
-                <div class="button_card">
-                    <a href="unit9.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
-            </div>
-
-        </div>
-        <div class="content1" id="content1">
-            <div class="card_extra" id="card">
-                <div class="card_img"><img style="width: 100%;" src="assets/image/card/tech.jpg" alt=""></div>
-                <div class="card_container">
-                    <h2><b>เทคนิคเพิ่มเติม</b></h2>
-                    <p></p>
-                </div>
-                <div class="button_card">
-                    <a href="tech.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
-            </div>
-
-            <div class="card_extra" id="card">
-                <div class="card_img"><img style="width: 100%;" src="assets/image/card/workshop.jpg" alt=""></div>
-                <div class="card_container">
-                    <h2><b>Workshop</b></h2>
-                    <p></p>
-                </div>
-                <div class="button_card">
-                    <a href="workshop.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                </div>
             </div>
         </div>
+        <div class="content2">
+            <div class="box"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="content2">
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+        <div class="content2">
+            <div class="box5"></div>
+            <div class="box6"></div>
+        </div>     
     </div>
 
 

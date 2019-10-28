@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <div class="head">
+    <div class="head" id="head">
         <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
-        <h1><a href="index.html">Excel Basic</a></h1>
+        <h1><a href="index.html" id="text">Excel Basic</a></h1>
     </div>
     <div class="header">
         <div class="container">
@@ -32,7 +32,6 @@
     </div>
 
     <div id="mySidebar" class="sidebar" onmouseover="setOverside(1)" onmouseout="setOverside(2)">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
         <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
         <a href="unit1.html">Interface</a>
         <a href="unit2.html">ตาราง</a>
@@ -57,80 +56,7 @@
                 allowfullscreen></iframe>
             <br><br>
 
-            <h1 id="text">ตัวดำเนินการเปรียบเทียบ</h1>
-            <p id="text">เป็นการเปรียบข้อมูลโดยจะให้ค่าสองค่าคือ เป็นจริง (TRUE) เป็นเท็จ (FALSE)
-                สามารถเปรียบเทียบเป็นข้อมูลหรืออ้างอิงก็ได้
-            </p>
-            <table style="height: 35%;">
-                <tr>
-                    <th style="width: 10%;">เครื่องหมาย</th>
-                    <th style="width: 20%;">ความหมาย</th>
-                    <th>ตัวอย่าง</th>
-                </tr>
-                <tr>
-                    <td>=</td>
-                    <td>เท่ากับ</td>
-                    <td>10 = 10, B1 = A2</td>
-                </tr>
-                <tr>
-                    <td>
-                        < </td> <td>น้อยกว่า
-                    </td>
-                    <td>4 < 30, A2 < A3</td> </tr> <tr>
-                    <td>></td>
-                    <td>มากกว่า</td>
-                    <td>30 > 10, C7 > B1</td>
-                </tr>
-                <tr>
-                    <td>
-                        <=</td> <td>น้อยกว่าเท่ากับ
-                    </td>
-                    <td>20 <= 21, C1 <=B3</td> </tr> <tr>
-                    <td>>=</td>
-                    <td>มากกว่าเท่ากับ</td>
-                    <td>14 >= 2, A5 >= B7</td>
-                </tr>
-                <tr>
-                    <td>
-                        <>
-                    </td>
-                    <td>ไม่เท่ากับ</td>
-                    <td>12 <> 13, A1 <> A7</td>
-                </tr>
-            </table>
-
-            <div class="underline" id="line"></div>
-
-            <h1 id="text">ลำดับความสำคัญ</h1>
-            <table>
-                <tr>
-                    <th>ลำดับ</th>
-                    <th>เครื่องหมาย</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>ตัวดำเนินการทางคณิตศาสตร์ (), %, ^, *, /, +, -</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>&</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>= <>
-                            <=>= <>
-                    </td>
-                </tr>
-            </table>
-
-            <br>
-            <h2 id="text">ตัวอย่าง</h2>
-            <li id="text">29 + 1 < 20 * 4==> (30) < (80)==> TRUE</li>
-            <li id="text">20 <= 30 - 10==> 20 <= (20)==> TRUE</li>
-            <li id="text">29 + 1 < 20 < 2==> (30) < 20 < 2==> FALSE </li>
-            <li id="text">29 + 1 > 20 >= 1 ==> (30) > 20 >= 1 ==> TRUE</li>
-            <li id="text">20 >= 1 <> 1 ==> TRUE </p><br><br></li>
-
+          
             <center>
                 <div class="navigator">
                     <a href="unit7.html" class="nav_button">
@@ -143,7 +69,6 @@
             </center>
         </div>
     </div>
-
 
 
 

@@ -129,7 +129,7 @@ top: 65px;
 left: 0;
 background-color: #111;
 transition: 0.5s;
-padding-top: 60px;
+padding-top: 30px;
 overflow-y: auto;
 overflow-x: hidden;
 }
@@ -267,8 +267,14 @@ color: #6fca98;
   width: 40%;
   height: 100%;
   border-radius : 5px 0px 0px 5px; 
-  background: #000;
-  
+  transition: 0.3s;
+  overflow: hidden;
+}
+img{
+  transition: 0.3s;
+}
+.card_img img:hover{
+  transform: scale(1.1);
 }
 .card_container{
   width: 60%;

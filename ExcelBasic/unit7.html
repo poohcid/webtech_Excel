@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <div class="head">
+    <div class="head" id="head">
         <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
-        <h1><a href="index.html">Excel Basic</a></h1>
+        <h1><a href="index.html" id="text">Excel Basic</a></h1>
     </div>
     <div class="header">
         <div class="container">
@@ -32,7 +32,6 @@
     </div>
 
     <div id="mySidebar" class="sidebar" onmouseover="setOverside(1)" onmouseout="setOverside(2)">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
         <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
         <a href="unit1.html">Interface</a>
         <a href="unit2.html">ตาราง</a>
@@ -56,81 +55,138 @@
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
-
-            <h1 id="text">ตัวดำเนินการเปรียบเทียบ</h1>
-            <p id="text">เป็นการเปรียบข้อมูลโดยจะให้ค่าสองค่าคือ เป็นจริง (TRUE) เป็นเท็จ (FALSE)
-                สามารถเปรียบเทียบเป็นข้อมูลหรืออ้างอิงก็ได้
-            </p>
-            <table style="height: 35%;">
-                <tr>
-                    <th style="width: 10%;">เครื่องหมาย</th>
-                    <th style="width: 20%;">ความหมาย</th>
-                    <th>ตัวอย่าง</th>
-                </tr>
-                <tr>
-                    <td>=</td>
-                    <td>เท่ากับ</td>
-                    <td>10 = 10, B1 = A2</td>
-                </tr>
-                <tr>
-                    <td>
-                        < </td> <td>น้อยกว่า
-                    </td>
-                    <td>4 < 30, A2 < A3</td> </tr> <tr>
-                    <td>></td>
-                    <td>มากกว่า</td>
-                    <td>30 > 10, C7 > B1</td>
-                </tr>
-                <tr>
-                    <td>
-                        <=</td> <td>น้อยกว่าเท่ากับ
-                    </td>
-                    <td>20 <= 21, C1 <=B3</td> </tr> <tr>
-                    <td>>=</td>
-                    <td>มากกว่าเท่ากับ</td>
-                    <td>14 >= 2, A5 >= B7</td>
-                </tr>
-                <tr>
-                    <td>
-                        <>
-                    </td>
-                    <td>ไม่เท่ากับ</td>
-                    <td>12 <> 13, A1 <> A7</td>
-                </tr>
-            </table>
-
             <div class="underline" id="line"></div>
 
-            <h1 id="text">ลำดับความสำคัญ</h1>
+            <h1 id="text">ฟังก์ชัน IF</h1>
+            <p id="text">ฟังก์ชัน IF ใช้ในการทำงานแบบมีเงื่อนไขที่ให้ค่าเป็นจริงหรือเป็นเท็จ
+                โดยสร้างเงื่อนไขจากการเปรียบเทียบจาก <br><a href="unit5.html" class="link">บทที่ 5
+                    ตัวดำเนินการเปรียบเทียบ </a>โดยมีรูปแบบดังนี้</p>
+            <br><h2 id="text">กรณี 2 เงื่อนไข</h2>
+            <p id="text">=IF(เงื่อนไข, ผลเมื่อเงื่อนไขเป็นจริง, ผลเมื่อเงื่อนไขเป็นเท็จ)</p>
+            <h2 id="text">กรณีหลายเงื่อนไข</h2>
+            <p id="text">=IF(เงื่อนไขที่1, ผลเมื่อเงื่อนไขเป็นจริง, IF(เงื่อนไขที่2,ผลเมื่อเงื่อนไขเป็นจริง,
+                ผลเมื่อเงื่อนไขเป็นเท็จ))</p>
+
+                <br><h2 id="text">ตัวอย่าง</h2>
+            <p id="text">1. ต้องการคำนวณว่าจะซื้อสินค้าหรือไม่โดยมีเงื่อนไขว่าถ้าราคาสินค้าน้อยกว่า 1000
+                บาทจะซื้อสินค้าแต่ถ้าราคามากกว่าหรือเท่ากับ 1000 บาทจะไม่ซื้อ</p>
+
+            <div class="img"><img src="assets/image/unit7/1.jpg" alt=""></div><br><br>
+            <div class="img"><img src="assets/image/unit7/2.png" alt=""></div><br><br>
+
+            <h2 id="text">ตัวอย่างผลลัพธ์</h2>
+            <div class="img"><img src="assets/image/unit7/3.png" alt=""></div><br><br>
+
+            <p id="text">2. ต้องการคำนวณส่วนลดให้ลูกค้าโดยมีเงื่อนไขว่าถ้ายอดซื้อของลูกค้ามากกว่าหรือเท่ากับ 100,000
+                บาทขึ้นไป จะได้ส่วนลด 5% แต่ถ้าต่ำกว่า 100,000 บาทจะได้ส่วนลด 1%</p>
+            <div class="img"><img src="assets/image/unit7/4.png" alt=""></div><br><br>
+
+            <h2 id="text">ตัวอย่างผลลัพธ์</h2>
+            <div class="img"><img src="assets/image/unit7/5.png" alt=""></div><br><br>
+            
+            <div class="underline" id="line"></div>
+
+            <h1 id="text">การใช้ตรรกะฟังก์ชันในฟังก์ชัน IF</h1>
+            <p id="text">หากมีหลายเงื่อนไขที่อยากจะเปรียบเทียบพร้อมกันโดยใช้ตัวเชื่อม AND OR NOT
+                สามารถใช้เป็นรูปแบบฟังก์ชันในหมวดนี้ได้</p><br>
+            
+            <h2 id="text">ฟังก์ชัน AND</h2>
             <table>
                 <tr>
-                    <th>ลำดับ</th>
-                    <th>เครื่องหมาย</th>
+                    <th>เงื่อนไขที่ 1</th>
+                    <th>เงื่อนไขที่ 2</th>
+                    <th>ผลลัพธ์</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>ตัวดำเนินการทางคณิตศาสตร์ (), %, ^, *, /, +, -</td>
+                    <td>จริง</td>
+                    <td>จริง</td>
+                    <td>จริง</td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>&</td>
+                    <td>จริง</td>
+                    <td>เท็จ</td>
+                    <td>เท็จ</td>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td>= <>
-                            <=>= <>
-                    </td>
+                    <td>เท็จ</td>
+                    <td>จริง</td>
+                    <td>เท็จ</td>
+                </tr>
+                <tr>
+                    <td>เท็จ</td>
+                    <td>เท็จ</td>
+                    <td>เท็จ</td>
                 </tr>
             </table>
 
-            <br>
+            <p id="text">ถ้าเงื่อนไขที่เชื่อมทุกอันเป็นจริง จะได้ค่าออกมาเป็นจริง</p>
+            <h2 id="text">รูปแบบ</h2>
+            <p id="text">=AND(เงื่อนไขที่ 1, เงื่อนไขที่ 2, …)</p>
             <h2 id="text">ตัวอย่าง</h2>
-            <li id="text">29 + 1 < 20 * 4==> (30) < (80)==> TRUE</li>
-            <li id="text">20 <= 30 - 10==> 20 <= (20)==> TRUE</li>
-            <li id="text">29 + 1 < 20 < 2==> (30) < 20 < 2==> FALSE </li>
-            <li id="text">29 + 1 > 20 >= 1 ==> (30) > 20 >= 1 ==> TRUE</li>
-            <li id="text">20 >= 1 <> 1 ==> TRUE </p><br><br></li>
+            <p id="text">=IF(AND(10 > 1, 12 < 20), "yes", "no") จะได้ “yes”</p>
+            <p id="text">=IF(AND(10 > 1, 12 < 20), "yes", "no") จะได้ “yes”</p>
 
+            <br><br><h2 id="text">ฟังก์ชัน OR</h2>
+            <table>
+                <tr>
+                    <th>เงื่อนไขที่ 1</th>
+                    <th>เงื่อนไขที่ 2</th>
+                    <th>ผลลัพธ์</th>
+                </tr>
+                <tr>
+                    <td>จริง</td>
+                    <td>จริง</td>
+                    <td>จริง</td>
+                </tr>
+                <tr>
+                    <td>จริง</td>
+                    <td>เท็จ</td>
+                    <td>จริง</td>
+                </tr>
+                <tr>
+                    <td>เท็จ</td>
+                    <td>จริง</td>
+                    <td>จริง</td>
+                </tr>
+                <tr>
+                    <td>เท็จ</td>
+                    <td>เท็จ</td>
+                    <td>เท็จ</td>
+                </tr>
+            </table>
+
+            <p id="text">ถ้าเงื่อนไขที่เชื่อมมีอย่างน้อย 1 เงื่อนไขเป็นจริง จะได้ค่าออกมาเป็นจริง</p>
+            <h2 id="text">รูปแบบ</h2>
+            <p id="text">=OR(เงื่อนไขที่ 1, เงื่อนไขที่ 2, …)</p>
+            <h2 id="text">ตัวอย่าง</h2>
+            <p id="text">=IF(OR(10 < 1, 12 > 20), "yes", "no") จะได้ “no”</p>
+            <p id="text">=IF(OR(10 < 1, 12 < 20), "yes", "no") จะได้ “yes”</p>
+
+            <br><br><h2 id="text">ฟังก์ชัน NOT</h2>
+            <table>
+                <tr>
+                    <th>เงื่อนไขที่ 1</th>
+                    <th>ผลลัพธ์</th>
+                </tr>
+                <tr>
+                    <td>จริง</td>
+                    <td>เท็จ</td>
+                </tr>
+                <tr>
+                    <td>เท็จ</td>
+                    <td>จริง</td>
+                </tr>
+            </table>
+
+            <p id="text">เปลี่ยนเงื่อนไข จริงเป็นเท็จ เท็จเป็นจริง</p>
+            <h2 id="text">รูปแบบ</h2>
+            <p id="text">=NOT(เงื่อนไข)</p>
+            <h2 id="text">ตัวอย่าง</h2>
+            <p id="text">=IF(NOT(10 < 1), "yes", "no") จะได้ “yes”</p>
+            <p id="text">=IF(NOT(12 < 20), "yes", "no") จะได้ “no”</p><br><br>
+       
+       
+       
             <center>
                 <div class="navigator">
                     <a href="unit6-4.html" class="nav_button">
@@ -143,8 +199,6 @@
             </center>
         </div>
     </div>
-
-
 
 
     <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'

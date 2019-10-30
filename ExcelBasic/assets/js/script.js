@@ -21,13 +21,11 @@ function openNav() {
         if(document.getElementById("mySidebar").style.width == "0px" || sidebar_status == false){
             document.getElementById("mySidebar").style.width = "250px";
             sidebar_status = true;
-            alert("1");
             console.log(sidebar_status);
         }
         else if(document.getElementById("mySidebar").style.width == "250px" || sidebar_status == true){
             document.getElementById("mySidebar").style.width = "0";
             sidebar_status = false;
-            alert("2");
             console.log(sidebar_status);
         }
     }
@@ -35,13 +33,11 @@ function openNav() {
         if(document.getElementById("mySidebar").style.width == "" || sidebar_status == false){
             document.getElementById("mySidebar").style.width = "250px";
             sidebar_status = true;
-            alert("3");
             console.log(sidebar_status);
         }
         else if(document.getElementById("mySidebar").style.width == "250px" || sidebar_status == true){
             document.getElementById("mySidebar").style.width = "0";
             sidebar_status = false;
-            alert("4");
             console.log(sidebar_status);
         }
     }

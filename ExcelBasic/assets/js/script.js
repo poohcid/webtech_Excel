@@ -1,41 +1,52 @@
 let nightmode_enable = false;
 let isOverside = 0;
 let sidebar_status = true;
-
-function start(){
-    if (window.innerWidth <= 1860){
-        isOverside = 0;
-        sidebar_status = false;
-    }
+function setOverside(a){
+    isOverside = a;
+    console.log(isOverside);
 }
 
 document.addEventListener("click", function(){
     if (isOverside == 2 && window.innerWidth <= 1860){
         document.getElementById("mySidebar").style.width = "0";
         isOverside = 0;
-        sidebar_status = false;
     }
 });
-
-function setOverside(a){
-    if (document.getElementById("mySidebar").style.width == "0"){
-        sidebar_status = false;
-    }
-
-    isOverside = a;
-}
 
 
 function openNav() {
     isOverside = 0;
-    if(document.getElementById("mySidebar").style.width == "250px" || sidebar_status == true){
-        document.getElementById("mySidebar").style.width = "0";
-        sidebar_status = false;
+
+    if(window.screen.width >= 1860){
+        if(document.getElementById("mySidebar").style.width == "0px" || sidebar_status == false){
+            document.getElementById("mySidebar").style.width = "250px";
+            sidebar_status = true;
+            alert("1");
+            console.log(sidebar_status);
+        }
+        else if(document.getElementById("mySidebar").style.width == "250px" || sidebar_status == true){
+            document.getElementById("mySidebar").style.width = "0";
+            sidebar_status = false;
+            alert("2");
+            console.log(sidebar_status);
+        }
     }
-    else{
-        document.getElementById("mySidebar").style.width = "250px";
-        sidebar_status = true;
+    else if(window.screen.width < 1860){
+        if(document.getElementById("mySidebar").style.width == "" || sidebar_status == false){
+            document.getElementById("mySidebar").style.width = "250px";
+            sidebar_status = true;
+            alert("3");
+            console.log(sidebar_status);
+        }
+        else if(document.getElementById("mySidebar").style.width == "250px" || sidebar_status == true){
+            document.getElementById("mySidebar").style.width = "0";
+            sidebar_status = false;
+            alert("4");
+            console.log(sidebar_status);
+        }
     }
+    
+    
 }
 
 
@@ -68,5 +79,3 @@ function nightmode(){
         nightmode_enable = false;
     }
 }
-
-start();

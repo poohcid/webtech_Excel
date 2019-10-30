@@ -270,6 +270,7 @@ color: #6fca98;
   border-radius : 5px 0px 0px 5px; 
   transition: 0.3s;
   overflow: hidden;
+  background: #FFF;
 }
 img{
   max-width: 100%;
@@ -395,11 +396,13 @@ padding-top: 45px;
   }
   .card_container{
     width: 80%;
-    height: 65%;
+    height: 50%;
     padding-left: 0;
   }
+  
   .card_container h1, .card_container p{
     padding: 10px;
+    
   }
   .sidebar{
     max-height: 75%;
@@ -440,6 +443,12 @@ padding-top: 45px;
   width: 85%;
   margin-left: auto; 
   margin-right: auto;
+}
+.card_container h1{
+  font-size: 25px;
+  margin-bottom: 0;
+  padding-bottom: 5;
+
 }
 .footer{
   bottom: 0;

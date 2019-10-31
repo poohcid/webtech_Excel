@@ -1,15 +1,27 @@
 let nightmode_enable = false;
 let isOverside = 0;
 let sidebar_status = true;
+
+function start(){
+    if (window.innerWidth <= 1860){
+        isOverside = 0;
+        sidebar_status = false;
+    }
+}
+
 function setOverside(a){
+    if (document.getElementById("mySidebar").style.width == "0"){
+        sidebar_status = false;
+    }
+
     isOverside = a;
-    console.log(isOverside);
 }
 
 document.addEventListener("click", function(){
     if (isOverside == 2 && window.innerWidth <= 1860){
         document.getElementById("mySidebar").style.width = "0";
         isOverside = 0;
+        sidebar_status = false;
     }
 });
 
@@ -21,24 +33,24 @@ function openNav() {
         if(document.getElementById("mySidebar").style.width == "0px" || sidebar_status == false){
             document.getElementById("mySidebar").style.width = "250px";
             sidebar_status = true;
-            console.log(sidebar_status);
+            console.log("1");
         }
         else if(document.getElementById("mySidebar").style.width == "250px" || sidebar_status == true){
             document.getElementById("mySidebar").style.width = "0";
             sidebar_status = false;
-            console.log(sidebar_status);
+            console.log("2");
         }
     }
     else if(window.screen.width < 1860){
         if(document.getElementById("mySidebar").style.width == "" || sidebar_status == false){
             document.getElementById("mySidebar").style.width = "250px";
             sidebar_status = true;
-            console.log(sidebar_status);
+            console.log("3");
         }
         else if(document.getElementById("mySidebar").style.width == "250px" || sidebar_status == true){
             document.getElementById("mySidebar").style.width = "0";
             sidebar_status = false;
-            console.log(sidebar_status);
+            console.log("4");
         }
     }
     
@@ -75,3 +87,5 @@ function nightmode(){
         nightmode_enable = false;
     }
 }
+
+start();

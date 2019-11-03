@@ -39,14 +39,13 @@ body, html{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-  border-radius: 10px;
+  background: #111; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555; 
-  border-radius: 5px;
+  background: #444; 
+  border-radius: 2px;
 
 }
 
@@ -372,6 +371,15 @@ body, html{
       padding-right: 40px;
       text-align: center;
     }
+    .content1{
+      flex-direction: column;
+    }
+    .card, .card_extra{
+      width: 300px;
+      margin-left: auto; 
+      margin-right: auto;
+    }
+
   }
 
 @media screen and (max-height: 830px) {
@@ -382,9 +390,7 @@ body, html{
 
 
 @media screen and (max-width: 490px) {
-  .content1{
-    flex-direction: column;
-  }
+  
   .card, .card_extra{
     width: 85%;
     margin-left: auto; 

@@ -46,25 +46,26 @@ iframe{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #AAA; 
-  border-radius: 10px;
+  background: #111; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555; 
+  background: #444; 
   border-radius: 2px;
 
 }
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #222; 
 }
+
 
 
 /* ส่วน Header ของเว็บ */

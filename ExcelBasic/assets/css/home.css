@@ -81,8 +81,7 @@ z-index: 1;
 text-decoration: none;
 color: #000;
 transition: 0.3s;
-border-bottom: 2px solid transparent;
-padding-bottom: 15px;
+border-bottom: 3px solid transparent;
 cursor: pointer;
 }
 .head button{
@@ -98,8 +97,7 @@ color: #000;
 font-style: italic;
 }
 .head h1 a:hover{
-border-bottom: 2px solid #000;
-padding-bottom: 0px;
+border-bottom: 3px solid #000;
 }
 
 .head2{
@@ -197,8 +195,8 @@ background-color: rgb(219, 120, 54);
 #member{
 color: #227547;
 transition: 0.3s;
+margin-bottom: 120px;
 }
-
 #member:hover{
 color: #6fca98;
 }
@@ -418,7 +416,7 @@ padding-top: 45px;
     
   }
   .sidebar{
-    max-height: 75%;
+
     width: 0px;
     overflow: auto;
   }
@@ -439,12 +437,6 @@ padding-top: 45px;
     padding-right: 40px;
     text-align: center;
   }
-}
-
-@media screen and (max-height: 830px) {
-.sidebar{
-  height: 90%;
-}
 }
 
 

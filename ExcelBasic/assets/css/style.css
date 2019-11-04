@@ -80,8 +80,7 @@ body, html{
   text-decoration: none;
   color: #000;
   transition: 0.3s;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 15px;
+  border-bottom: 3px solid transparent;
   cursor: pointer;
 }
 .head button{
@@ -97,8 +96,7 @@ body, html{
   font-style: italic;
 }
 .head h1 a:hover{
-  border-bottom: 2px solid #000;
-  padding-bottom: 0px;
+  border-bottom: 3px solid #000;
 }
 
 .head2{
@@ -196,6 +194,7 @@ body, html{
 #member{
   color: #227547;
   transition: 0.3s;
+  margin-bottom: 120px;
 }
 
 #member:hover{
@@ -350,7 +349,6 @@ body, html{
       font-size: 17px;
     }
     .sidebar{
-      max-height: 75%;
       width: 0px;
       overflow: auto;
     }
@@ -381,12 +379,6 @@ body, html{
     }
 
   }
-
-@media screen and (max-height: 830px) {
-  .sidebar{
-    height: 90%;
-  }
-}
 
 
 @media screen and (max-width: 490px) {

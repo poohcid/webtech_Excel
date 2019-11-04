@@ -39,14 +39,13 @@ body, html{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-  border-radius: 10px;
+  background: #111; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555; 
-  border-radius: 5px;
+  background: #444; 
+  border-radius: 2px;
 
 }
 
@@ -81,8 +80,7 @@ body, html{
   text-decoration: none;
   color: #000;
   transition: 0.3s;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 15px;
+  border-bottom: 3px solid transparent;
   cursor: pointer;
 }
 .head button{
@@ -98,8 +96,7 @@ body, html{
   font-style: italic;
 }
 .head h1 a:hover{
-  border-bottom: 2px solid #000;
-  padding-bottom: 0px;
+  border-bottom: 3px solid #000;
 }
 
 .head2{
@@ -197,6 +194,7 @@ body, html{
 #member{
   color: #227547;
   transition: 0.3s;
+  margin-bottom: 120px;
 }
 
 #member:hover{
@@ -351,7 +349,6 @@ body, html{
       font-size: 17px;
     }
     .sidebar{
-      max-height: 75%;
       width: 0px;
       overflow: auto;
     }
@@ -372,19 +369,20 @@ body, html{
       padding-right: 40px;
       text-align: center;
     }
-  }
+    .content1{
+      flex-direction: column;
+    }
+    .card, .card_extra{
+      width: 300px;
+      margin-left: auto; 
+      margin-right: auto;
+    }
 
-@media screen and (max-height: 830px) {
-  .sidebar{
-    height: 90%;
   }
-}
 
 
 @media screen and (max-width: 490px) {
-  .content1{
-    flex-direction: column;
-  }
+  
   .card, .card_extra{
     width: 85%;
     margin-left: auto; 

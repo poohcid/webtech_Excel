@@ -23,6 +23,8 @@ document.addEventListener("click", function(){
         isOverside = 0;
         sidebar_status = false;
     }
+    let btotop = document.getElementsByClassName('bottom_to_top')[0];
+    btotop.style = "display: none;";
 });
 
 document.addEventListener('scroll', function(){

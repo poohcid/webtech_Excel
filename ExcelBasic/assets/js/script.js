@@ -30,7 +30,7 @@ document.addEventListener("click", function(){
 document.addEventListener('scroll', function(){
     let btotop = document.getElementsByClassName('bottom_to_top')[0];
     if (window.scrollY == 0){
-        btotop.style = "display: none;";
+        btotop.style = "width: 0px; height: 0px; border: none; background: transparent";
     }
     else{
         btotop.style = "display: inline-block;"

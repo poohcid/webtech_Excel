@@ -25,6 +25,16 @@ document.addEventListener("click", function(){
     }
 });
 
+document.addEventListener('scroll', function(){
+    let btotop = document.getElementsByClassName('bottom_to_top')[0];
+    if (window.scrollY == 0){
+        btotop.style = "display: none;";
+    }
+    else{
+        btotop.style = "display: inline-block;"
+    }
+});
+
 
 function openNav() {
     isOverside = 0;

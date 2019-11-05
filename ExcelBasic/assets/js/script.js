@@ -7,6 +7,8 @@ function start(){
         isOverside = 0;
         sidebar_status = false;
     }
+    let btotop = document.getElementsByClassName('bottom_to_top')[0];
+    btotop.style = "display: none;";
 }
 
 function setOverside(a){
@@ -23,14 +25,12 @@ document.addEventListener("click", function(){
         isOverside = 0;
         sidebar_status = false;
     }
-    let btotop = document.getElementsByClassName('bottom_to_top')[0];
-    btotop.style = "display: none;";
 });
 
 document.addEventListener('scroll', function(){
     let btotop = document.getElementsByClassName('bottom_to_top')[0];
     if (window.scrollY == 0){
-        btotop.style = "width: 0px; height: 0px; border: none; background: transparent";
+        btotop.style = "width: 0px; height: 0px; border: none; background: transparent;";
     }
     else{
         btotop.style = "display: inline-block;"

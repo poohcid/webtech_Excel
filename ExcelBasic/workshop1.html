@@ -21,9 +21,10 @@
     <div class="header">
         <div class="container">
             <div class="head2">
-                <h1 style="font-size: 60px;">Workshop</h1>
-                <a href="tech.html"><button class="head_button">บทก่อนหน้า</button></a>
+                <h1 style="font-size: 60px;">โปรแกรมคำนวนโบนัสให้พนักงาน</h1>
+                <a href="workshop.html"><button class="head_button">บทก่อนหน้า</button></a>
                 <a href="content.html"><button class="head_button">หน้าหลัก</button></a>
+                <a href="workshop2.html" class="btn3"><button class="head_button">บทถัดไป</button></a>
             </div>
         </div>
     </div>
@@ -48,57 +49,30 @@
 
     <div class="container">
         <div class="content1" id="text">
-            <br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/pJmD_IF7SUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br><br><div class="underline" id="line"></div>
+            <br><br><h1>โปรแกรมคำนวนโบนัสให้พนักงาน</h1><br>
 
-            <div class="flex_container">
-                <div class="card" id="card">
-                    <div class="card_img"><img src="assets/image/card/workshop.jpg" alt=""></div>
-                    <div class="card_container" style="text-align: center;">
-                        <h1><b>โปรแกรมคำนวนโบนัสให้พนักงาน</b></h1>
-                    </div>
-                    <div class="button_card">
-                        <a href="workshop1.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                    </div>
-                </div>
-    
-                <div class="card" id="card">
-                    <div class="card_img"><img src="assets/image/card/workshop.jpg" alt=""></div>
-                    <div class="card_container" style="text-align: center;">
-                        <h1><b>คำนวนโปรโมชัน</b></h1>
-                    </div>
-                    <div class="button_card">
-                        <a href="unit6-2.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                    </div>
-    
-                </div>
-            </div>
-            <div class="flex_container">
-                <div class="card" id="card">
-                    <div class="card_img"><img src="assets/image/card/workshop.jpg" alt=""></div>
-                    <div class="card_container" style="text-align: center;">
-                        <h1><b>ทำใบส่งสินค้าใบกำกับภาษี</b></h1>
-                    </div>
-                    <div class="button_card">
-                        <a href="unit6-3.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                    </div>
-    
-                </div>
-                <div class="card" id="card">
-                    <div class="card_img"><img src="assets/image/card/workshop.jpg" alt=""></div>
-                    <div class="card_container" style="text-align: center;">
-                        <h1><b>โปรแกรมตัดเกรด</b></h1>
-                    </div>
-                    <div class="button_card">
-                        <a href="unit6-4.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                    </div>
-                </div>
-            </div>
+            <h2>ฟังก์ชันที่เกี่ยวข้อง</h2>
+            <li>VLOOKUP ค้นหาข้อมูลในแนวคอลัมน์</li>
+            <li>IF ตรวจสอบเงื่อนไขว่าเป็นจริงหรือเท็จ</li><br>
 
+            <h2>ขั้นตอน</h2>
+            <p>1. สร้างเกณฑ์พิจารณาของการตัดเกรดตามตัวอย่าง</p>
+            <p>2. สร้างตารางและกรอกข้อมูลดังรูป ซึ่งในที่นี้จะกรอกคะแนนประเมินและเงินเดือนปัจจุบัน</p>
+            <div class="img"><img src="assets/image/workshop/b1.png" alt=""></div><br>
+            <p>3. คลิกเม้าส์ที่เซล E9 เพื่อเริ่มใส่สูตรตัดเกรด</p><br>
+            <p>4. พิมพ์สูตร <b>=IF(C9>=80,"A",IF(C9>=70,"B",IF(C9>=60,"C",IF(C9>=50,"D"))))</b></p>
+            <div class="img"><img src="assets/image/workshop/b2.png" alt=""></div><br><br>
+            <p>5. กดปุ่ม Enter ที่คีย์บอร์ดจะได้เกรดพนักงานออกมา แล้วคัดลอดสูตรมาด้านล่างจะได้เกรดพนักงานคนอื่น ๆ</p>
+            <p>6. คลิกที่เซล F9 แล้วพิมพ์สูตร<b> =VLOOKUP(E9,$D$3:$E$6,2,0)*G9 </b>แล้วกด<b> Enter </b>แล้วคัดลอกสูตรลงมาด้านล่าง จะได้โบนัสของพนักงานทุกคน</p>
+            <p>7.	คำนวณยอดสุทธิ โดยคลิกที่เซล H9 แล้วพิมพ์สูตร =F9+G9 กดปุ่ม Enter แล้วคัดลอกสูตรลงมาจะได้ยอดเงินเดือนรวมกับเงินโบนัส</p>
+            <div class="img"><img src="assets/image/workshop/b3.png" alt=""></div><br><br><br><br>
             <center>
                 <div class="navigator">
-                    <a href="tech.html" class="nav_button">
+                    <a href="workshop.html" class="nav_button">
                         <p>เนื้อหาก่อนหน้า</p>
+                    </a>
+                    <a href="workshop2.html" class="nav_button">
+                        <p>เนื้อหาถัดไป</p>
                     </a>
                 </div>
             </center>
@@ -116,5 +90,4 @@
     </div>
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>

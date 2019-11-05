@@ -66,6 +66,7 @@ min-height: 53%;
 margin: 0;
 background-image:url("../image/back5.png");
 background-attachment: fixed;
+
 }
 .head{
 width: 100%;
@@ -99,6 +100,7 @@ font-style: italic;
 .head h1 a:hover{
 border-bottom: 3px solid #000;
 }
+
 
 .head2{
 width: 100%;

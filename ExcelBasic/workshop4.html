@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/unit.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/image/white_excel.ico" />
+    <title>Excel Basic</title>
+</head>
+
+<body>
+    <div class="head" id="head">
+        <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
+        <h1><a href="index.html" id="text">Excel Basic</a></h1>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="head2">
+                <h1 style="font-size: 60px;">โปรแกรมตัดเกรด</h1>
+                <a href="workshop3.html"><button class="head_button">บทก่อนหน้า</button></a>
+                <a href="content.html"><button class="head_button">หน้าหลัก</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar" onmouseover="setOverside(1)" onmouseout="setOverside(2)">
+        <h1 style="color:white; margin-left: 15px;">เนื้อหา</h1>
+        <a href="unit1.html">Interface</a>
+        <a href="unit2.html">ตาราง</a>
+        <a href="unit3.html">การจัดการตาราง</a>
+        <a href="unit4.html">การดำเนินการทางคณิตศาสตร์</a>
+        <a href="unit5.html">ตัวดำเนินการเปรียบเทียบ</a>
+        <a href="unit6.html">ฟังก์ชัน</a>
+        <a href="unit7.html">ฟังก์ชัน IF</a>
+        <a href="unit8.html">ฟังก์ชัน VLOOKUP</a>
+        <a href="unit9.html">การสร้างกราฟ</a>
+        <a href="tech.html">เทคนิคเพิ่มเติม</a>
+        <a href="workshop.html">Workshop</a>
+        <p style="border-top: 4px solid rgb(165, 165, 165);"></p>
+        <a onclick="nightmode()"><i class='fas fa-adjust' style='font-size:25px'></i> โหมดกลางคืน</a>
+        <a href="member.html" id="member"><i class='fas fa-user' style='font-size:25px'></i> สมาชิกกลุ่ม</a>
+    </div>
+
+    <div class="container">
+        <div class="content1" id="text">
+            <br><br><h1>โปรแกรมตัดเกรด</h1>
+            <p>เป็นการสร้างโปรแกรมที่ให้ผู้ใช้ใส่ชื่อนักเรียนและคะแนนลงไปจากนั้นก็จะปรากฎเกรดออกมา โดยใช้ฟังก์ชัน VLOOKUP ที่เป็นการค้นหาแบบประมาณให้เป็นประโยชน์</p><br>
+            <h2>ฟังก์ชันที่เกี่ยวข้อง</h2>
+            <li>VLOOKUP ค้นหาข้อมูลในแนวคอลัมน์</li><br>
+
+            <h2>ขั้นตอน</h2>
+            <p>1.	สร้างตารางที่เป็นตัวกำหนดเกณฑ์พิจารณาที่เป็นลักษณะไล่จากคะแนนน้อยไปหาคะแนนมากเพื่อฟังก์ชัน VLOOKUP จะทำงานได้ และตารางที่จะให้กรอกชื่อและคะแนน</p>
+            <div class="img"><img src="assets/image/workshop/a1.png" alt=""></div><br><br><br>
+            <p>2.	เลือก cell ในคอลั่มเกรด จากนั้นให้ทำการพิมพ์สูตรลงไปว่า<b> 
+                =VLOOKUP(D14, $C$3:$D$10, 2, 1) </b>โดยอาร์กิวเมนต์แรกให้ใส่ค่าที่จะค้นหาเป็นคะแนนที่เป็นการอ้างอิงแบบสัมพัทธ์, ตารางเกณฑ์ตัดเกรดที่เป็นการอ้างอิงแบบสัมบูรณ์ทั้งแถวและคอลั่ม, ให้แสดงผลที่คอลั่มที่ 2 และสุดท้ายเป็นรูปแบบค้นหาแบบประมาณ
+                </p>
+            <div class="img"><img src="assets/image/workshop/a2.png" alt=""></div><br><br><br>
+            <p>3.	กด Enter จะเห็นว่าจะได้เกรด F เพราะเรายังไม่ได้ใส่ค่าอะไรลงไปในคอลั่มคะแนน แต่ตอนนี้ให้เราทำการคัดลอกสูตรก่อนในคอลั่มเกรดก่อน</p>
+            <div class="img"><img src="assets/image/workshop/a3.png" alt=""></div><br><br><br>
+            <p>4.	คัดลอกเสร็จเราก็จะได้โปรแกรมตัดเกรดแล้ว เราก็สามารถใส่ชื่อและคะแนนลงไปได้เลย คอลั่มเกรดก็จะแปลงผลลัพธ์ตามฟังก์ชัน VLOOKUP แบบประมาณค่า</p>
+            <div class="img"><img src="assets/image/workshop/a4.png" alt=""></div><br><br><br><br><br>
+
+            <center>
+                <div class="navigator">
+                    <a href="workshop2.html" class="nav_button">
+                        <p>เนื้อหาก่อนหน้า</p>
+                    </a>
+                </div>
+            </center>
+        </div>
+    </div>
+    <button class="bottom_to_top"><a href="#"><i class='fas fa-angle-up'
+                style='font-size: 60px; color: white;'></i></a></button>
+    <div class="footer">
+        <div class="container">
+            <div class="infooter">
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                        style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

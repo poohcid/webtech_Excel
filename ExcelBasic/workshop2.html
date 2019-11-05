@@ -21,9 +21,10 @@
     <div class="header">
         <div class="container">
             <div class="head2">
-                <h1 style="font-size: 60px;">Workshop</h1>
-                <a href="tech.html"><button class="head_button">บทก่อนหน้า</button></a>
+                <h1 style="font-size: 60px;">โปรแกรมคำนวนราคาสินค้าโปรโมชัน</h1>
+                <a href="workshop1.html"><button class="head_button">บทก่อนหน้า</button></a>
                 <a href="content.html"><button class="head_button">หน้าหลัก</button></a>
+                <a href="workshop3.html" class="btn3"><button class="head_button">บทถัดไป</button></a>
             </div>
         </div>
     </div>
@@ -48,57 +49,30 @@
 
     <div class="container">
         <div class="content1" id="text">
-            <br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/pJmD_IF7SUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br><br><div class="underline" id="line"></div>
+            <br><br><h1>โปรแกรมคำนวนราคาสินค้าโปรโมชัน</h1>
+            <p>เป็นโปรแกรมที่ใส่ชื่อสินค้าและจำนวนลงไปก็จะออกราคารวมและราคาสุทธิที่ผ่านการลดราคามาแล้วจากตารางที่เรากำหนด</p><br>
+            <h2>ฟังก์ชันที่เกี่ยวข้อง</h2>
+            <li>VLOOKUP ค้นหาข้อมูลในแนวคอลัมน์</li>
+            <li>QUOTIENT หารแลขแบบทิ้งเศษ</li><br>
 
-            <div class="flex_container">
-                <div class="card" id="card">
-                    <div class="card_img"><img src="assets/image/card/workshop.jpg" alt=""></div>
-                    <div class="card_container" style="text-align: center;">
-                        <h1><b>โปรแกรมคำนวนโบนัสให้พนักงาน</b></h1>
-                    </div>
-                    <div class="button_card">
-                        <a href="workshop1.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                    </div>
-                </div>
-    
-                <div class="card" id="card">
-                    <div class="card_img"><img src="assets/image/card/workshop.jpg" alt=""></div>
-                    <div class="card_container" style="text-align: center;">
-                        <h1><b>คำนวนโปรโมชัน</b></h1>
-                    </div>
-                    <div class="button_card">
-                        <a href="unit6-2.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                    </div>
-    
-                </div>
-            </div>
-            <div class="flex_container">
-                <div class="card" id="card">
-                    <div class="card_img"><img src="assets/image/card/workshop.jpg" alt=""></div>
-                    <div class="card_container" style="text-align: center;">
-                        <h1><b>ทำใบส่งสินค้าใบกำกับภาษี</b></h1>
-                    </div>
-                    <div class="button_card">
-                        <a href="unit6-3.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                    </div>
-    
-                </div>
-                <div class="card" id="card">
-                    <div class="card_img"><img src="assets/image/card/workshop.jpg" alt=""></div>
-                    <div class="card_container" style="text-align: center;">
-                        <h1><b>โปรแกรมตัดเกรด</b></h1>
-                    </div>
-                    <div class="button_card">
-                        <a href="unit6-4.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
-                    </div>
-                </div>
-            </div>
-
+            <h2>ขั้นตอน</h2>
+            <p>1.	สร้างตารางที่กำหนดราคาสินค้าและโปรโมชันพร้อมระบุราคาลดราคา แล้วสร้างตารางแบบฟอร์มที่ไว้กรอกชื่อสินค้าและจำนวนสินค้า</p>
+            <div class="img"><img src="assets/image/workshop/d1.png" alt=""></div><br><br><br>
+            <p>2.	ในคอลั่มราคารวมให้สร้างสูตรดังนี้<b> =VLOOKUP(B10, $B$1:$C$6, 2, 0)*C10 </b>เป็นสูตรค้นหาราคาสินค้าและคูณจำนวนเข้าไป</p>
+            <div class="img"><img src="assets/image/workshop/d2.png" alt=""></div><br><br><br>
+            <p>3.	ในคอลั่มราคาสุทธิให้สร้างสูตรดังนี้<b> =D10-(VLOOKUP(B10, $B$2:$E$6, 4, 0)*QUOTIENT(C10, VLOOKUP(B10, $B$2:$E$6, 3, 0))) </b>เป็นสูตรที่หักราคาตามจำนวนโปรโมชัน</p>
+            <div class="img"><img src="assets/image/workshop/d3.png" alt=""></div><br><br><br>
+            <p>4.	คัดลอกสูตรให้ครบทั้งคอลั่ม</p>
+            <div class="img"><img src="assets/image/workshop/d4.png" alt=""></div><br><br><br>
+            <p>5.	เมื่อเราใส่ชื่อสินค้าและจำนวนลงไป ช่องราคารวมและราคาสุทธิก็จะปรากฎออกมาตามที่เรากำหนดไว้</p>
+            <div class="img"><img src="assets/image/workshop/d5.png" alt=""></div><br><br><br><br><br>
             <center>
                 <div class="navigator">
-                    <a href="tech.html" class="nav_button">
+                    <a href="workshop1.html" class="nav_button">
                         <p>เนื้อหาก่อนหน้า</p>
+                    </a>
+                    <a href="workshop3.html" class="nav_button">
+                        <p>เนื้อหาถัดไป</p>
                     </a>
                 </div>
             </center>
@@ -116,5 +90,4 @@
     </div>
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>

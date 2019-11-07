@@ -1,14 +1,16 @@
 let nightmode_enable = false;
 let isOverside = 0;
 let sidebar_status = true;
+let btotop = document.getElementsByClassName('bottom_to_top')[0];
+if (window.scrollY == 0){
+    btotop.style = "opacity: 0; width: 0; height: 0;";
+}
 
 function start(){
     if (window.innerWidth <= 1860){
         isOverside = 0;
         sidebar_status = false;
     }
-    let btotop = document.getElementsByClassName('bottom_to_top')[0];
-    btotop.style = "display: none;";
 }
 
 function setOverside(a){
@@ -30,10 +32,10 @@ document.addEventListener("click", function(){
 document.addEventListener('scroll', function(){
     let btotop = document.getElementsByClassName('bottom_to_top')[0];
     if (window.scrollY == 0){
-        btotop.style = "width: 0px; height: 0px; border: none; background: transparent;";
+        btotop.style = "opacity: 0; width: 0; height: 0;";
     }
     else{
-        btotop.style = "display: inline-block;"
+        btotop.style = "width: 65px; height: 65px;"
     }
 });
 

@@ -39,6 +39,25 @@ document.addEventListener('scroll', function(){
     }
 });
 
+document.addEventListener('scroll', function(){
+    let flex2 = document.getElementsByClassName('flex_container')[1];
+    let flex3 = document.getElementsByClassName('flex_container')[2];
+
+    if (window.scrollY >= 450){
+        flex2.style = "opacity: 1; transition: 0.5s";
+    }
+    else{
+        flex2.style = "opacity: 0; transition: 0.5s"
+    }
+
+    if (window.scrollY >= 940){
+        flex3.style = "opacity: 1; transition: 0.5s";
+    }
+    else{
+        flex3.style = "opacity: 0; transition: 0.5s"
+    }
+});
+
 
 function openNav() {
     isOverside = 0;

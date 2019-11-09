@@ -9,7 +9,7 @@ body, html{
 
 }
 .container{
-  max-width: 1100px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 .head_button{
@@ -108,7 +108,7 @@ height: auto;
 text-align: center;
 color: white;
 padding-top: 12%;
-margin-top: 6%;
+margin-top: 5%;
 }
 .head2 p{
 font-size: 22px;
@@ -123,7 +123,7 @@ font-family: 'Prompt', sans-serif;
 /* ส่วนของ SideBar */
 .sidebar {
 height: 100%;
-width: 250px;
+width: 0px;
 position: fixed;
 z-index: 1;
 top: 65px;
@@ -205,134 +205,119 @@ color: #6fca98;
 
 
 /* ส่วนเนื้อหาของเว็บ */
+.flex_container{
+  display: flex;
+  width: 100%;
+  height: 25vw;
+  background: #222;
+}
+
+.image{
+  width: 40%;
+  height: auto;
+  position: relative;
+
+}
+.image img{
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.text_container{
+  width: 40%;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  font-size: 1vw;
+}
+
+
+.flex_container:nth-last-of-type(4){
+  background: transparent;
+  flex-direction: row-reverse;
+}
+
+.flex_container:nth-last-of-type(4) .text_container{
+  color: #000;
+  margin-right: 75px;
+}
+
 
 .content1{
   max-width: 100%;
-  height: 270px;
   margin-bottom: 5%; 
   border-radius :20px;
   display: flex;
-  align-items: center;
-  border-radius: 50px;
-  margin-top: 50px;
-
+  justify-content: center;
 }
 
+.card {
+  transition: 0.3s;
+  width: 30%;
+  height: 500px;
+  background: white;
+  border-radius : 5px; 
+  float: left;
+  margin-left: 1.5%; 
+  margin-right: 1.5%;
+  margin-top: 0%;
+  margin-bottom: 4%;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
 .card_img{
-  width: 40%;
-  height: 100%;
-  border-radius : 5px 0px 0px 5px; 
-  transition: 0.3s;
-  overflow: hidden;
-  background: #FFF;
+width:100%;
+height:50%;
+background: #227547;
+overflow: hidden;
+
 }
-img{
-  max-width: 100%;
-  transition: 0.3s;
+.card_img img{
+width:100%;
+height: 100%;
+background: #227547;
+transition: 0.3s;
 }
 .card_img img:hover{
-  transform: scale(1.1);
-}
-.card_container{
-  width: 60%;
-  height: 100%;
-  background: #093c28;
-  border-radius: 5px;
-  border-radius : 0px 5px 5px 0px; 
-  color: #FFF;
-  
-}
-.card_container p, .card_container h1{
-  padding-left: 20px;
-  overflow: hidden;
-  margin-top: 0;
-  
-}
-.card_container h1{
-  padding-top: 20px;
-  margin-bottom: 5px;
-}
-.card_content{
-  width: 100%;
-  height: 75%;
-  overflow: hidden;
+transform: scale(1.1);
 }
 .card_button{
-  width: 100%;
-  height: 25%;
-  background: white;
-  border: 1px solid #111;
-  border-radius : 0px 0px 5px 5px; 
-  font-family: 'Prompt', sans-serif;
-  text-align: center;
-  transition: 0.3s;
-  font-size: 17px;
-  bottom: 0;
-  cursor: pointer;
+width: 100%;
+height: 101.5%;
+background: white;
+border: 1px solid #111;
+border-radius : 0px 0px 5px 5px; 
+font-family: 'Prompt', sans-serif;
+transition: 0.3s;
+font-size: 17px;
+bottom: 0;
+cursor: pointer;
 }
 .card_button a{
-  width: 1000%;
-  text-decoration: none;
-
-  
-  color: #000;
+width: 100%;
+text-decoration: none;
+color: #000;
 }
 .card_button:hover{
-  background: #111;
-  color: white;
+background: #111;
+color: white;
 }
-
-
-
-.content2{
-  max-width: 100%;
-  height: 30%;
-  border-radius :20px;
-  display: flex;
-  align-items: center;
-  border-radius: 50px;
+.card p{
+font-size: 18px;
+margin: 0;
 }
-.content2:last-child{
-  margin-bottom: 70px;
+.button_card{
+width: 100%;
+height:14%;
 }
-
-
-
-
-.box{
-  border-top-left-radius: 10px;
-  width: 50%;
-  height: 100%;
-  background: #21a366;
-}
-.box2{
-  border-top-right-radius: 10px;
-  width: 50%;
-  height:100%;
-  background: #33c481;
-}
-.box3{
-  width: 50%;
-  height:100%;
-  background: #107c41;
-}
-.box4{
-  width: 50%;
-  height:100%;
-  background: #21a366;
-}
-.box5{
-  width: 50%;
-  height:100%;
-  background: #185c37;
-  border-bottom-left-radius: 10px;
-}
-.box6{
-  width: 50%;
-  height:100%;
-  background: #107c41;
-  border-bottom-right-radius: 10px;
+.card_container {
+  padding: 2px 16px;
+  color: black;
+  border-radius : 20px; 
+  height: 35%;
 }
 
 
@@ -387,38 +372,27 @@ padding-top: 45px;
 /* ส่วนขอการปรับหน้าจอ */
 
 @media screen and (max-width: 960px) {
-  .content1{
+  .flex_container{
     flex-direction: column;
-    width: 425px;
-    margin: 50px auto 0 auto;
-    height: 100%;
+    height: 450px;
   }
-  .card_img{
+  .image{
     width: 100%;
-    height: 250px;
-    border-radius: 5px;
+    height: 300px;
   }
-  .card_img img{
-    max-width: 100%;
-  }
-  .card_container{
+  .flex_container .text_container{
+    margin: 0 auto;
+    font-size: 12px;
     width: 100%;
-    height:400px;
-    padding-left: 0;
   }
-  .card_button{
-    height: 25%;
+  .flex_container:nth-last-of-type(4){
+    flex-direction: column;
+    height: 450px;
   }
-  .card_content{
-    height: 75%;
-  }
-  
-  .card_container h1, .card_container p{
-    padding: 10px;
-    
+  .flex_container:nth-last-of-type(4) .image{
+    height: 200px;
   }
   .sidebar{
-
     width: 0px;
     overflow: auto;
   }
@@ -439,30 +413,18 @@ padding-top: 45px;
     padding-right: 40px;
     text-align: center;
   }
+  .content1{
+    flex-direction: column;
+  }
+  .card, .card_extra{
+    width: 300px;
+    margin-left: auto; 
+    margin-right: auto;
+  }
 }
 
 
 @media screen and (max-width: 490px) {
-.content1{
-  flex-direction: column;
-  width: 300px;
-}
-.card, .card_extra{
-  width: 85%;
-  margin-left: auto; 
-  margin-right: auto;
-}
-.card_container h1{
-  font-size: 25px;
-  margin-bottom: 0;
-  padding-bottom: 5;
-}
-.card_img{
-  height: 190px;
-}
-.card_container{
-  height:300px;
-}
 .footer{
   bottom: 0;
 }

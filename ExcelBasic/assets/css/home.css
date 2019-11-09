@@ -244,6 +244,25 @@ color: #6fca98;
   margin-right: 75px;
 }
 
+.all_content button{
+  width: 45%;
+  height: 75px;
+  background: #ffef91;
+  color: #000;
+  font-family: 'Prompt', sans-serif;
+  font-size: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.all_content button:hover{
+  background: #000;
+  color:#ffef91;
+}
+
 
 .content1{
   max-width: 100%;

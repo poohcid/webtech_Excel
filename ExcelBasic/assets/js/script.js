@@ -1,7 +1,10 @@
 let nightmode_enable = false;
 let isOverside = 0;
 let sidebar_status = true;
+let isFlexSlide = 0;
 let btotop = document.getElementsByClassName('bottom_to_top')[0];
+let flex2 = document.getElementsByClassName('flex_container')[1];
+flex2.style = "opacity: 0; transition: 0.5s";
 if (window.scrollY == 0){
     btotop.style = "opacity: 0; width: 0; height: 0;";
 }
@@ -29,7 +32,31 @@ document.addEventListener("click", function(){
     }
 });
 
-document.addEventListener('scroll', function(){
+function flexSlide(){
+    let flex2 = document.getElementsByClassName('flex_container')[1];
+    let flex3 = document.getElementsByClassName('flex_container')[2];
+
+    if (isFlexSlide >= 1){
+        return
+    }
+
+    if (window.scrollY >= 350){
+        flex2.style = "opacity: 1; transition: 0.5s";
+    }
+    else{
+        flex2.style = "opacity: 0; transition: 0.5s";
+    }
+
+    if (window.scrollY >= 726){
+        flex3.style = "opacity: 1; transition: 0.5s";
+        isFlexSlide = true;
+    }
+    else{
+        flex3.style = "opacity: 0; transition: 0.5s"
+    }
+}
+
+function hideButtonTop(){
     let btotop = document.getElementsByClassName('bottom_to_top')[0];
     if (window.scrollY == 0){
         btotop.style = "opacity: 0; width: 0; height: 0;";
@@ -37,25 +64,33 @@ document.addEventListener('scroll', function(){
     else{
         btotop.style = "width: 65px; height: 65px;"
     }
-});
+}
+
+function changeCardScale(){
+    card1 = document.getElementsByClassName("content1")[0];
+    card2 = document.getElementsByClassName("content1")[1];
+    if (isFlexSlide >= 2){
+        return
+    }
+    if (window.scrollY >= 1463){
+        card1.style = "transform: scale(1); transition: 0.5s;";
+    }
+    else{
+        card1.style = "transform: scale(0); transition: 0.5s;";
+    }
+    if (window.scrollY >= 1850){
+        card2.style = "transform: scale(1); transition: 0.5s;";
+        isFlexSlide = 2;
+    }
+    else{
+        card2.style = "transform: scale(0); transition: 0.5s;";
+    }
+}
 
 document.addEventListener('scroll', function(){
-    let flex2 = document.getElementsByClassName('flex_container')[1];
-    let flex3 = document.getElementsByClassName('flex_container')[2];
-
-    if (window.scrollY >= 450){
-        flex2.style = "opacity: 1; transition: 0.5s";
-    }
-    else{
-        flex2.style = "opacity: 0; transition: 0.5s"
-    }
-
-    if (window.scrollY >= 940){
-        flex3.style = "opacity: 1; transition: 0.5s";
-    }
-    else{
-        flex3.style = "opacity: 0; transition: 0.5s"
-    }
+    flexSlide();
+    hideButtonTop();
+    changeCardScale();
 });
 
 

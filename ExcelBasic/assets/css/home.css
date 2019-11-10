@@ -211,7 +211,6 @@ color: #6fca98;
   height: 25vw;
   background: #222;
 }
-
 .image{
   width: 40%;
   height: auto;
@@ -224,6 +223,9 @@ color: #6fca98;
   position: absolute;
   left: 0;
   bottom: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
 }
 .text_container{
   width: 40%;
@@ -232,11 +234,17 @@ color: #6fca98;
   align-items: center;
   font-size: 1vw;
 }
+.text_container .text p{
+  font-size: 1.15vw;
+}
 
 
 .flex_container:nth-last-of-type(4){
   background: transparent;
   flex-direction: row-reverse;
+}
+.flex_container:nth-last-of-type(4) .image img{
+  margin-bottom: 0;
 }
 
 .flex_container:nth-last-of-type(4) .text_container{
@@ -292,6 +300,7 @@ width:100%;
 height:50%;
 background: #227547;
 overflow: hidden;
+
 
 }
 .card_img img{
@@ -393,23 +402,23 @@ padding-top: 45px;
 @media screen and (max-width: 960px) {
   .flex_container{
     flex-direction: column;
-    height: 450px;
+    height: 550px;
   }
   .image{
     width: 100%;
     height: 300px;
   }
-  .flex_container .text_container{
+  .flex_container .text_container, .text_container .text p{
     margin: 0 auto;
-    font-size: 12px;
+    font-size: 17px;
     width: 100%;
   }
   .flex_container:nth-last-of-type(4){
     flex-direction: column;
-    height: 450px;
+    height: 550px;
   }
   .flex_container:nth-last-of-type(4) .image{
-    height: 200px;
+    height: 400px;
   }
   .sidebar{
     width: 0px;

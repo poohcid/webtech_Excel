@@ -14,6 +14,9 @@ function start(){
         isOverside = 0;
         sidebar_status = false;
     }
+    nightmode_enable = (Cookies.get('nightMode') == 'true');
+    console.log(typeof nightmode_enable);
+    nightModeStart();
 }
 
 function setOverside(a){
@@ -156,6 +159,36 @@ function nightmode(){
           }
         nightmode_enable = false;
     }
+    Cookies.set('nightMode', nightmode_enable, {expires: 2});
+}
+
+function nightModeStart(){
+    if(nightmode_enable == true){
+        document.body.style.backgroundColor ="#222";
+        var text = document.querySelectorAll("#text");
+        var line = document.querySelectorAll(".underline");
+        document.getElementById("head").style.background = "#555";
+        for (i = 0; i < text.length; i++) {
+            text[i].style.color = "#FFF";
+          }  
+        for (i = 0; i < line.length; i++) {
+            line[i].style.backgroundColor = "rgb(255, 191, 118)";
+          }
+    }
+    else{
+        document.body.style.backgroundColor ="#b5bdc5";
+        var text = document.querySelectorAll("#text");
+        var line = document.querySelectorAll(".underline");
+        document.getElementById("head").style.background = "#e0e0e0";
+
+        for (i = 0; i < text.length; i++) {
+            text[i].style.color = "#000";
+          }      
+        for (i = 0; i < line.length; i++) {
+            line[i].style.backgroundColor = "#111";
+          }
+    }
+    Cookies.set('nightMode', nightmode_enable, {expires: 2});
 }
 
 start();

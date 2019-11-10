@@ -3,8 +3,6 @@ let isOverside = 0;
 let sidebar_status = true;
 let isFlexSlide = 0;
 let btotop = document.getElementsByClassName('bottom_to_top')[0];
-let flex2 = document.getElementsByClassName('flex_container')[1];
-flex2.style = "opacity: 0; transition: 0.5s";
 if (window.scrollY == 0){
     btotop.style = "opacity: 0; width: 0; height: 0;";
 }
@@ -32,30 +30,6 @@ document.addEventListener("click", function(){
     }
 });
 
-function flexSlide(){
-    let flex2 = document.getElementsByClassName('flex_container')[1];
-    let flex3 = document.getElementsByClassName('flex_container')[2];
-
-    if (isFlexSlide >= 1){
-        return
-    }
-
-    if (window.scrollY >= 350){
-        flex2.style = "opacity: 1; transition: 0.5s";
-    }
-    else{
-        flex2.style = "opacity: 0; transition: 0.5s";
-    }
-
-    if (window.scrollY >= 726){
-        flex3.style = "opacity: 1; transition: 0.5s";
-        isFlexSlide = true;
-    }
-    else{
-        flex3.style = "opacity: 0; transition: 0.5s"
-    }
-}
-
 function hideButtonTop(){
     let btotop = document.getElementsByClassName('bottom_to_top')[0];
     if (window.scrollY == 0){
@@ -66,31 +40,9 @@ function hideButtonTop(){
     }
 }
 
-function changeCardScale(){
-    card1 = document.getElementsByClassName("content1")[0];
-    card2 = document.getElementsByClassName("content1")[1];
-    if (isFlexSlide >= 2){
-        return
-    }
-    if (window.scrollY >= 1463){
-        card1.style = "transform: scale(1); transition: 0.5s;";
-    }
-    else{
-        card1.style = "transform: scale(0); transition: 0.5s;";
-    }
-    if (window.scrollY >= 1850){
-        card2.style = "transform: scale(1); transition: 0.5s;";
-        isFlexSlide = 2;
-    }
-    else{
-        card2.style = "transform: scale(0); transition: 0.5s;";
-    }
-}
 
 document.addEventListener('scroll', function(){
-    flexSlide();
     hideButtonTop();
-    changeCardScale();
 });
 
 
@@ -101,24 +53,20 @@ function openNav() {
         if(document.getElementById("mySidebar").style.width == "0px" || sidebar_status == false){
             document.getElementById("mySidebar").style.width = "250px";
             sidebar_status = true;
-            console.log("1");
         }
         else if(document.getElementById("mySidebar").style.width == "250px" || sidebar_status == true){
             document.getElementById("mySidebar").style.width = "0";
             sidebar_status = false;
-            console.log("2");
         }
     }
     else if(window.screen.width < 1860){
         if(document.getElementById("mySidebar").style.width == "" || sidebar_status == false){
             document.getElementById("mySidebar").style.width = "250px";
             sidebar_status = true;
-            console.log("3");
         }
         else if(document.getElementById("mySidebar").style.width == "250px" || sidebar_status == true){
             document.getElementById("mySidebar").style.width = "0";
             sidebar_status = false;
-            console.log("4");
         }
     }
     

@@ -28,8 +28,6 @@ background: rgb(255, 204, 108);
 color: #000;
 }
 
-
-
 /* Scroll Bar */
 
 /* width */
@@ -55,69 +53,127 @@ color: #000;
 }
 
 
+/* nightmode_switch */
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 30px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+  position: relative;
+  transition: 0.3s;
+  margin-top: 2px;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 21px;
+	height: 21px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #ffcc41;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 30px;
+}
+
 
 
 
 
 /* ส่วน Header ของเว็บ */
 .header{
-width: 100%;
-min-height: 53%;
-margin: 0;
-background-image:url("../image/back5.png");
-background-attachment: fixed;
-
+  width: 100%;
+  min-height: 53%;
+  margin: 0;
+  background-image:url("../image/back5.png");
+  background-attachment: fixed;
 }
 .head{
-width: 100%;
-height: 65px;
-background:  #e0e0e0;
-transition: 0.3s;
-position: fixed;
-top: 0;
-border-bottom: 2px solid #000;
-z-index: 1;
+  width: 100%;
+  height: 65px;
+  background:  #e0e0e0;
+  transition: 0.3s;
+  position: fixed;
+  top: 0;
+  border-bottom: 2px solid #000;
+  z-index: 1;
+  display: flex;
 }
-.head a{
-text-decoration: none;
-color: #000;
-transition: 0.3s;
-border-bottom: 3px solid transparent;
-cursor: pointer;
+.head .home a{
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
 }
-.head button{
-float: left;
-margin-left: 10px;
-margin-right: 20px;
+.head .home button{
+  float: left;
+  margin-left: 10px;
+  margin-right: 20px;
 }
-.head h1{
-padding-left: 20px;
-margin-top: 10px;
-margin-bottom: 0;
-color: #000;
-font-style: italic;
+.head  .home h1{
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #000;
+  font-style: italic;
 }
-.head h1 a:hover{
-border-bottom: 3px solid #000;
+.head .home h1 a:hover{
+  border-bottom: 3px solid #000;
 }
-
 
 .head2{
-width: 100%;
-height: auto;
-text-align: center;
-color: white;
-padding-top: 12%;
-margin-top: 5%;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding-top: 12%;
+  margin-top: 5%;
 }
 .head2 p{
-font-size: 22px;
+ font-size: 22px;
 }
 .head2 button{
-width: 180px;
-margin-bottom: 10px;
-font-family: 'Prompt', sans-serif;
+  width: 130px;
+  margin-bottom: 10px;
+  font-family: 'Prompt', sans-serif;
 }
+.home{
+  width: 100%;
+}
+.nightmode{
+  width: 100px;
+  height: 60%;
+  display: flex;
+  margin: auto 0 auto 0;
+  margin-top: 14px;
+}
+.nightmode i{
+  margin-top: 5px;
+  cursor: pointer;
+}
+
 
 
 /* ส่วนของ SideBar */
@@ -209,7 +265,7 @@ color: #6fca98;
   display: flex;
   width: 100%;
   height: 25vw;
-  background: #222;
+  background: rgb(23, 23, 23);
 }
 .image{
   width: 40%;
@@ -440,8 +496,8 @@ padding-top: 45px;
   .head2 p{
     margin-bottom: 5px;
   }
-  .head h1{
-    padding-right: 40px;
+  .head .home h1{
+    padding-right: 25px;
     text-align: center;
   }
   .content1{
@@ -463,5 +519,10 @@ padding-top: 45px;
 .header{
   height: auto;
 }
-
+label{
+  display: none;
+}
+.nightmode{
+  width: 35px;
+}
 }

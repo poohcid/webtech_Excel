@@ -15,8 +15,14 @@
 
 <body>
     <div class="head" id="head">
-        <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
-        <h1><a href="index.html" id="text">Excel Basic</a></h1>
+        <div class="home">
+            <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
+            <h1><a href="index.html" id="text">Excel Basic</a></h1>
+        </div>
+        <div class="nightmode">
+            <i id="text" onclick="nightmode()" class="fas fa-moon" style='font-size:28px; color: #000;'></i>
+            <input type="checkbox" id="switch" onclick="nightmode()" /><label for="switch">Toggle</label>
+        </div>
     </div>
     <div class="header">
         <div class="container">
@@ -48,8 +54,11 @@
 
     <div class="container">
         <div class="content1" id="text">
-            <br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/pJmD_IF7SUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br><br><div class="underline" id="line"></div>
+            <br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/pJmD_IF7SUA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <br><br>
+            <div class="underline" id="line"></div>
 
             <div class="flex_container">
                 <div class="card" id="card">
@@ -61,7 +70,7 @@
                         <a href="workshop1.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
                     </div>
                 </div>
-    
+
                 <div class="card" id="card">
                     <div class="card_img"><img src="assets/image/card/workshop.jpg" alt=""></div>
                     <div class="card_container" style="text-align: center;">
@@ -70,7 +79,7 @@
                     <div class="button_card">
                         <a href="workshop2.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
                     </div>
-    
+
                 </div>
             </div>
             <div class="flex_container">
@@ -82,7 +91,7 @@
                     <div class="button_card">
                         <a href="workshop3.html"><button class="card_button">รายละเอียดเพิ่มเติม</button></a>
                     </div>
-    
+
                 </div>
                 <div class="card" id="card">
                     <div class="card_img"><img src="assets/image/card/workshop.jpg" alt=""></div>
@@ -109,12 +118,14 @@
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fab fa-github"
                         style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
     <script src="assets/js/script.js"></script>
+   
 </body>
 
 </html>

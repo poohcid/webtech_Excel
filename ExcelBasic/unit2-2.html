@@ -14,9 +14,15 @@
 </head>
 
 <body>
-    <div class="head"  id="head">
+    <div class="head" id="head">
+        <div class="home">
             <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
             <h1><a href="index.html" id="text">Excel Basic</a></h1>
+        </div>
+        <div class="nightmode">
+            <i id="text" onclick="nightmode()" class="fas fa-moon" style='font-size:28px; color: #000;'></i>
+            <input type="checkbox" id="switch" onclick="nightmode()" /><label for="switch">Toggle</label>
+        </div>
     </div>
     <div class="header">
         <div class="container">
@@ -69,7 +75,8 @@
             <p>เซลล์ตำแหน่งที่ <b>E3</b> ได้อ้างอิงแบบสัมพัทธ์ไปที่ตำแหน่ง <b>C3</b> ซึ่งมีค่าเท่ากับ 20
                 จากนั้นทำการคัดลอกสูตรในคอลั่ม <b>E</b> จนถึงแถวที่ <b>9</b></p>
 
-            <br><h2>ผลลัพธ์ที่ได้คือ</h2>
+            <br>
+            <h2>ผลลัพธ์ที่ได้คือ</h2>
 
             <div class="img"><img src="assets/image/unit2/ref3.jpg" alt=""></div>
             <p>จะเห็นว่าตำแหน่งเซลล์ที่ <b>E4</b> มีสูตรที่อ้างอิงไปยังตำแหน่งที่ <b>C4</b>
@@ -106,7 +113,8 @@
                 </table>
             </center>
 
-            <br><br><h2 id="text">โดยตัวอย่าง</h2>
+            <br><br>
+            <h2 id="text">โดยตัวอย่าง</h2>
 
 
             <div class="img"><img src="assets/image/unit2/ref4.jpg" alt=""></div>
@@ -115,7 +123,8 @@
 
 
             <div class="img"><img src="assets/image/unit2/ref5.jpg" alt=""></div>
-            <br><br><br><h2>ตัวอย่างผสม</h2>
+            <br><br><br>
+            <h2>ตัวอย่างผสม</h2>
 
 
             <div class="img"><img src="assets/image/unit2/ref6.jpg" alt=""></div>
@@ -150,12 +159,14 @@
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fab fa-github"
                         style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
     <script src="assets/js/script.js"></script>
+   
 </body>
 
 </html>

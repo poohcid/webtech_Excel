@@ -15,8 +15,14 @@
 
 <body>
     <div class="head" id="head">
-        <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
-        <h1><a href="index.html" id="text">Excel Basic</a></h1>
+        <div class="home">
+            <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
+            <h1><a href="index.html" id="text">Excel Basic</a></h1>
+        </div>
+        <div class="nightmode">
+            <i id="text" onclick="nightmode()" class="fas fa-moon" style='font-size:28px; color: #000;'></i>
+            <input type="checkbox" id="switch" onclick="nightmode()" /><label for="switch">Toggle</label>
+        </div>
     </div>
     <div class="header">
         <div class="container">
@@ -49,22 +55,27 @@
 
     <div class="container">
         <div class="content1" id="text">
-            <br><br><h1>โปรแกรมคำนวนราคาสินค้าโปรโมชัน</h1>
-            <p>เป็นโปรแกรมที่ใส่ชื่อสินค้าและจำนวนลงไปก็จะออกราคารวมและราคาสุทธิที่ผ่านการลดราคามาแล้วจากตารางที่เรากำหนด</p><br>
+            <br><br>
+            <h1>โปรแกรมคำนวนราคาสินค้าโปรโมชัน</h1>
+            <p>เป็นโปรแกรมที่ใส่ชื่อสินค้าและจำนวนลงไปก็จะออกราคารวมและราคาสุทธิที่ผ่านการลดราคามาแล้วจากตารางที่เรากำหนด
+            </p><br>
             <h2>ฟังก์ชันที่เกี่ยวข้อง</h2>
             <li>VLOOKUP ค้นหาข้อมูลในแนวคอลัมน์</li>
             <li>QUOTIENT หารแลขแบบทิ้งเศษ</li><br>
 
             <h2>ขั้นตอน</h2>
-            <p>1.	สร้างตารางที่กำหนดราคาสินค้าและโปรโมชันพร้อมระบุราคาลดราคา แล้วสร้างตารางแบบฟอร์มที่ไว้กรอกชื่อสินค้าและจำนวนสินค้า</p>
+            <p>1. สร้างตารางที่กำหนดราคาสินค้าและโปรโมชันพร้อมระบุราคาลดราคา
+                แล้วสร้างตารางแบบฟอร์มที่ไว้กรอกชื่อสินค้าและจำนวนสินค้า</p>
             <div class="img"><img src="assets/image/workshop/d1.png" alt=""></div><br><br><br>
-            <p>2.	ในคอลั่มราคารวมให้สร้างสูตรดังนี้<b> =VLOOKUP(B10, $B$1:$C$6, 2, 0)*C10 </b>เป็นสูตรค้นหาราคาสินค้าและคูณจำนวนเข้าไป</p>
+            <p>2. ในคอลั่มราคารวมให้สร้างสูตรดังนี้<b> =VLOOKUP(B10, $B$1:$C$6, 2, 0)*C10
+                </b>เป็นสูตรค้นหาราคาสินค้าและคูณจำนวนเข้าไป</p>
             <div class="img"><img src="assets/image/workshop/d2.png" alt=""></div><br><br><br>
-            <p>3.	ในคอลั่มราคาสุทธิให้สร้างสูตรดังนี้<b> =D10-(VLOOKUP(B10, $B$2:$E$6, 4, 0)*QUOTIENT(C10, VLOOKUP(B10, $B$2:$E$6, 3, 0))) </b>เป็นสูตรที่หักราคาตามจำนวนโปรโมชัน</p>
+            <p>3. ในคอลั่มราคาสุทธิให้สร้างสูตรดังนี้<b> =D10-(VLOOKUP(B10, $B$2:$E$6, 4, 0)*QUOTIENT(C10, VLOOKUP(B10,
+                    $B$2:$E$6, 3, 0))) </b>เป็นสูตรที่หักราคาตามจำนวนโปรโมชัน</p>
             <div class="img"><img src="assets/image/workshop/d3.png" alt=""></div><br><br><br>
-            <p>4.	คัดลอกสูตรให้ครบทั้งคอลั่ม</p>
+            <p>4. คัดลอกสูตรให้ครบทั้งคอลั่ม</p>
             <div class="img"><img src="assets/image/workshop/d4.png" alt=""></div><br><br><br>
-            <p>5.	เมื่อเราใส่ชื่อสินค้าและจำนวนลงไป ช่องราคารวมและราคาสุทธิก็จะปรากฎออกมาตามที่เรากำหนดไว้</p>
+            <p>5. เมื่อเราใส่ชื่อสินค้าและจำนวนลงไป ช่องราคารวมและราคาสุทธิก็จะปรากฎออกมาตามที่เรากำหนดไว้</p>
             <div class="img"><img src="assets/image/workshop/d5.png" alt=""></div><br><br><br><br><br>
             <center>
                 <div class="navigator">
@@ -83,11 +94,14 @@
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fab fa-github"
                         style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
     <script src="assets/js/script.js"></script>
+    
 </body>
+
 </html>

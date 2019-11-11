@@ -75,10 +75,12 @@ function openNav() {
 
 
 function nightmode(){
+    var x = document.getElementById("switch");
     if(nightmode_enable == false){
         document.body.style.backgroundColor ="#222";
         var text = document.querySelectorAll("#text");
         var line = document.querySelectorAll(".underline");
+       
         document.getElementById("head").style.background = "#555";
         for (i = 0; i < text.length; i++) {
             text[i].style.color = "#FFF";
@@ -87,6 +89,7 @@ function nightmode(){
             line[i].style.backgroundColor = "rgb(255, 191, 118)";
           }
         nightmode_enable = true;
+        x.checked = true;
     }
     else{
         document.body.style.backgroundColor ="#b5bdc5";
@@ -101,7 +104,11 @@ function nightmode(){
             line[i].style.backgroundColor = "#111";
           }
         nightmode_enable = false;
+        x.checked = false;
     }
+    
 }
+
+
 
 start();

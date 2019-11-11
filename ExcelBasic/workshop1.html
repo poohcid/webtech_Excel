@@ -15,8 +15,14 @@
 
 <body>
     <div class="head" id="head">
-        <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
-        <h1><a href="index.html" id="text">Excel Basic</a></h1>
+        <div class="home">
+            <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
+            <h1><a href="index.html" id="text">Excel Basic</a></h1>
+        </div>
+        <div class="nightmode">
+            <i id="text" onclick="nightmode()" class="fas fa-moon" style='font-size:28px; color: #000;'></i>
+            <input type="checkbox" id="switch" onclick="nightmode()" /><label for="switch">Toggle</label>
+        </div>
     </div>
     <div class="header">
         <div class="container">
@@ -49,7 +55,8 @@
 
     <div class="container">
         <div class="content1" id="text">
-            <br><br><h1>โปรแกรมคำนวนโบนัสให้พนักงาน</h1><br>
+            <br><br>
+            <h1>โปรแกรมคำนวนโบนัสให้พนักงาน</h1><br>
 
             <h2>ฟังก์ชันที่เกี่ยวข้อง</h2>
             <li>VLOOKUP ค้นหาข้อมูลในแนวคอลัมน์</li>
@@ -61,11 +68,13 @@
             <div class="img"><img src="assets/image/workshop/b1.png" alt=""></div>
             <p>3. คลิกเม้าส์ที่เซล E9 เพื่อเริ่มใส่สูตรตัดเกรด</p>
             <p>4. พิมพ์สูตร <b>= IF(C9 >= 80, "A", IF(C9>=70, "B", IF(C9>=60, "C", IF(C9>=50, "D"))))</b></p>
-            
+
             <div class="img"><img src="assets/image/workshop/b2.png" alt=""></div><br><br>
             <p>5. กดปุ่ม Enter ที่คีย์บอร์ดจะได้เกรดพนักงานออกมา แล้วคัดลอดสูตรมาด้านล่างจะได้เกรดพนักงานคนอื่น ๆ</p>
-            <p>6. คลิกที่เซล F9 แล้วพิมพ์สูตร<b> =VLOOKUP(E9, $D$3:$E$6, 2, 0)*G9 </b>แล้วกด<b> Enter </b>แล้วคัดลอกสูตรลงมาด้านล่าง จะได้โบนัสของพนักงานทุกคน</p>
-            <p>7. คำนวณยอดสุทธิ โดยคลิกที่เซล H9 แล้วพิมพ์สูตร =F9+G9 กดปุ่ม Enter แล้วคัดลอกสูตรลงมาจะได้ยอดเงินเดือนรวมกับเงินโบนัส</p>
+            <p>6. คลิกที่เซล F9 แล้วพิมพ์สูตร<b> =VLOOKUP(E9, $D$3:$E$6, 2, 0)*G9 </b>แล้วกด<b> Enter
+                </b>แล้วคัดลอกสูตรลงมาด้านล่าง จะได้โบนัสของพนักงานทุกคน</p>
+            <p>7. คำนวณยอดสุทธิ โดยคลิกที่เซล H9 แล้วพิมพ์สูตร =F9+G9 กดปุ่ม Enter
+                แล้วคัดลอกสูตรลงมาจะได้ยอดเงินเดือนรวมกับเงินโบนัส</p>
             <div class="img"><img src="assets/image/workshop/b3.png" alt=""></div><br><br><br><br>
             <center>
                 <div class="navigator">
@@ -84,11 +93,14 @@
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fab fa-github"
                         style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
     <script src="assets/js/script.js"></script>
+  
 </body>
+
 </html>

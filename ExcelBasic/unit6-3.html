@@ -15,8 +15,14 @@
 
 <body>
     <div class="head" id="head">
+        <div class="home">
             <button class="openbtn" id="open1" onclick="openNav()" onmouseout="setOverside(2)">☰</button>
             <h1><a href="index.html" id="text">Excel Basic</a></h1>
+        </div>
+        <div class="nightmode">
+            <i id="text" onclick="nightmode()" class="fas fa-moon" style='font-size:28px; color: #000;'></i>
+            <input type="checkbox" id="switch" onclick="nightmode()" /><label for="switch">Toggle</label>
+        </div>
     </div>
     <div class="header">
         <div class="container">
@@ -95,7 +101,8 @@
             <div class="underline" id="line"></div>
 
             <h1>การประยุกต์ใช้งานกับตัวดำเนินการอาร์เรย์</h1>
-            <p>สามารถย้อนกลับไปดูเรื่องของสูตรแบบอาร์เรย์ได้ที่ <a href="unit6-2.html" id="text" class="link">บทที่ 6.2 สูตรแบบอาร์เรย์</a> ตอนนี้เราสามารถใช้เครื่องหมาย “ , ” ได้กับฟังก์ชันตามข้างต้น
+            <p>สามารถย้อนกลับไปดูเรื่องของสูตรแบบอาร์เรย์ได้ที่ <a href="unit6-2.html" id="text" class="link">บทที่ 6.2
+                    สูตรแบบอาร์เรย์</a> ตอนนี้เราสามารถใช้เครื่องหมาย “ , ” ได้กับฟังก์ชันตามข้างต้น
                 โดยเป็นตัวดำเนินการที่เชื่อมตัวอาร์เรย์เข้าด้วยกัน</p>
 
             <br>
@@ -137,12 +144,14 @@
     <div class="footer">
         <div class="container">
             <div class="infooter">
-                <a href="https://github.com/poohcid/webtech_Excel"><i class="fa fa-github"
+                <a href="https://github.com/poohcid/webtech_Excel"><i class="fab fa-github"
                         style="font-size: 40px ;color: #FFF; cursor: pointer;"></i></a>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
     <script src="assets/js/script.js"></script>
+    
 </body>
 
 </html>

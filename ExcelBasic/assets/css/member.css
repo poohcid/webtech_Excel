@@ -410,4 +410,8 @@ label:active:after {
     .nightmode{
       width: 35px;
     }
+    .head .home h1{
+      font-size: 28px;
+    }
+    
   }

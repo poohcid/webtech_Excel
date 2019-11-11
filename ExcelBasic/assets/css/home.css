@@ -522,6 +522,10 @@ padding-top: 45px;
 label{
   display: none;
 }
+.head .home h1{
+  font-size: 28px;
+}
+
 .nightmode{
   width: 35px;
 }

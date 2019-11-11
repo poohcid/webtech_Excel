@@ -579,6 +579,10 @@ table tr td{
   .nightmode{
     width: 35px;
   }
+  .head .home h1{
+    font-size: 28px;
+  }
+  
   
 }
 

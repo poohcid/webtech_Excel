@@ -468,4 +468,8 @@ label:active:after {
   label{
     display: none;
   }
+  .head .home h1{
+    font-size: 28px;
+  }
+  
 }

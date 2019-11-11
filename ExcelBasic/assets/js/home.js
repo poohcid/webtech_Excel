@@ -2,9 +2,11 @@ let nightmode_enable = false;
 let isOverside = 0;
 let sidebar_status = false;
 let isFlexSlide = 0;
+let switch1  = document.getElementById('switch');
 let btotop = document.getElementsByClassName('bottom_to_top')[0];
 let flex2 = document.getElementsByClassName('flex_container')[1];
 flex2.style = "opacity: 0; transition: 0.5s";
+let flex3 = document.getElementsByClassName('flex_container')[2];
 if (window.scrollY == 0){
     btotop.style = "opacity: 0; width: 0; height: 0;";
 }
@@ -14,6 +16,12 @@ function start(){
         isOverside = 0;
         sidebar_status = false;
     }
+    flex2.style = "opacity: 0; transition: 0.5s";
+    flex3.style = "opacity: 0; transition: 0.5s";
+    nightmode_enable = (Cookies.get('nightMode') == 'true');
+    switch1.checked = nightmode_enable;
+    //console.log(typeof nightmode_enable);
+    nightModeStart();
 }
 
 function setOverside(a){
@@ -156,6 +164,37 @@ function nightmode(){
           }
         nightmode_enable = false;
     }
+    switch1.checked = nightmode_enable;
+    Cookies.set('nightMode', nightmode_enable, {expires: 2});
+}
+
+function nightModeStart(){
+    if(nightmode_enable == true){
+        document.body.style.backgroundColor ="#222";
+        var text = document.querySelectorAll("#text");
+        var line = document.querySelectorAll(".underline");
+        document.getElementById("head").style.background = "#555";
+        for (i = 0; i < text.length; i++) {
+            text[i].style.color = "#FFF";
+          }  
+        for (i = 0; i < line.length; i++) {
+            line[i].style.backgroundColor = "rgb(255, 191, 118)";
+          }
+    }
+    else{
+        document.body.style.backgroundColor ="#b5bdc5";
+        var text = document.querySelectorAll("#text");
+        var line = document.querySelectorAll(".underline");
+        document.getElementById("head").style.background = "#e0e0e0";
+
+        for (i = 0; i < text.length; i++) {
+            text[i].style.color = "#000";
+          }      
+        for (i = 0; i < line.length; i++) {
+            line[i].style.backgroundColor = "#111";
+          }
+    }
+    Cookies.set('nightMode', nightmode_enable, {expires: 2});
 }
 
 start();

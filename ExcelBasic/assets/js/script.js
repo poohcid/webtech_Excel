@@ -8,14 +8,50 @@ if (window.scrollY == 0){
     btotop.style = "opacity: 0; width: 0; height: 0;";
 }
 
+//จัดการคุกกี้
+function setCookie(name, value, expires, path, domain, secure) {
+    document.cookie = name + "=" + escape(value) +
+        ((expires) ? "; expires=" + expires.toGMTString() : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
+}
+
+function getCookie(name) {
+    var dc = document.cookie;
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    } else {
+        begin += 2;
+    }
+    var end = document.cookie.indexOf(";", begin);
+    if (end == -1) {
+        end = dc.length;
+    }
+    return unescape(dc.substring(begin + prefix.length, end));
+}
+
+function deleteCookie(name, path, domain) {
+    if (getCookie(name)) {
+        document.cookie = name + "=" +
+            ((path) ? "; path=" + path : "") +
+            ((domain) ? "; domain=" + domain : "") +
+            "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+
+    }
+}
+//จบฟังก์ชัน
+
 function start(){
     if (window.innerWidth <= 1860){
         isOverside = 0;
         sidebar_status = false;
     }
-    nightmode_enable = (Cookies.get('nightMode') == 'true');
+    nightmode_enable = (getCookie('nightMode') == 'true');
     switch1.checked = nightmode_enable;
-    //console.log(typeof nightmode_enable);
     nightModeStart();
 }
 
@@ -112,7 +148,7 @@ function nightmode(){
         x.checked = false;
     }
     switch1.checked = nightmode_enable;
-    Cookies.set('nightMode', nightmode_enable, {expires: 2});
+    setCookie('nightMode', nightmode_enable);
 }
 
 function nightModeStart(){
@@ -141,7 +177,7 @@ function nightModeStart(){
             line[i].style.backgroundColor = "#111";
           }
     }
-    Cookies.set('nightMode', nightmode_enable, {expires: 2});
+    setCookie('nightMode', nightmode_enable);
 }
 
 start();

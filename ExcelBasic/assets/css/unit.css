@@ -491,8 +491,11 @@ table tr td{
   widows: 100%;
   height: 100%;
 }
+.infooter p{
+  font-size: 16px;
+}
 .infooter i{
-  padding-top: 45px;
+  padding-top: 25px;
 }
 
 @media screen and (max-width: 1860px) {

@@ -497,7 +497,7 @@ padding-top: 45px;
     margin-bottom: 5px;
   }
   .head .home h1{
-    padding-right: 25px;
+    
     text-align: center;
   }
   .content1{
@@ -524,6 +524,7 @@ label{
 }
 .head .home h1{
   font-size: 28px;
+  padding-right: 25px;
 }
 
 .nightmode{

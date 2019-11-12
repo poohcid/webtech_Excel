@@ -430,8 +430,8 @@ label:active:after {
       margin-bottom: 5px;
     }
     .head .home h1{
-      padding-left: 70px;
       text-align: center;
+      
     }
     .content1{
       flex-direction: column;

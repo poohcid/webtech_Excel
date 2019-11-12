@@ -533,7 +533,6 @@ table tr td{
       margin-bottom: 5px;
     }
     .head .home h1{
-      padding-right: 25px;
       text-align: center;
     }
     .head button{
@@ -581,6 +580,10 @@ table tr td{
   }
   .head .home h1{
     font-size: 28px;
+    padding-right: 25px;
+  }
+  .nightmode{
+    width: 35px;
   }
   
   

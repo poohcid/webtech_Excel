@@ -583,13 +583,9 @@ table tr td{
   }
   .head .home h1{
     font-size: 28px;
-    padding-right: 25px;
+    padding-top: 2.5px;
+    padding-right: 30px;
   }
-  .nightmode{
-    width: 35px;
-  }
-  
-  
 }
 
 

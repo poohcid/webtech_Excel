@@ -155,7 +155,7 @@ label:active:after {
  font-size: 22px;
 }
 .head2 button{
-  width: 130px;
+  width: 180px;
   margin-bottom: 10px;
   font-family: 'Prompt', sans-serif;
 }
@@ -497,7 +497,6 @@ padding-top: 25px;
     margin-bottom: 5px;
   }
   .head .home h1{
-    
     text-align: center;
   }
   .content1{
@@ -524,7 +523,8 @@ label{
 }
 .head .home h1{
   font-size: 28px;
-  padding-right: 25px;
+  padding-top: 2.5px;
+  padding-right: 30px;
 }
 
 .nightmode{

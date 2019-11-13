@@ -390,7 +390,6 @@ label:active:after {
       margin-bottom: 5px;
     }
     .head .home h1{
-      padding-right: 25px;
       text-align: center;
     }
 
@@ -412,6 +411,8 @@ label:active:after {
     }
     .head .home h1{
       font-size: 28px;
+      padding-top: 2.5px;
+      padding-right: 30px;
     }
     
   }

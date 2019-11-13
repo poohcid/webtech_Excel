@@ -470,6 +470,8 @@ label:active:after {
   }
   .head .home h1{
     font-size: 28px;
+    padding-top: 2.5px;
+    padding-right: 30px;
   }
   
 }

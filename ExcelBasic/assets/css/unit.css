@@ -1,30 +1,34 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    font-family: 'Prompt', sans-serif;
-    background: #a9b4bd;
-    scroll-behavior: smooth;
-    transition: 0.3s;
-}
-.container{
-    max-width: 1220px;
-    margin: 0 auto;
-}
-p, li{
-    font-size: 19px;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+  background: #a9b4bd;
+  scroll-behavior: smooth;
+  transition: 0.3s;
 }
 
-a{
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+p, li {
+  font-size: 19px;
+}
+
+a {
   text-decoration: none;
   color: white;
 }
-iframe{
+
+iframe {
   width: 100%;
   height: 70%;
   border-radius: 10px;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-.head_button{
+
+.head_button {
   background: #111;
   border: none;
   width: 100px;
@@ -35,96 +39,99 @@ iframe{
   transition: 0.3s;
   cursor: pointer;
 }
-.head_button:hover{
+
+.head_button:hover {
   background: rgb(255, 204, 108);
   color: #000;
 }
 
-
-
-
 /* Scroll Bar */
 
 /* width */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-  background: #111; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #444; 
-  border-radius: 2px;
 
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 2px;
 }
 
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #222; 
+  background: #222;
 }
 
 /* nightmode_switch */
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
+
 label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 50px;
-	height: 30px;
-	background: grey;
-	display: block;
-	border-radius: 100px;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
   position: relative;
   transition: 0.3s;
   margin-top: 2px;
 }
 
 label:after {
-	content: '';
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 21px;
-	height: 21px;
-	background: #fff;
-	border-radius: 90px;
-	transition: 0.3s;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 21px;
+  height: 21px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
 }
 
-input:checked + label {
-	background: #ffcc41;
+input:checked+label {
+  background: #ffcc41;
 }
 
-input:checked + label:after {
+input:checked+label:after {
   left: calc(100% - 5px);
-	transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 label:active:after {
-	width: 30px;
+  width: 30px;
 }
 
-
-
 /* ส่วน Header ของเว็บ */
-.header{
+
+.header {
   width: 100%;
   min-height: 53%;
   margin: 0;
-  background-image:url("../image/back6.png");
+  background-image: url("../image/back6.png");
   background-attachment: fixed;
 }
-.head{
+
+.head {
   width: 100%;
   height: 65px;
-  background:  #e0e0e0;
+  background: #e0e0e0;
   transition: 0.3s;
   position: fixed;
   top: 0;
@@ -132,30 +139,34 @@ label:active:after {
   z-index: 1;
   display: flex;
 }
-.head .home a{
+
+.head .home a {
   text-decoration: none;
   color: #000;
   transition: 0.3s;
   border-bottom: 3px solid transparent;
   cursor: pointer;
 }
-.head .home button{
+
+.head .home button {
   float: left;
   margin-left: 10px;
   margin-right: 20px;
 }
-.head  .home h1{
+
+.head .home h1 {
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 0;
   color: #000;
   font-style: italic;
 }
-.head .home h1 a:hover{
+
+.head .home h1 a:hover {
   border-bottom: 3px solid #000;
 }
 
-.head2{
+.head2 {
   width: 100%;
   height: auto;
   text-align: center;
@@ -163,41 +174,46 @@ label:active:after {
   padding-top: 12%;
   margin-top: 5%;
 }
-.head2 p{
- font-size: 22px;
+
+.head2 p {
+  font-size: 22px;
 }
-.head2 button{
+
+.head2 button {
   width: 130px;
   margin-bottom: 10px;
   font-family: 'Prompt', sans-serif;
 }
-.home{
+
+.home {
   width: 100%;
 }
-.nightmode{
+
+.nightmode {
   width: 100px;
   height: 60%;
   display: flex;
   margin: auto 0 auto 0;
   margin-top: 14px;
 }
-.nightmode i{
+
+.nightmode i {
   margin-top: 5px;
   cursor: pointer;
 }
 
-
-.button_container{
+.button_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.btn2{
+
+.btn2 {
   margin: 0 10px 0 10px;
 }
 
-
 /* ส่วนของ SideBar */
+
 .sidebar {
   height: 100%;
   width: 250px;
@@ -212,7 +228,6 @@ label:active:after {
   overflow-x: hidden;
 }
 
-
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -221,16 +236,19 @@ label:active:after {
   display: block;
   transition: 0.2s;
 }
-.sidebar a:first-child:hover{
+
+.sidebar a:first-child:hover {
   color: #f1f1f1;
   border-left: none;
   background: #111;
 }
+
 .sidebar a:hover {
   color: #f1f1f1;
   background: #222;
-  border-left: 7px solid rgb(219, 120, 54) ;
+  border-left: 7px solid rgb(219, 120, 54);
 }
+
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -238,80 +256,84 @@ label:active:after {
   font-size: 36px;
   margin-left: 50px;
 }
-.closebtn{
+
+.closebtn {
   font-size: 60px;
 }
-
-
-
 
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 12px;
-
   }
-  .sidebar a {font-size: 18px;}
-  
+  .sidebar a {
+    font-size: 18px;
+  }
 }
+
 /* ปุ่มเรียก sidebar */
 
 .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 9px 15px;
-    border: none;
-    border-radius: 5px;
-    transition: 0.3s;
-    margin-top: 10px;   
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 9px 15px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 10px;
 }
-#open1{
-    margin-left: 15px;  
+
+#open1 {
+  margin-left: 15px;
 }
+
 .openbtn:hover {
   background-color: rgb(219, 120, 54);
 }
 
-#member{
+#member {
   color: #227547;
   transition: 0.3s;
   margin-bottom: 120px;
 }
 
-#member:hover{
+#member:hover {
   color: #6fca98;
 }
 
-
 /* ส่วนเนื้อหาของเว็บ */
 
-.content1{
-    max-width: 100%;
-    margin-bottom: 5%; 
-    border-radius :20px;
-}
-.img{
-    width: 100%;
-}
-.img img{
-    max-width: 95%;
-    border-radius: 5px;
-    border: 2px solid #222;
-}
-.content_detail p{
-    padding-bottom: 40px;
-}
-.underline{
-    width: 100%;
-    height: 3px;
-    background: #111;
-    margin: 5% 0 5% 0;
+.content1 {
+  max-width: 100%;
+  margin-bottom: 5%;
+  border-radius: 20px;
 }
 
-.flex_container{
+.img {
+  width: 100%;
+}
+
+.img img {
+  max-width: 95%;
+  border-radius: 5px;
+  border: 2px solid #222;
+}
+
+.content_detail p {
+  padding-bottom: 40px;
+}
+
+.underline {
+  width: 100%;
+  height: 3px;
+  background: #111;
+  margin: 5% 0 5% 0;
+}
+
+.flex_container {
   max-width: 100%;
-  border-radius :20px;
+  border-radius: 20px;
   display: flex;
 }
 
@@ -320,73 +342,81 @@ label:active:after {
   width: 30%;
   height: 500px;
   background: white;
-  border-radius : 5px; 
+  border-radius: 5px;
   float: left;
   overflow: hidden;
   margin-bottom: 5%;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-.card_img{
-  width:100%;
-  height:50%;
+
+.card_img {
+  width: 100%;
+  height: 50%;
   background: #227547;
   overflow: hidden;
-  
 }
-.card_img img{
-  width:100%;
+
+.card_img img {
+  width: 100%;
   height: 100%;
   background: #227547;
   transition: 0.3s;
 }
-.card_img img:hover{
+
+.card_img img:hover {
   transform: scale(1.1);
 }
-.card_button{
-width: 100%;
-height: 101%;
-background: white;
-border: 1px solid #111;
-border-radius : 0px 0px 5px 5px; 
-font-family: 'Prompt', sans-serif;
-transition: 0.3s;
-font-size: 17px;
-bottom: 0;
-cursor: pointer;
+
+.card_button {
+  width: 100%;
+  height: 101%;
+  background: white;
+  border: 1px solid #111;
+  border-radius: 0px 0px 5px 5px;
+  font-family: 'Prompt', sans-serif;
+  transition: 0.3s;
+  font-size: 17px;
+  bottom: 0;
+  cursor: pointer;
 }
-.card_button a{
-width: 100%;
-text-decoration: none;
-color: #000;
+
+.card_button a {
+  width: 100%;
+  text-decoration: none;
+  color: #000;
 }
-.card_button:hover{
-background: #111;
-color: white;
+
+.card_button:hover {
+  background: #111;
+  color: white;
 }
-.card p{
-font-size: 18px;
-margin: 0;
+
+.card p {
+  font-size: 18px;
+  margin: 0;
 }
-.button_card{
-width: 100%;
-height:14%;
+
+.button_card {
+  width: 100%;
+  height: 14%;
 }
+
 .card_container {
   padding: 2px 16px;
   color: black;
-  border-radius : 20px; 
+  border-radius: 20px;
   height: 35%;
 }
 
-
-.navigator{
+.navigator {
   max-width: 90%;
   display: flex;
   justify-content: center;
 }
-.nav_button{
+
+.nav_button {
   max-width: 50%;
   background: #444;
   border: 2px solid #444;
@@ -398,10 +428,12 @@ height:14%;
   flex-wrap: wrap;
   align-items: center;
 }
-.nav_button:nth-child(2){
-  margin-left:20px;
+
+.nav_button:nth-child(2) {
+  margin-left: 20px;
 }
-.nav_button:hover{
+
+.nav_button:hover {
   background: transparent;
   background: #e6ce49;
   color: #111;
@@ -409,55 +441,54 @@ height:14%;
 }
 
 /* table */
-table{
-  width: 100%; 
+
+table {
+  width: 100%;
   height: 30%;
   border-radius: 10px;
   text-align: center;
   font-size: 20px;
 }
-table tr th{
+
+table tr th {
   border: 2px solid #111;
   border-radius: 10px;
   background: #3379c0;
   color: white;
 }
-table tr td{
+
+table tr td {
   border: 2px solid #111;
   border-radius: 10px;
   background: #a0a0a0;
   color: #000;
 }
 
-.table_fix{
+.table_fix {
   overflow-x: auto;
 }
 
-
-
-
 /* link เชื่อมไปเนื้อหาอื่นๆ */
 
-.link{
+.link {
   font-size: 22px;
   transition: 0.3s;
   border-bottom: 2px solid rgb(179, 40, 93);
   font-style: italic;
   font-weight: bold;
   color: #000;
-
 }
-.link:hover{
+
+.link:hover {
   font-size: 22px;
   border-width: 4px;
 }
 
-
 /* ปุ่มไปส่วนบนสุดของหน้าเว็บ */
 
-.bottom_to_top{
-  width: 65px; 
-  height: 65px; 
+.bottom_to_top {
+  width: 65px;
+  height: 65px;
   background: rgb(0, 0, 0);
   position: fixed;
   right: 0;
@@ -468,124 +499,129 @@ table tr td{
   transition: 0.3s;
 }
 
-.bottom_to_top:hover{
+.bottom_to_top:hover {
   background: #4970c5;
   color: #111;
   border: 2px solid #111;
 }
 
 /* ส่วนของ Footer */
-.footer{
+
+.footer {
   width: 100%;
-	height: 120px;
-	text-align: center;
+  height: 120px;
+  text-align: center;
   background: #093c28;
   bottom: 0;
-  margin-top:auto; 
+  margin-top: auto;
+}
 
+.footer .container p {
+  padding-top: 50px;
 }
-.footer .container p{
-    padding-top:50px; 
-}
-.infooter{
+
+.infooter {
   widows: 100%;
   height: 100%;
 }
-.infooter p{
+
+.infooter p {
   font-size: 16px;
 }
-.infooter i{
+
+.infooter i {
   padding-top: 25px;
 }
 
 @media screen and (max-width: 1860px) {
-  .sidebar{
+  .sidebar {
     width: 0px;
   }
 }
 
 @media screen and (max-width: 1220px) {
-  .content1{
-    margin: 0 7px 5% 7px; 
- }
+  .content1 {
+    margin: 0 7px 5% 7px;
+  }
 }
 
 /* ส่วนขอการปรับหน้าจอ */
 
 @media screen and (max-width: 960px) {
-    .flex_container{
-      flex-direction: column;
-    }
-    .card, .card_extra{
-      width: 55%;
-    }
-    .card p{
-      font-size: 17px;
-    }
-    .sidebar{
-      width: 0px;
-      overflow: auto;
-    }
-    .header{
-      height: auto;
-    }
-    .head2{
-      padding-top: 18%;
-    }
-    .head2 p{
-      margin-bottom: 5px;
-    }
-    .head .home h1{
-      text-align: center;
-    }
-    .head button{
-      padding-left: 15px;
-      margin-right: 0px;
-    }
-    .nav_button p{
-      font-size: 18px;
-    }
-    iframe{
-      height: 50%;
-    }
+  .flex_container {
+    flex-direction: column;
   }
-
-@media screen and (max-width: 490px) {
-  .card, .card_extra{
-    width: 85%;
+  .card, .card_extra {
+    width: 55%;
   }
-  .footer{
-    bottom: 0;
+  .card p {
+    font-size: 17px;
   }
-  .header{
+  .sidebar {
+    width: 0px;
+    overflow: auto;
+  }
+  .header {
     height: auto;
   }
-  .nav_button p{
+  .head2 {
+    padding-top: 18%;
+  }
+  .head2 p {
+    margin-bottom: 5px;
+  }
+  .head .home h1 {
+    text-align: center;
+  }
+  .head button {
+    padding-left: 15px;
+    margin-right: 0px;
+  }
+  .nav_button p {
+    font-size: 18px;
+  }
+  iframe {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .card, .card_extra {
+    width: 85%;
+  }
+  .footer {
+    bottom: 0;
+  }
+  .header {
+    height: auto;
+  }
+  .nav_button p {
     font-size: 19px;
   }
-  img #mange1_photo{
+  img #mange1_photo {
     margin: 0;
   }
-  iframe{
+  iframe {
     height: 40%;
   }
-  .btn2{
+  .btn2 {
     order: 1;
   }
-  .btn1{
+  .btn1 {
     margin-right: 5px;
   }
-  label{
+  label {
     display: none;
   }
-  .nightmode{
+  .nightmode {
     width: 35px;
   }
-  .head .home h1{
+  .head .home h1 {
     font-size: 28px;
     padding-top: 2.5px;
     padding-right: 30px;
   }
+  .infooter i {
+    padding-top: 15px;
+  }
 }
-
-

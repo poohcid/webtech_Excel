@@ -1,18 +1,19 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+  background: #a9b4bd;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
 
-body, html{
-    margin: 0;
-    padding: 0;
-    font-family: 'Prompt', sans-serif;
-    background: #a9b4bd;
-    scroll-behavior: smooth;
-    transition: 0.3s;
-    box-sizing: border-box;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
-.container{
-    max-width: 960px;
-    margin: 0 auto;
-}
-.head_button{
+
+.head_button {
   background: #111;
   border: none;
   width: 100px;
@@ -23,96 +24,99 @@ body, html{
   transition: 0.3s;
   cursor: pointer;
 }
-.head_button:hover{
+
+.head_button:hover {
   background: rgb(255, 204, 108);
   color: #000;
 }
 
-
-
 /* Scroll Bar */
 
 /* width */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-  background: #111; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #444; 
-  border-radius: 2px;
 
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 2px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #222; 
-}
 
+::-webkit-scrollbar-thumb:hover {
+  background: #222;
+}
 
 /* nightmode_switch */
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
+
 label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 50px;
-	height: 30px;
-	background: grey;
-	display: block;
-	border-radius: 100px;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
   position: relative;
   transition: 0.3s;
   margin-top: 2px;
 }
 
 label:after {
-	content: '';
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 21px;
-	height: 21px;
-	background: #fff;
-	border-radius: 90px;
-	transition: 0.3s;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 21px;
+  height: 21px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
 }
 
-input:checked + label {
-	background: #ffcc41;
+input:checked+label {
+  background: #ffcc41;
 }
 
-input:checked + label:after {
+input:checked+label:after {
   left: calc(100% - 5px);
-	transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 label:active:after {
-	width: 30px;
+  width: 30px;
 }
 
-
-
 /* ส่วน Header ของเว็บ */
-.header{
+
+.header {
   width: 100%;
   min-height: 53%;
   margin: 0;
-  background-image:url("../image/back6.png");
+  background-image: url("../image/back6.png");
   background-attachment: fixed;
 }
-.head{
+
+.head {
   width: 100%;
   height: 65px;
-  background:  #e0e0e0;
+  background: #e0e0e0;
   transition: 0.3s;
   position: fixed;
   top: 0;
@@ -120,30 +124,34 @@ label:active:after {
   z-index: 1;
   display: flex;
 }
-.head .home a{
+
+.head .home a {
   text-decoration: none;
   color: #000;
   transition: 0.3s;
   border-bottom: 3px solid transparent;
   cursor: pointer;
 }
-.head .home button{
+
+.head .home button {
   float: left;
   margin-left: 10px;
   margin-right: 20px;
 }
-.head  .home h1{
+
+.head .home h1 {
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 0;
   color: #000;
   font-style: italic;
 }
-.head .home h1 a:hover{
+
+.head .home h1 a:hover {
   border-bottom: 3px solid #000;
 }
 
-.head2{
+.head2 {
   width: 100%;
   height: auto;
   text-align: center;
@@ -151,30 +159,33 @@ label:active:after {
   padding-top: 12%;
   margin-top: 6.5%;
 }
-.head2 p{
- font-size: 22px;
+
+.head2 p {
+  font-size: 22px;
 }
-.head2 button{
+
+.head2 button {
   width: 130px;
   margin-bottom: 10px;
   font-family: 'Prompt', sans-serif;
 }
-.home{
+
+.home {
   width: 100%;
 }
-.nightmode{
+
+.nightmode {
   width: 100px;
   height: 60%;
   display: flex;
   margin: auto 0 auto 0;
   margin-top: 14px;
 }
-.nightmode i{
+
+.nightmode i {
   margin-top: 5px;
   cursor: pointer;
 }
-
-
 
 
 /* ส่วนของ SideBar */
@@ -193,7 +204,6 @@ label:active:after {
   overflow-x: hidden;
 }
 
-
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -202,15 +212,17 @@ label:active:after {
   display: block;
   transition: 0.2s;
 }
-.sidebar a:first-child:hover{
+
+.sidebar a:first-child:hover {
   color: #f1f1f1;
   border-left: none;
   background: #111;
 }
+
 .sidebar a:hover {
   color: #f1f1f1;
   background: #222;
-  border-left: 7px solid rgb(219, 120, 54) ;
+  border-left: 7px solid rgb(219, 120, 54);
 }
 
 .sidebar .closebtn {
@@ -221,19 +233,20 @@ label:active:after {
   margin-left: 50px;
 }
 
-.closebtn{
+.closebtn {
   font-size: 60px;
 }
 
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
-
   }
-  .sidebar a {font-size: 18px;}
-  
+  .sidebar a {
+    font-size: 18px;
+  }
 }
-  /* ปุ่มเรียก sidebar */
+
+/* ปุ่มเรียก sidebar */
 
 .openbtn {
   font-size: 20px;
@@ -244,67 +257,69 @@ label:active:after {
   border: none;
   border-radius: 5px;
   transition: 0.3s;
-  margin-top: 10px;   
+  margin-top: 10px;
 }
-#open1{
-  margin-left: 15px;  
-  }
-  
+
+#open1 {
+  margin-left: 15px;
+}
+
 .openbtn:hover {
   background-color: rgb(219, 120, 54);
 }
 
-#member{
+#member {
   color: #227547;
   transition: 0.3s;
   margin-bottom: 120px;
 }
 
-#member:hover{
+#member:hover {
   color: #6fca98;
 }
 
-
 /* ส่วนเนื้อหาของเว็บ */
 
-.content1{
+.content1 {
   display: flex;
-  margin-bottom: 5%; 
+  margin-bottom: 5%;
   align-items: center;
   text-align: center;
   color: white;
   transition: 0.3s;
 }
-.img{
-    width: 44%;
-    height: 293px;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    overflow: hidden;
-    
+
+.img {
+  width: 44%;
+  height: 293px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
 }
-.detail{
-    width: 100%;
-    height: 293px;
-    background: #444;
-    border-radius: 5px ;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+.detail {
+  width: 100%;
+  height: 293px;
+  background: #444;
+  border-radius: 5px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-.img img{
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5px ;
-    transition: 0.3s;
-    
+
+.img img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  transition: 0.3s;
 }
-.img img:hover{
+
+.img img:hover {
   transform: scale(1.1);
 }
 
 /* ปุ่มไปส่วนบนสุดของหน้าเว็บ */
 
-.bottom_to_top{
-  width: 65px; 
-  height: 65px; 
+.bottom_to_top {
+  width: 65px;
+  height: 65px;
   background: rgb(0, 0, 0);
   position: fixed;
   right: 0;
@@ -322,97 +337,100 @@ label:active:after {
 }
 
 /* ส่วนของ Footer */
-.footer{
+
+.footer {
   width: 100%;
-	height: 120px;
-	text-align: center;
+  height: 120px;
+  text-align: center;
   background: #093c28;
   bottom: 0;
-  margin-top:auto; 
+  margin-top: auto;
+}
 
+.footer .container p {
+  padding-top: 50px;
 }
-.footer .container p{
-    padding-top:50px; 
-}
-.infooter{
+
+.infooter {
   width: 100%;
   height: 100%;
 }
-.infooter i{
+
+.infooter i {
   padding-top: 25px;
 }
 
-
-
 /* ส่วนขอการปรับหน้าจอ */
+
 @media screen and (max-width: 1830px) {
-  .sidebar{
+  .sidebar {
     width: 0px;
   }
-
 }
+
 @media screen and (max-width:960px) {
-
-    .footer{
-        bottom: 0;
-    }
-    .sidebar{
-      width: 0px;
-      overflow: auto;
-    }
-    .content1{
-        flex-direction: column;
-        color: white;
-    } 
-    .img{
-        width: 250px;
-        height: 250px;
-
-    }
-    .detail{
-        width: 250px;
-    }
-    .detail h1{
-      font-size: 26px;
-    }
-    .detail h2{
-      font-size: 20px;
-    }
-    .header{
-      text-align: center;
-      height: auto;
-    }
-    .head button{
-      padding-left: 15px;
-      margin-right: 0px;
-    }
-    .head2 p{
-      margin-bottom: 5px;
-    }
-    .head .home h1{
-      text-align: center;
-    }
-
+  .footer {
+    bottom: 0;
   }
+  .sidebar {
+    width: 0px;
+    overflow: auto;
+  }
+  .content1 {
+    flex-direction: column;
+    color: white;
+  }
+  .img {
+    width: 250px;
+    height: 250px;
+  }
+  .detail {
+    width: 250px;
+  }
+  .detail h1 {
+    font-size: 26px;
+  }
+  .detail h2 {
+    font-size: 20px;
+  }
+  .header {
+    text-align: center;
+    height: auto;
+  }
+  .head button {
+    padding-left: 15px;
+    margin-right: 0px;
+  }
+  .head2 p {
+    margin-bottom: 5px;
+  }
+  .head .home h1 {
+    text-align: center;
+  }
+}
 
 @media screen and (max-width: 480px) {
-
-    .footer{
-        bottom: 0;
-    }
-    .header{
-        height: auto;
-    }
-    label{
-      display: none;
-    }
-    .nightmode{
-      width: 35px;
-    }
-    .head .home h1{
-      font-size: 28px;
-      padding-top: 2.5px;
-      padding-right: 30px;
-    }
-    
+  .footer {
+    bottom: 0;
   }
+  .header {
+    height: auto;
+  }
+  label {
+    display: none;
+  }
+  .nightmode {
+    width: 35px;
+  }
+  .head .home h1 {
+    font-size: 28px;
+    padding-top: 2.5px;
+    padding-right: 30px;
+  }
+  .infooter i {
+    padding-top: 15px;
+  }
+  .infooter p {
+    padding-top: 0px;
+  }
+}

@@ -1,18 +1,19 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    font-family: 'Prompt', sans-serif;
-    background: #a9b4bd;
-    scroll-behavior: smooth;
-    transition: 0.3s;
-    box-sizing: border-box;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+  background: #a9b4bd;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
-.container{
-    max-width: 960px;
-    margin: 0 auto;
-}
-.head_button{
+
+.head_button {
   background: #111;
   border: none;
   width: 100px;
@@ -23,101 +24,99 @@ body, html{
   cursor: pointer;
   transition: 0.3s;
 }
-.head_button:hover{
+
+.head_button:hover {
   background: rgb(255, 204, 108);
   color: #000;
 }
 
-
-
 /* Scroll Bar */
 
 /* width */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-  background: #111; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #444; 
-  border-radius: 2px;
 
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 2px;
 }
 
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #222; 
+  background: #222;
 }
 
 /* nightmode_switch */
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
+
 label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 50px;
-	height: 30px;
-	background: grey;
-	display: block;
-	border-radius: 100px;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
   position: relative;
   transition: 0.3s;
   margin-top: 2px;
 }
 
 label:after {
-	content: '';
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 21px;
-	height: 21px;
-	background: #fff;
-	border-radius: 90px;
-	transition: 0.3s;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 21px;
+  height: 21px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
 }
 
-input:checked + label {
-	background: #ffcc41;
+input:checked+label {
+  background: #ffcc41;
 }
 
-input:checked + label:after {
+input:checked+label:after {
   left: calc(100% - 5px);
-	transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 label:active:after {
-	width: 30px;
+  width: 30px;
 }
 
-
-
-
-
-
-
-
-
 /* ส่วน Header ของเว็บ */
-.header{
+
+.header {
   width: 100%;
   min-height: 53%;
   margin: 0;
-  background-image:url("../image/back6.png");
+  background-image: url("../image/back6.png");
   background-attachment: fixed;
 }
-.head{
+
+.head {
   width: 100%;
   height: 65px;
-  background:  #e0e0e0;
+  background: #e0e0e0;
   transition: 0.3s;
   position: fixed;
   top: 0;
@@ -125,30 +124,34 @@ label:active:after {
   z-index: 1;
   display: flex;
 }
-.head .home a{
+
+.head .home a {
   text-decoration: none;
   color: #000;
   transition: 0.3s;
   border-bottom: 3px solid transparent;
   cursor: pointer;
 }
-.head .home button{
+
+.head .home button {
   float: left;
   margin-left: 10px;
   margin-right: 20px;
 }
-.head  .home h1{
+
+.head .home h1 {
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 0;
   color: #000;
   font-style: italic;
 }
-.head .home h1 a:hover{
+
+.head .home h1 a:hover {
   border-bottom: 3px solid #000;
 }
 
-.head2{
+.head2 {
   width: 100%;
   height: auto;
   text-align: center;
@@ -156,32 +159,36 @@ label:active:after {
   padding-top: 12%;
   margin-top: 6.5%;
 }
-.head2 p{
- font-size: 22px;
+
+.head2 p {
+  font-size: 22px;
 }
-.head2 button{
+
+.head2 button {
   width: 130px;
   margin-bottom: 10px;
   font-family: 'Prompt', sans-serif;
 }
-.home{
+
+.home {
   width: 100%;
 }
-.nightmode{
+
+.nightmode {
   width: 100px;
   height: 60%;
   display: flex;
   margin: auto 0 auto 0;
   margin-top: 14px;
 }
-.nightmode i{
+
+.nightmode i {
   margin-top: 5px;
   cursor: pointer;
 }
 
-
-
 /* ส่วนของ SideBar */
+
 .sidebar {
   height: 100%;
   width: 250px;
@@ -204,15 +211,17 @@ label:active:after {
   display: block;
   transition: 0.2s;
 }
-.sidebar a:first-child:hover{
+
+.sidebar a:first-child:hover {
   color: #f1f1f1;
   border-left: none;
   background: #111;
 }
+
 .sidebar a:hover {
   color: #f1f1f1;
   background: #222;
-  border-left: 7px solid rgb(219, 120, 54) ;
+  border-left: 7px solid rgb(219, 120, 54);
 }
 
 .sidebar .closebtn {
@@ -223,7 +232,7 @@ label:active:after {
   margin-left: 50px;
 }
 
-.closebtn{
+.closebtn {
   font-size: 60px;
 }
 
@@ -231,9 +240,12 @@ label:active:after {
   .sidebar {
     padding-top: 12px;
   }
-  .sidebar a {font-size: 18px;}
+  .sidebar a {
+    font-size: 18px;
+  }
 }
-  /* ปุ่มเรียก sidebar */
+
+/* ปุ่มเรียก sidebar */
 
 .openbtn {
   font-size: 20px;
@@ -245,124 +257,133 @@ label:active:after {
   border-radius: 5px;
   transition: 0.3s;
   margin-top: 10px;
-  
 }
-#open1{
-  margin-left: 15px;  
+
+#open1 {
+  margin-left: 15px;
 }
 
 .openbtn:hover {
   background-color: rgb(219, 120, 54);
 }
 
-#member{
+#member {
   color: #227547;
   transition: 0.3s;
   margin-bottom: 120px;
 }
 
-#member:hover{
+#member:hover {
   color: #6fca98;
 }
 
-
 /* ส่วนเนื้อหาของเว็บ */
 
-.content1{
-    max-width: 100%;
-    margin-bottom: 5%; 
-    border-radius :20px;
-    display: flex;
+.content1 {
+  max-width: 100%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  display: flex;
 }
 
 .card {
-    transition: 0.3s;
-    width: 40%;
-    height: 500px;
-    background: white;
-    border-radius : 5px; 
-    float: left;
-    margin-left: 1.5%; 
-    margin-right: 1.5%;
-    margin-top: 0%;
-    margin-bottom: 4%;
-    overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: 0.3s;
+  width: 40%;
+  height: 500px;
+  background: white;
+  border-radius: 5px;
+  float: left;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-top: 0%;
+  margin-bottom: 4%;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.card_extra{
+
+.card_extra {
   transition: 0.3s;
   width: 50%;
   height: 500px;
   background: white;
-  border-radius : 5px; 
+  border-radius: 5px;
   float: left;
-  margin-left: 1.5%; 
+  margin-left: 1.5%;
   margin-top: 0%;
   margin-bottom: 4%;
   overflow: hidden;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.card_extra h2{
+
+.card_extra h2 {
   font-size: 40px;
   text-align: center;
 }
-.card_img{
-  width:100%;
-  height:50%;
+
+.card_img {
+  width: 100%;
+  height: 50%;
   background: #227547;
   overflow: hidden;
-  
 }
-.card_img img{
-  width:100%;
+
+.card_img img {
+  width: 100%;
   height: 100%;
   background: #227547;
   transition: 0.3s;
 }
-.card_img img:hover{
+
+.card_img img:hover {
   transform: scale(1.1);
 }
-.card_button{
+
+.card_button {
   width: 100%;
   height: 101.5%;
   background: white;
   border: 1px solid #111;
-  border-radius : 0px 0px 5px 5px; 
+  border-radius: 0px 0px 5px 5px;
   font-family: 'Prompt', sans-serif;
   transition: 0.3s;
   font-size: 17px;
   bottom: 0;
   cursor: pointer;
 }
-.card_button a{
+
+.card_button a {
   width: 100%;
   text-decoration: none;
   color: #000;
 }
-.card_button:hover{
+
+.card_button:hover {
   background: #111;
   color: white;
 }
-.card p{
+
+.card p {
   font-size: 18px;
   margin: 0;
 }
-.button_card{
+
+.button_card {
   width: 100%;
-  height:14%;
+  height: 14%;
 }
+
 .card_container {
-    padding: 2px 16px;
-    color: black;
-    border-radius : 20px; 
-    height: 35%;
-  }
+  padding: 2px 16px;
+  color: black;
+  border-radius: 20px;
+  height: 35%;
+}
 
 /* ปุ่มไปส่วนบนสุดของหน้าเว็บ */
 
-.bottom_to_top{
-  width: 65px; 
-  height: 65px; 
+.bottom_to_top {
+  width: 65px;
+  height: 65px;
   background: rgb(0, 0, 0);
   position: fixed;
   right: 0;
@@ -373,35 +394,38 @@ label:active:after {
   transition: 0.3s;
 }
 
-.bottom_to_top:hover{
+.bottom_to_top:hover {
   background: #4970c5;
   color: #111;
   border: 2px solid #111;
 }
 
 /* ส่วนของ Footer */
-.footer{
+
+.footer {
   width: 100%;
-	height: 120px;
-	text-align: center;
+  height: 120px;
+  text-align: center;
   background: #093c28;
   bottom: 0;
-  margin-top:auto; 
+  margin-top: auto;
+}
 
+.footer .container p {
+  padding-top: 50px;
 }
-.footer .container p{
-    padding-top:50px; 
-}
-.infooter{
+
+.infooter {
   widows: 100%;
   height: 100%;
 }
-.infooter i{
+
+.infooter i {
   padding-top: 25px;
 }
 
 @media screen and (max-width: 1860px) {
-  .sidebar{
+  .sidebar {
     width: 0px;
   }
 }
@@ -409,69 +433,67 @@ label:active:after {
 /* ส่วนขอการปรับหน้าจอ */
 
 @media screen and (max-width: 960px) {
-    .card p{
-      font-size: 17px;
-    }
-    .sidebar{
-      width: 0px;
-      overflow: auto;
-    }
-    .header{
-      height: auto;
-    }
-    .head button{
-      padding-left: 15px;
-      margin-right: 0px;
-    }
-    .head2{
-      padding-top: 18%;
-    }
-    .head2 p{
-      margin-bottom: 5px;
-    }
-    .head .home h1{
-      text-align: center;
-      
-    }
-    .content1{
-      flex-direction: column;
-    }
-    .card, .card_extra{
-      width: 300px;
-      margin-left: auto; 
-      margin-right: auto;
-    }
-
+  .card p {
+    font-size: 17px;
   }
-
-
-@media screen and (max-width: 490px) {
-  
-  .card, .card_extra{
-    width: 85%;
-    margin-left: auto; 
-    margin-right: auto;
+  .sidebar {
+    width: 0px;
+    overflow: auto;
   }
-  .footer{
-    bottom: 0;
-  }
-  .header{
+  .header {
     height: auto;
   }
-  .nightmode{
+  .head button {
+    padding-left: 15px;
+    margin-right: 0px;
+  }
+  .head2 {
+    padding-top: 18%;
+  }
+  .head2 p {
+    margin-bottom: 5px;
+  }
+  .head .home h1 {
+    text-align: center;
+  }
+  .content1 {
+    flex-direction: column;
+  }
+  .card, .card_extra {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .card, .card_extra {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer {
+    bottom: 0;
+  }
+  .header {
+    height: auto;
+  }
+  .nightmode {
     width: 35px;
   }
-  .head .home h1{
+  .head .home h1 {
     padding-right: 25px;
     text-align: center;
   }
-  label{
+  label {
     display: none;
   }
-  .head .home h1{
+  .head .home h1 {
     font-size: 28px;
     padding-top: 2.5px;
     padding-right: 30px;
   }
-  
+  .infooter i {
+    padding-top: 15px;
+  }
 }
